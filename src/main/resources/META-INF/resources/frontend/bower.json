@@ -1,8 +1,12 @@
 {
-  "name": "skeleton",
-  "homepage": "https://github.com/vaadin/flow-application-skeleton",
+  "name": "skeleton-spring",
+  "homepage": "https://github.com/vaadin/skeleton-starter-flow-spring",
   "authors": [],
-  "description": "",
+  "description": "Skeleton Spring Starter for Vaadin Flow",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vaadin/skeleton-starter-flow-spring.git"
+  },
   "main": "",
   "license": "Apache2",
   "private": true,
@@ -14,6 +18,7 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "2.0.0"
+    "polymer": "2.1.1",
+    "vaadin-core": "2.0.0-alpha3"
   }
 }
