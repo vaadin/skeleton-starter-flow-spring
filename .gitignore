@@ -1,0 +1,13 @@
+/target/
+.idea/
+bower_components/
+node/
+node_modules/
+etc/
+.settings
+.project
+.classpath
+
+
+*.iml
+.DS_Store
