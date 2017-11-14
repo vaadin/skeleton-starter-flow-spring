@@ -78,18 +78,6 @@
         </dependency>
         
         <dependency>
-            <!-- 
-                 Spring dev tools dependency is not needed for production. 
-                 It allows to speed up the development and may be used 
-                 during development.
-                 E.g. it automatically restarts application whenever files 
-                 on the classpath change.
-                 To be able to make it work properly with Flow there is 
-                 META-INF/spring-devtools.proeprties file which might need 
-                 to be adjusted for your specific purposes. 
-                 See https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-devtools.html#using-boot-devtools-customizing-classload
-                 for details. 
-            -->
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <version>${spring-boot.version}</version>
