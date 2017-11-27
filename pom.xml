@@ -16,7 +16,7 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
 
         <!-- Dependencies -->
-        <vaadin.project.version>10.0.0-alpha8</vaadin.project.version>
+        <vaadin.project.version>10.0.0.alpha8</vaadin.project.version>
         <servlet.api.version>3.1.0</servlet.api.version>
         <selenium.server.version>3.4.0</selenium.server.version>
         <flow.project.version>1.0.0.alpha11</flow.project.version>
@@ -37,7 +37,12 @@
 
     <repositories>
         <repository>
-            <id>flow-internal-release</id>
+            <id>flow</id>
+            <url>https://maven.vaadin.com/vaadin-prerelease</url>
+        </repository>
+
+        <repository>
+            <id>vaadin-platform</id>
             <url>https://repo.vaadin.com/nexus/content/repositories/flow</url>
         </repository>
 
