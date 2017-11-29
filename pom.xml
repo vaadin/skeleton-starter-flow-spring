@@ -61,6 +61,13 @@
                 <scope>import</scope>
                 <version>${flow.project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.vaadin</groupId>
+                <artifactId>vaadin-bom</artifactId>
+                <version>${vaadin.project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -69,18 +76,11 @@
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin</artifactId>
             <version>${vaadin.project.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.vaadin</groupId>
-                    <artifactId>flow-server</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
     
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>flow-spring-boot-starter</artifactId>
-            <version>${flow.project.version}</version>
         </dependency>
         
         <dependency>
@@ -93,7 +93,6 @@
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>flow-components</artifactId>
-            <version>${flow.project.version}</version>
         </dependency>
 
         <dependency>
