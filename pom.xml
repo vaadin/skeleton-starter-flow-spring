@@ -5,7 +5,7 @@
     <groupId>com.example</groupId>
     <artifactId>spring-skeleton</artifactId>
     <name>Spring Flow Application Skeleton</name>
-    <version>1.0.0.alpha10</version>
+    <version>1.0.0.alpha11</version>
     <packaging>war</packaging>
 
     <properties>
