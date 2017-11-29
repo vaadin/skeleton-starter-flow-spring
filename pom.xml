@@ -16,6 +16,7 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
 
         <!-- Dependencies -->
+
         <vaadin.project.version>10.0.0.alpha8</vaadin.project.version>
         <servlet.api.version>3.1.0</servlet.api.version>
         <selenium.server.version>3.4.0</selenium.server.version>
@@ -66,6 +67,13 @@
                 <scope>import</scope>
                 <version>${flow.project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.vaadin</groupId>
+                <artifactId>vaadin-bom</artifactId>
+                <version>${vaadin.project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -79,7 +87,6 @@
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>flow-spring-boot-starter</artifactId>
-            <version>${flow.project.version}</version>
         </dependency>
 
         <dependency>
