@@ -13,21 +13,28 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.example.spring;
+package com.vaadin.starter.skeleton.spring;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.support.SpringBootServletInitializer;
+import com.vaadin.spring.annotation.SpringComponent;
+import com.vaadin.spring.annotation.UIScope;
 
 /**
- * The entry point of the Spring Boot application.
+ * Data provider bean.
+ *
+ * @author Vaadin Ltd
  *
  */
-@SpringBootApplication
-public class ExampleServletInitializer extends SpringBootServletInitializer {
+@SpringComponent
+@UIScope
+public class MessageBean {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ExampleServletInitializer.class, args);
+    /**
+     * Gets message data.
+     *
+     * @return a message
+     */
+    public String getMessage() {
+        return "World!";
     }
 
 }
