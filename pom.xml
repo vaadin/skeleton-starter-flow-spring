@@ -21,9 +21,14 @@
         <servlet.api.version>3.1.0</servlet.api.version>
         <selenium.server.version>3.4.0</selenium.server.version>
 
-        <spring-boot.version>1.5.8.RELEASE</spring-boot.version>
+        <spring-boot.version>2.0.0.M7</spring-boot.version>
     </properties>
-
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-milestone</id>
+            <url>https://repo.spring.io/milestone/</url>
+        </pluginRepository>
+    </pluginRepositories>
     <repositories>
         <repository>
             <id>vaadin-prereleases</id>
@@ -37,6 +42,10 @@
         <repository>
             <id>webjars</id>
             <url>https://dl.bintray.com/webjars/maven</url>
+        </repository>
+        <repository>
+            <id>spring-milestone</id>
+            <url>https://repo.spring.io/milestone/</url>
         </repository>
     </repositories>
 
@@ -82,7 +91,22 @@
             <version>${servlet.api.version}</version>
             <scope>provided</scope>
         </dependency>
-
+        <!-- Fix version conflicts between various dependencies -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.9.0</version>
+        </dependency>
     </dependencies>
 
     <build>
