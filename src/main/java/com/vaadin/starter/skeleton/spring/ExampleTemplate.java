@@ -13,15 +13,15 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.example.spring;
+package com.vaadin.starter.skeleton.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 
-import com.example.spring.ExampleTemplate.ExampleModel;
 import com.vaadin.flow.model.TemplateModel;
 import com.vaadin.spring.annotation.SpringComponent;
+import com.vaadin.starter.skeleton.spring.ExampleTemplate.ExampleModel;
 import com.vaadin.ui.Tag;
 import com.vaadin.ui.common.HtmlImport;
 import com.vaadin.ui.polymertemplate.PolymerTemplate;
