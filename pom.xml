@@ -26,13 +26,7 @@
         <maven.clean.plugin.version>3.0.0</maven.clean.plugin.version>
         <maven.war.plugin.version>3.1.0</maven.war.plugin.version>
 
-        <!-- Frontend -->
-        <node.version>v7.10.0</node.version>
-        <npm.version>5.0.3</npm.version>
-        
         <spring-boot.version>1.5.8.RELEASE</spring-boot.version>
-
-        <frontend.working.directory>src/main/resources/META-INF/resources/frontend</frontend.working.directory>
     </properties>
 
     <repositories>
@@ -44,13 +38,13 @@
             <id>vaadin-addons</id>
             <url>http://maven.vaadin.com/vaadin-addons</url>
         </repository>
-        
+
         <repository>
             <id>webjars</id>
             <url>https://dl.bintray.com/webjars/maven</url>
         </repository>
     </repositories>
-    
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -103,75 +97,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-clean-plugin</artifactId>
-                <version>${maven.clean.plugin.version}</version>
-                <configuration>
-                    <filesets>
-                        <fileset>
-                            <directory>${frontend.working.directory}/bower_components</directory>
-                        </fileset>
-                        <fileset>
-                            <directory>${frontend.working.directory}/build</directory>
-                        </fileset>
-                        <fileset>
-                            <directory>${frontend.working.directory}/node</directory>
-                        </fileset>
-                        <fileset>
-                            <directory>${frontend.working.directory}/node_modules</directory>
-                        </fileset>
-                    </filesets>
-                </configuration>
-            </plugin>
-            
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>${maven.war.plugin.version}</version>
-                <configuration>
-                    <archive>
-                        <manifestEntries>
-                            <Implementation-Title>${project.name}
-                            </Implementation-Title>
-                            <Implementation-Version>${project.version}
-                            </Implementation-Version>
-                        </manifestEntries>
-                    </archive>
-                    <warSourceExcludes>
-                        **/node_modules/,**/node/,**/build/,**/etc/
-                    </warSourceExcludes>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>com.github.eirslett</groupId>
-                <artifactId>frontend-maven-plugin</artifactId>
-                <version>1.4</version>
-                <configuration>
-                    <nodeVersion>${node.version}</nodeVersion>
-                    <npmVersion>${npm.version}</npmVersion>
-                    <workingDirectory>${frontend.working.directory}</workingDirectory>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>install-node-and-npm</id>
-                        <goals>
-                            <goal>install-node-and-npm</goal>
-                            <goal>npm</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>npm run</id>
-                        <goals>
-                            <goal>npm</goal>
-                        </goals>
-                        <configuration>
-                            <arguments>${npm.build.goal}</arguments>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 
@@ -195,25 +120,6 @@
                 </dependency>
             </dependencies>
 
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-war-plugin</artifactId>
-                        <version>${maven.war.plugin.version}</version>
-                        <configuration>
-                           <webResources>
-                                <resource>
-                                    <directory>${frontend.working.directory}/build</directory>
-                                </resource>
-                            </webResources>
-                            <packagingExcludes>**/node_modules/,**/node/,**/etc/,**/bower.json,**/package.json
-                            </packagingExcludes>
-                        </configuration>
-                    </plugin>
-
-                </plugins>
-            </build>
         </profile>
 
     </profiles>
