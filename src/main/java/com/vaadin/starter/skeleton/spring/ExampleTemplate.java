@@ -19,12 +19,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 
-import com.vaadin.flow.model.TemplateModel;
-import com.vaadin.spring.annotation.SpringComponent;
-import com.vaadin.starter.skeleton.spring.ExampleTemplate.ExampleModel;
-import com.vaadin.ui.Tag;
-import com.vaadin.ui.common.HtmlImport;
-import com.vaadin.ui.polymertemplate.PolymerTemplate;
+import com.vaadin.flow.component.Tag;
+import com.vaadin.flow.component.dependency.HtmlImport;
+import com.vaadin.flow.component.polymertemplate.PolymerTemplate;
+import com.vaadin.flow.spring.annotation.SpringComponent;
+import com.vaadin.flow.templatemodel.TemplateModel;
 
 /**
  * Simple template example.
@@ -33,12 +32,12 @@ import com.vaadin.ui.polymertemplate.PolymerTemplate;
 @HtmlImport("frontend://ExampleTemplate.html")
 @SpringComponent
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-public class ExampleTemplate extends PolymerTemplate<ExampleModel> {
+public class ExampleTemplate extends PolymerTemplate<ExampleTemplate.ExampleModel> {
 
     /**
      * Template model which defines the single "name" property.
      */
-    public static interface ExampleModel extends TemplateModel {
+    public interface ExampleModel extends TemplateModel {
 
         void setName(String name);
     }

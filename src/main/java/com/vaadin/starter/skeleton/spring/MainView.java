@@ -17,11 +17,11 @@ package com.vaadin.starter.skeleton.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.vaadin.router.Route;
-import com.vaadin.ui.Composite;
-import com.vaadin.ui.common.StyleSheet;
-import com.vaadin.ui.html.Div;
-import com.vaadin.ui.html.Label;
+import com.vaadin.flow.component.Composite;
+import com.vaadin.flow.component.dependency.StyleSheet;
+import com.vaadin.flow.component.html.Div;
+import com.vaadin.flow.component.html.Label;
+import com.vaadin.flow.router.Route;
 
 /**
  * The main view contains a simple label element and a template element.
