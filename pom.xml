@@ -5,7 +5,7 @@
     <groupId>com.example</groupId>
     <artifactId>spring-skeleton</artifactId>
     <name>Spring Flow Application Skeleton</name>
-    <version>1.0.0.alpha12</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <properties>
@@ -16,10 +16,10 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
 
         <!-- Dependencies -->
-
-        <vaadin.version>10.0.0.alpha9</vaadin.version>
+        <vaadin.version>10.0.0.alpha11</vaadin.version>
         <servlet.api.version>3.1.0</servlet.api.version>
         <selenium.server.version>3.4.0</selenium.server.version>
+        <slf4j.version>1.7.25</slf4j.version>
 
         <spring-boot.version>2.0.0.M7</spring-boot.version>
     </properties>
@@ -107,6 +107,21 @@
             <artifactId>jackson-annotations</artifactId>
             <version>2.9.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -134,8 +149,6 @@
                     <artifactId>flow-server-production-mode</artifactId>
                 </dependency>
             </dependencies>
-
         </profile>
-
     </profiles>
 </project>
