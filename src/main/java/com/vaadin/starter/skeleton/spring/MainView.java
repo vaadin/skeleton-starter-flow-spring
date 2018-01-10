@@ -21,11 +21,13 @@ import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.dependency.StyleSheet;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Label;
+import com.vaadin.flow.component.page.BodySize;
 import com.vaadin.flow.router.Route;
 
 /**
  * The main view contains a simple label element and a template element.
  */
+@BodySize(height = "100vh", width = "100vw")
 @StyleSheet("context://styles.css")
 @Route("")
 public class MainView extends Composite<Div> {
