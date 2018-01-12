@@ -42,8 +42,12 @@ public class ExampleTemplate extends PolymerTemplate<ExampleTemplate.ExampleMode
         void setName(String name);
     }
 
-    public ExampleTemplate(@Autowired MessageBean bean) {
+    public ExampleTemplate() {
         // Set the initial value to the "name" property.
-        getModel().setName(bean.getMessage());
+        getModel().setName("Not clicked");
+    }
+    
+    public void setName(String name) {
+    	getModel().setName(name);
     }
 }
