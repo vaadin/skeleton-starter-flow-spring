@@ -35,11 +35,10 @@ import com.vaadin.flow.router.Route;
 @Route("")
 public class MainView extends VerticalLayout {
 
-    public MainView() {
-    	ExampleTemplate template = new ExampleTemplate();
+    public MainView(@Autowired ExampleTemplate template) {
         // This is just a simple label created via Elements API
-        Button button = new Button("Click me",	event -> template.setName("Clicked!"));
-    	// This is a simple template example
+        Button button = new Button("Click me", event -> template.setValue("Clicked!"));
+        // This is a simple template example
         add(button, template);
     }
 
