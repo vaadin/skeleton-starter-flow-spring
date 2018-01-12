@@ -35,15 +35,19 @@ import com.vaadin.flow.templatemodel.TemplateModel;
 public class ExampleTemplate extends PolymerTemplate<ExampleTemplate.ExampleModel> {
 
     /**
-     * Template model which defines the single "name" property.
+     * Template model which defines the single "value" property.
      */
     public interface ExampleModel extends TemplateModel {
 
-        void setName(String name);
+        void setValue(String name);
     }
 
     public ExampleTemplate(@Autowired MessageBean bean) {
-        // Set the initial value to the "name" property.
-        getModel().setName(bean.getMessage());
+        // Set the initial value to the "value" property.
+        getModel().setValue(bean.getMessage());
+    }
+
+    public void setValue(String value) {
+        getModel().setValue(value);
     }
 }
