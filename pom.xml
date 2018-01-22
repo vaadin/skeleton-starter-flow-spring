@@ -108,7 +108,8 @@
             <version>2.9.0</version>
         </dependency>
 
-        <!-- added to provide logging output -->
+        <!-- Added to provide logging output as Flow uses -->
+        <!-- the unbound SLF4J no-operation (NOP) logger implementation -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
