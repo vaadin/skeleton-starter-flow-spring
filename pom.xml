@@ -21,12 +21,22 @@
         <selenium.server.version>3.4.0</selenium.server.version>
         <slf4j.version>1.7.25</slf4j.version>
 
+        <maven.resources.plugin.version>3.0.2</maven.resources.plugin.version>
+        <maven.clean.plugin.version>3.0.0</maven.clean.plugin.version>
+        <maven.war.plugin.version>3.1.0</maven.war.plugin.version>
+
+        <frontend.directory>src/main/webapp/frontend</frontend.directory>
+
         <spring-boot.version>2.0.0.M7</spring-boot.version>
     </properties>
     <pluginRepositories>
         <pluginRepository>
             <id>spring-milestone</id>
             <url>https://repo.spring.io/milestone/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>vaadin-prereleases</id>
+            <url>https://maven.vaadin.com/vaadin-prereleases</url>
         </pluginRepository>
     </pluginRepositories>
     <repositories>
@@ -76,14 +86,14 @@
             <groupId>com.vaadin</groupId>
             <artifactId>flow-spring-boot-starter</artifactId>
         </dependency>
-
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <version>${spring-boot.version}</version>
             <optional>true</optional>
         </dependency>
-
+        
         <dependency>
             <groupId>org.webjars.bower</groupId>
             <artifactId>polymer</artifactId>
@@ -123,11 +133,50 @@
     </dependencies>
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>${maven.clean.plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${maven.resources.plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>${maven.war.plugin.version}</version>
+                    <configuration>
+                        <packagingExcludes>
+                            %regex[WEB-INF/lib/slf4j-simple.*.jar],
+                            %regex[WEB-INF/lib/tomcat.*.jar]
+                        </packagingExcludes>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${frontend.directory}/build</directory>
+                        </fileset>
+                        <fileset>
+                            <directory>${frontend.directory}/bower_components</directory>
+                        </fileset>
+                    </filesets>
+                </configuration>
             </plugin>
         </plugins>
     </build>
@@ -141,12 +190,57 @@
                 </property>
             </activation>
 
+            <properties>
+                <transpilation.output>${project.build.directory}/build</transpilation.output>
+            </properties>
+
             <dependencies>
                 <dependency>
                     <groupId>com.vaadin</groupId>
                     <artifactId>flow-server-production-mode</artifactId>
                 </dependency>
             </dependencies>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.vaadin</groupId>
+                        <artifactId>flow-maven-plugin</artifactId>
+                        <version>1.0.0.alpha18</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>copy-production-files</goal>
+                                    <goal>transpile-production-files</goal>
+                                </goals>
+                                <configuration>
+                                    <transpileOutputDirectory>${transpilation.output}</transpileOutputDirectory>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-war-plugin</artifactId>
+                        <version>${maven.war.plugin.version}</version>
+                        <configuration>
+                            <archive>
+                                <manifestEntries>
+                                    <Implementation-Title>${project.name}</Implementation-Title>
+                                    <Implementation-Version>${project.version}</Implementation-Version>
+                                </manifestEntries>
+                            </archive>
+                            <webResources>
+                                <resource>
+                                    <directory>${transpilation.output}</directory>
+                                </resource>
+                            </webResources>
+                        </configuration>
+                    </plugin>
+
+                </plugins>
+            </build>
         </profile>
     </profiles>
 </project>
