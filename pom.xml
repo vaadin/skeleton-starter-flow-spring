@@ -206,7 +206,7 @@
                     <plugin>
                         <groupId>com.vaadin</groupId>
                         <artifactId>flow-maven-plugin</artifactId>
-                        <version>0.0.7</version>
+                        <version>1.0.0.alpha18</version>
                         <executions>
                             <execution>
                                 <goals>
