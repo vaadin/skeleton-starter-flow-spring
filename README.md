@@ -8,7 +8,7 @@ The best way to use it by via vaadin.com/start - you can get only the necessary 
 Import the project to the IDE of your choosing as a Maven project. 
 
 Run application using
-`mvn clean spring-boot:run`
+`mvn spring-boot:run`
 
 Open http://localhost:8888/ in browser
 
