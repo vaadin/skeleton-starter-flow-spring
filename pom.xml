@@ -18,7 +18,7 @@
         <webapp.directory>src/main/webapp</webapp.directory>
 
         <!-- Dependencies -->
-        <vaadin.version>10.0.0.alpha18</vaadin.version>
+        <vaadin.version>10.0.0.alpha19</vaadin.version>
         <spring-boot.version>2.0.0.M7</spring-boot.version>
     </properties>
 
@@ -59,12 +59,8 @@
     <dependencies>
         <dependency>
             <groupId>com.vaadin</groupId>
-            <artifactId>vaadin</artifactId>
+            <artifactId>vaadin-core</artifactId>
             <version>${vaadin.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.vaadin</groupId>
-            <artifactId>vaadin-lumo-theme</artifactId>
         </dependency>
 
         <dependency>
@@ -173,7 +169,7 @@
                     <plugin>
                         <groupId>com.vaadin</groupId>
                         <artifactId>flow-maven-plugin</artifactId>
-                        <version>1.0.0.alpha20</version>
+                        <version>1.0.0.alpha21</version>
                         <executions>
                             <execution>
                                 <goals>
