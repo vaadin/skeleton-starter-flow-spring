@@ -15,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 @HtmlImport("styles/shared-styles.html")
 @Route("")
 @Theme(Lumo.class)
-@BodySize(height = "100vh", width = "100vw")
 public class MainView extends VerticalLayout {
 
     public MainView(@Autowired ExampleTemplate template) {
