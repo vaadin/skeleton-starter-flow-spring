@@ -67,7 +67,6 @@
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-core</artifactId>
-            <version>${vaadin.version}</version>
         </dependency>
 
         <dependency>
