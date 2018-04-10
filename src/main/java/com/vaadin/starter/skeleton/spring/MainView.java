@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.HtmlImport;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.component.page.BodySize;
 import com.vaadin.flow.router.Route;
 
 /**
@@ -13,7 +12,6 @@ import com.vaadin.flow.router.Route;
  */
 @HtmlImport("styles/shared-styles.html")
 @Route("")
-@BodySize(height = "100vh", width = "100vw")
 public class MainView extends VerticalLayout {
 
     public MainView(@Autowired ExampleTemplate template) {
