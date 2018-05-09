@@ -40,6 +40,10 @@
             <url>https://maven.vaadin.com/vaadin-prereleases</url>
         </repository>
         <repository>
+             <id>Vaadin Directory</id>
+             <url>http://maven.vaadin.com/vaadin-addons</url>
+        </repository>        
+        <repository>
             <id>spring-milestone</id>
             <url>https://repo.spring.io/milestone/</url>
         </repository>
