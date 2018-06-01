@@ -15,7 +15,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <failOnMissingWebXml>false</failOnMissingWebXml>
 
-        <webapp.directory>src/main/webapp</webapp.directory>
+        <!-- Place for frontend stuff in Spring Boot apps to META-INF/resources -->
+        <webapp.directory>src/main/resources/META-INF/resources</webapp.directory>
 
         <!-- Dependencies -->
         <vaadin.version>10.0.0.rc1</vaadin.version>
