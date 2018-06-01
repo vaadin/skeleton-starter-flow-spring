@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
     <artifactId>spring-skeleton</artifactId>
@@ -36,8 +36,8 @@
             <url>https://maven.vaadin.com/vaadin-prereleases</url>
         </repository>
         <repository>
-             <id>Vaadin Directory</id>
-             <url>http://maven.vaadin.com/vaadin-addons</url>
+            <id>Vaadin Directory</id>
+            <url>http://maven.vaadin.com/vaadin-addons</url>
         </repository>        
     </repositories>
 
@@ -147,6 +147,28 @@
             <build>
                 <plugins>
                     <plugin>
+                        <!-- TODO make this step in vaadin/flow-maven-plugin -->
+                        <artifactId>maven-resources-plugin</artifactId>
+                        <version>3.1.0</version>
+                        <executions>
+                            <execution>
+                                <id>copy-resources</id>
+                                <phase>generate-resources</phase>
+                                <goals>
+                                    <goal>copy-resources</goal>
+                                </goals>
+                                <configuration>
+                                    <outputDirectory>${basedir}/target/frontend</outputDirectory>
+                                    <resources>          
+                                        <resource>
+                                            <directory>src/main/resources/META-INF/resources/frontend</directory>
+                                        </resource>
+                                    </resources>              
+                                </configuration>            
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
                         <groupId>com.vaadin</groupId>
                         <artifactId>vaadin-maven-plugin</artifactId>
                         <version>${vaadin.version}</version>
@@ -157,7 +179,8 @@
                                     <goal>package-for-production</goal>
                                 </goals>
                                 <configuration>
-                                    <transpileOutputDirectory>${webapp.directory}</transpileOutputDirectory>
+                                    <frontendWorkingDirectory>${webapp.directory}</frontendWorkingDirectory>
+                                    <transpileOutputDirectory>target/classes/META-INF/resources</transpileOutputDirectory>
                                 </configuration>
                             </execution>
                         </executions>
