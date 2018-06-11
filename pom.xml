@@ -14,11 +14,9 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <failOnMissingWebXml>false</failOnMissingWebXml>
 
         <!-- Dependencies -->
         <vaadin.version>10.0.0.rc2</vaadin.version>
-        <spring-boot.version>2.0.2.RELEASE</spring-boot.version>
     </properties>
 
     <parent>
@@ -73,27 +71,10 @@
     </dependencies>
 
     <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <version>3.1.0</version>
-                    <configuration>
-                        <packagingExcludes>
-                            %regex[WEB-INF/lib/slf4j-simple.*.jar],
-                            %regex[WEB-INF/lib/tomcat.*.jar]
-                        </packagingExcludes>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring-boot.version}</version>
             </plugin>
         </plugins>
     </build>
@@ -132,7 +113,6 @@
                     <plugin>
                         <groupId>org.springframework.boot</groupId>
                         <artifactId>spring-boot-maven-plugin</artifactId>
-                        <version>${spring-boot.version}</version>
                         <configuration>
                             <jvmArguments>-Dvaadin.productionMode</jvmArguments>
                         </configuration>
