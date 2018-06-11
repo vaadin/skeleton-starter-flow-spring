@@ -11,7 +11,7 @@ import com.vaadin.flow.router.Route;
  * The main view contains a simple label element and a template element.
  */
 @HtmlImport("styles/shared-styles.html")
-@Route("")
+@Route
 public class MainView extends VerticalLayout {
 
     public MainView(@Autowired ExampleTemplate template) {
