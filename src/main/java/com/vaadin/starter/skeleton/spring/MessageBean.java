@@ -1,21 +1,12 @@
 package com.vaadin.starter.skeleton.spring;
 
-import com.vaadin.flow.spring.annotation.SpringComponent;
-import com.vaadin.flow.spring.annotation.UIScope;
+import java.time.LocalTime;
+import org.springframework.stereotype.Service;
 
-/**
- * Data provider bean.
- */
-@SpringComponent
-@UIScope
+@Service
 public class MessageBean {
 
-    /**
-     * Gets message data.
-     *
-     * @return a message
-     */
     public String getMessage() {
-        return "Not Clicked";
+        return "Button was clicked at " + LocalTime.now();
     }
 }
