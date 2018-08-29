@@ -17,6 +17,6 @@ For documentation on using Vaadin Flow and Spring, visit [vaadin.com/docs](https
 For more information on Vaadin Flow, visit https://vaadin.com/flow.
 
 Branching information:
-* `master` the latest version of the starter, using the latest platform snapshot
+* `master` the latest version of the starter, the using the latest platform snapshot
 * `V10` the version for Vaadin 10
 * `V11` the version for Vaadin 11
