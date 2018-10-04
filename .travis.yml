@@ -14,7 +14,7 @@ script:
 # Cache requires a master build
 branches:
   only:
-    - master
+    - v10
 cache:
   directories:
   - $HOME/.m2
