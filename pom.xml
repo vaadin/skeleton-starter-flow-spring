@@ -142,6 +142,7 @@
                 <executions>
                     <execution>
                         <goals>
+                            <goal>validate</goal>
                             <goal>update-npm-dependencies</goal>
                             <goal>update-imports</goal>
                         </goals>
@@ -160,7 +161,6 @@
                         <fileset>
                             <directory>${project.basedir}</directory>
                             <includes>
-                                <include>frontend/main.js</include>
                                 <include>package.json</include>
                                 <include>webpack.config.js</include>
                             </includes>
