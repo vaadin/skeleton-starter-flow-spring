@@ -3,7 +3,6 @@
 .settings
 .project
 .classpath
-/src/main/webapp/frontend-es*/
 
 *.iml
 .DS_Store
