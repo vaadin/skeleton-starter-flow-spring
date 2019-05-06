@@ -8,6 +8,4 @@
 .DS_Store
 
 # The following files are generated/updated by vaadin-maven-plugin
-package.json
-webpack.config.js
 node_modules/

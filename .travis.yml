@@ -15,7 +15,6 @@ script:
 branches:
   only:
     - master
-    - "2.0"
 cache:
   directories:
   - $HOME/.m2
