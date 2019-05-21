@@ -127,17 +127,11 @@
 
     <profiles>
         <profile>
-            <!-- Production mode can be activated with either property or profile -->
-            <id>production-mode</id>
-            <activation>
-                <property>
-                    <name>vaadin.productionMode</name>
-                </property>
-            </activation>
+            <!-- Production mode is activated using -Pproduction -->
+            <id>production</id>
             <properties>
                 <vaadin.productionMode>true</vaadin.productionMode>
             </properties>
-
 
             <dependencies>
                 <dependency>
