@@ -170,13 +170,15 @@
                         <artifactId>spring-boot-maven-plugin</artifactId>
                         <executions>
                             <execution>
-                                <id>pre-integration-test</id>
+                                <id>start-spring-boot</id>
+                                <phase>pre-integration-test</phase>
                                 <goals>
                                     <goal>start</goal>
                                 </goals>
                             </execution>
                             <execution>
-                                <id>post-integration-test</id>
+                                <id>stop-spring-boot</id>
+                                <phase>post-integration-test</phase>
                                 <goals>
                                     <goal>stop</goal>
                                 </goals>
