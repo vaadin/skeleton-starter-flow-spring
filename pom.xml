@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <vaadin.version>14.0.0.beta1</vaadin.version>
+        <vaadin.version>14.0.0.beta2</vaadin.version>
     </properties>
 
     <parent>
@@ -85,7 +85,11 @@
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-spring-boot-starter</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <!-- Replace artifactId with vaadin-core to use only free components -->
+            <artifactId>vaadin</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -112,7 +116,7 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>validate</goal>
+                            <goal>prepare-frontend</goal>
                             <goal>build-frontend</goal>
                         </goals>
                     </execution>
@@ -123,17 +127,11 @@
 
     <profiles>
         <profile>
-            <!-- Production mode can be activated with either property or profile -->
-            <id>production-mode</id>
-            <activation>
-                <property>
-                    <name>vaadin.productionMode</name>
-                </property>
-            </activation>
+            <!-- Production mode is activated using -Pproduction -->
+            <id>production</id>
             <properties>
                 <vaadin.productionMode>true</vaadin.productionMode>
             </properties>
-
 
             <dependencies>
                 <dependency>
