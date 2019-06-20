@@ -11,6 +11,7 @@
     "webpack-cli": "3.3.0",
     "webpack-dev-server": "3.3.0",
     "webpack-babel-multi-target-plugin": "2.1.0",
-    "copy-webpack-plugin": "5.0.3"
+    "copy-webpack-plugin": "5.0.3",
+    "webpack-merge": "4.2.1"
   }
 }
