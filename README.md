@@ -7,7 +7,7 @@ The best way to use it by via [vaadin.com/start](https://vaadin.com/start) - you
 
 Import the project to the IDE of your choosing as a Maven project. 
 
-Run application using `mvn spring-boot:run` or directly running Application class from your IDE. Note that when you run your Application class directly you need to perform a preparation build first, by running `mvn install`.
+Run application using `mvn spring-boot:run` or directly running Application class from your IDE. Note that when you run your Application class directly you need to perform a preparation build first, by running `mvn package`.
 
 Open http://localhost:8080/ in browser
 
