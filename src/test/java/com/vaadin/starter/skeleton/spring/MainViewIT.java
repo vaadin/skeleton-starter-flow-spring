@@ -1,6 +1,7 @@
 package com.vaadin.starter.skeleton.spring;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
 
