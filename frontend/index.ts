@@ -19,4 +19,3 @@ const routes = [
 
 const router = new Router(document.querySelector('#outlet'));
 router.setRoutes(routes);
-
