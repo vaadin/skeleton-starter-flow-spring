@@ -3,7 +3,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@vaadin/flow-deps": "./target/frontend",
-    "@vaadin/router": "^1.4.1",
+    "@vaadin/router": "^1.4.3",
     "@webcomponents/webcomponentsjs": "^2.2.10",
     "lit-element": "^2.2.1"
   },
