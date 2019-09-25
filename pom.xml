@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <vaadin.version>14.0.4</vaadin.version>
+        <vaadin.version>14.0.5</vaadin.version>
         <flow.version>3.0.0.alpha2</flow.version>
 
         <drivers.dir>${project.basedir}/drivers</drivers.dir>
