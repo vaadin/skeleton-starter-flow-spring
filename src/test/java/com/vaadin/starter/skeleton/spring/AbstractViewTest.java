@@ -11,6 +11,7 @@ import com.vaadin.flow.theme.AbstractTheme;
 import com.vaadin.testbench.ScreenshotOnFailureRule;
 import com.vaadin.testbench.TestBench;
 import com.vaadin.testbench.parallel.ParallelTest;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /**
  * Base class for TestBench IntegrationTests on chrome.
@@ -37,7 +38,7 @@ public abstract class AbstractViewTest extends ParallelTest {
             false);
 
     public AbstractViewTest() {
-        this("", By.tagName("body"));
+        this("", By.cssSelector("#outlet > :first-child"));
     }
 
     protected AbstractViewTest(String route, By rootSelector) {
@@ -53,6 +54,7 @@ public abstract class AbstractViewTest extends ParallelTest {
             setDriver(TestBench.createDriver(new ChromeDriver()));
         }
         getDriver().get(getURL(route));
+        waitUntil(ExpectedConditions.presenceOfElementLocated(this.rootSelector));
     }
 
     /**
