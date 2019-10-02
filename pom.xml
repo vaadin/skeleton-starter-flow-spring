@@ -29,6 +29,8 @@
 
     <repositories>
         <!-- The order of definitions matters. Explicitly defining central here to make sure it has the highest priority. -->
+
+        <!-- Main Maven repository -->
         <repository>
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
@@ -36,7 +38,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <!-- The current version of vaadin-connect is a pre-release version, so vaadin-prereleases repository is needed. -->
+        <!-- The current version of Flow 3.0 is a pre-release version, so vaadin-prereleases repository is needed. -->
         <repository>
             <id>vaadin-prereleases</id>
             <url>
@@ -46,7 +48,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <!-- The snapshot repository is needed when people want to test the starter with the latest snapshot of vaadin-connect. -->
+        <!-- This should be removed after new platform alpha release-->
         <repository>
             <id>vaadin-snapshots</id>
             <url>
@@ -67,7 +69,7 @@
     </repositories>
 
     <pluginRepositories>
-        <!-- The order of definitions matters. Explicitly defining central here to make sure it has the highest priority. -->
+        <!-- Main Maven repository -->
         <pluginRepository>
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
@@ -75,7 +77,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
-        <!-- The current version of vaadin-connect is a pre-release version, so vaadin-prereleases repository is needed. -->
         <pluginRepository>
             <id>vaadin-prereleases</id>
             <url>
@@ -85,7 +86,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
-        <!-- The snapshot repository is needed when people want to test the starter with the latest snapshot of vaadin-connect. -->
+        <!-- This should be removed after new platform alpha release-->
         <pluginRepository>
             <id>vaadin-snapshots</id>
             <url>
