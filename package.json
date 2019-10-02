@@ -18,7 +18,9 @@
     "raw-loader": "3.0.0",
     "typescript": "3.5.3",
     "awesome-typescript-loader": "5.2.1",
-    "compression-webpack-plugin": "3.0.0"
+    "compression-webpack-plugin": "3.0.0",
+    "html-webpack-plugin": "3.2.0",
+    "script-ext-html-webpack-plugin": "2.1.4"
   },
-  "vaadinAppPackageHash": "bfa56a3401120d19ebf20b1c76af890ee925bbd1ab0da40402542a858d6ca01a"
+  "vaadinAppPackageHash": "1cee86684953d13edb5275929101d31a324b9197808b995ea40cfdb59bdd6219"
 }
