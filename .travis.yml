@@ -1,18 +1,23 @@
 language: java
 jdk: openjdk8
-# Run on a dedicated Trusty VM to avoid random problems like "User limit of inotify watches reached"
 sudo: required
 dist: xenial
-
-addons:
-  chrome: stable
 
 before_install:
   # Disable all Travis default repositories
   - sed -i "s/activeByDefault>true</activeByDefault>false</g"  ~/.m2/settings.xml
+  # Make it possible to run tests on a local Chrome
+  - export CHROME_BIN=/usr/bin/google-chrome
+
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
 
 script:
-  - mvn -B -e -V clean verify -Pintegration-tests
+  - mvn -B -e -V clean verify -Pintegration-tests,production
 
 # Cache requires a master build
 branches:
