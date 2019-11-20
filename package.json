@@ -2,9 +2,11 @@
   "name": "no-name",
   "license": "UNLICENSED",
   "dependencies": {
-    "@polymer/polymer": "3.2.0",
+    "@vaadin/flow-deps": "./target/frontend",
+    "@vaadin/router": "^1.4.3",
     "@webcomponents/webcomponentsjs": "^2.2.10",
-    "@vaadin/flow-deps": "./target/frontend"
+    "lit-element": "^2.2.1",
+    "@polymer/polymer": "3.2.0"
   },
   "devDependencies": {
     "webpack": "4.30.0",
@@ -14,7 +16,11 @@
     "copy-webpack-plugin": "5.0.3",
     "webpack-merge": "4.2.1",
     "raw-loader": "3.0.0",
-    "compression-webpack-plugin": "3.0.0"
+    "typescript": "3.5.3",
+    "awesome-typescript-loader": "5.2.1",
+    "compression-webpack-plugin": "3.0.0",
+    "html-webpack-plugin": "3.2.0",
+    "script-ext-html-webpack-plugin": "2.1.4"
   },
-  "vaadinAppPackageHash": "0c21d16ce7f21080258b5cde1ff4de146ce56ce12bb3ab12695699415211d562"
+  "vaadinAppPackageHash": "dcd3b543094aaa7e05349dd5a09fd216e60bcc6132b84a2f366d1f5ec66efa9a"
 }
