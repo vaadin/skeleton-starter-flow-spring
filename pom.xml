@@ -113,6 +113,11 @@
             <artifactId>vaadin-testbench</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-spring</artifactId>
+            <version>12.1.1</version>
+        </dependency>
     </dependencies>
 
     <build>
