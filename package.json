@@ -10,11 +10,11 @@
     "webpack": "4.30.0",
     "webpack-cli": "3.3.0",
     "webpack-dev-server": "3.3.0",
-    "webpack-babel-multi-target-plugin": "2.3.1",
+    "webpack-babel-multi-target-plugin": "2.1.0",
     "copy-webpack-plugin": "5.0.3",
     "webpack-merge": "4.2.1",
     "raw-loader": "3.0.0",
     "compression-webpack-plugin": "3.0.0"
   },
-  "vaadinAppPackageHash": "9d5b9d6c86b98f1b46c0b46c58cfea4d387729ff1f4cae50888a2259eecd40ba"
+  "vaadinAppPackageHash": "247d87d24bcc726c0f868769cf1dd3d16f8ddcc22a49946f1e28f2f060d11694"
 }
