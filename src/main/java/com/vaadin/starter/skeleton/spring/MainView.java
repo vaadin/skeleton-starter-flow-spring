@@ -12,9 +12,9 @@ import com.vaadin.flow.server.PWA;
 @PWA(name = "Project Base for Vaadin Flow with Spring", shortName = "Project Base")
 public class MainView extends VerticalLayout {
 
-    public MainView(@Autowired MessageBean bean) {
+    public MainView(@Autowired MessageService service) {
         Button button = new Button("Click me",
-                e -> Notification.show(bean.getMessage()));
+                e -> Notification.show(service.getMessage()));
         add(button);
     }
 
