@@ -3,7 +3,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@vaadin/flow-deps": "./target/frontend",
-    "@vaadin/router": "^1.4.3",
+    "@vaadin/router": "^1.4.1",
     "@webcomponents/webcomponentsjs": "^2.2.10",
     "lit-element": "^2.2.1",
     "@polymer/polymer": "3.2.0",
@@ -23,5 +23,5 @@
     "html-webpack-plugin": "3.2.0",
     "script-ext-html-webpack-plugin": "2.1.4"
   },
-  "vaadinAppPackageHash": "f6910a4058f1906f2b945269534965d643311cb97fab936a6e6fb09a42a9d899"
+  "vaadinAppPackageHash": "998e5cbe4b84af7bb9f0fcef26c88ee41ccdf3163456a0699a7d7f36c6072e0a"
 }
