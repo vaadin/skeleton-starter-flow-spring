@@ -9,6 +9,7 @@
 
 # The following files are generated/updated by vaadin-maven-plugin
 node_modules/
+frontend/generated/
 
 # Browser drivers for local integration tests
 drivers/
