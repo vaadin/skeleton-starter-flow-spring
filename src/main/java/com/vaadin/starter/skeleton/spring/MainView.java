@@ -10,7 +10,10 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
 
 @Route
-@PWA(name = "Vaadin App", shortName = "Vaadin App")
+@PWA(name = "Vaadin Application",
+        shortName = "Vaadin App",
+        description = "This is an example Vaadin application.",
+        enableInstallPrompt = true)
 @CssImport("./styles/shared-styles.css")
 public class MainView extends VerticalLayout {
 
