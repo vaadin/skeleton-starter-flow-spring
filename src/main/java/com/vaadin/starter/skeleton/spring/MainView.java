@@ -3,6 +3,7 @@ package com.vaadin.starter.skeleton.spring;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.notification.Notification;
+import com.vaadin.flow.component.textfield.TextField;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -31,11 +32,12 @@ public class MainView extends VerticalLayout {
      *
      * @param service The message service. Automatically injected Spring managed bean.
      */
-    public MainView(@Autowired MessageService service) {
-        Button button = new Button("Click me",
-                e -> Notification.show(service.getMessage()));
+    public MainView(@Autowired GreetService service) {
+        TextField textField = new TextField("Your name");
+        Button button = new Button("Say hello",
+                e -> Notification.show(service.greet(textField.getValue())));
         button.setClassName("my-style");
-        add(button);
+        add(textField,button);
     }
 
 }
