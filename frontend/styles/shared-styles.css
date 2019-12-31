@@ -4,8 +4,8 @@
    https://vaadin.com/themes/lumo for more information.
 */
 
-/* Example: Make all buttons larger than normal using Lumo variables. */
-button {
+/* Example: Make all Vaadin buttons larger than normal using Lumo variables. */
+vaadin-button {
     font-size: var(--lumo-font-size-xxl);
     height: var(--lumo-size-xxl);
 }
