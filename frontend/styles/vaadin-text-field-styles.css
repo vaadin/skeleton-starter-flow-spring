@@ -1,0 +1,11 @@
+/*
+   CSS styling examples for the Vaadin app.
+   Visit https://vaadin.com/docs/flow/theme/theming-overview.html and
+   https://vaadin.com/themes/lumo for more information.
+*/
+
+/* Example: Make all Vaadin textfield label larger than normal using Lumo variables. */
+[part="label"] {
+    font-size: var(--lumo-font-size-xxl);
+    height: var(--lumo-size-xxl);
+}
