@@ -3,7 +3,7 @@
 This project can be used as a starting point to create your own Vaadin application with Spring Boot.
 It contains the required dependencies and configuration and sample code to get you started.
 
-The best way to create your own project based on this setup is [vaadin.vaadin.com/start](https://vaadin.vaadin.com/start/) - you can get only the necessary parts and choose the package naming you want to use.
+The best way to create your own project based on this setup is [vaadin.com/start](https://vaadin.com/start/) - you can get only the necessary parts and choose the package naming you want to use.
 
 Import the project to the IDE of your choosing as a Maven project.
 
