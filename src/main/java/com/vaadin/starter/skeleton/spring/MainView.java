@@ -1,9 +1,12 @@
 package com.vaadin.starter.skeleton.spring;
 
+import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.textfield.TextField;
+import com.vaadin.flow.theme.lumo.Lumo;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -37,7 +40,9 @@ public class MainView extends VerticalLayout {
         TextField textField = new TextField("Your name");
         Button button = new Button("Say hello",
                 e -> Notification.show(service.greet(textField.getValue())));
-        button.setClassName("my-style");
+        button.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+        addClassName("my-style");
+        button.addClickShortcut(Key.ENTER);
         add(textField,button);
     }
 

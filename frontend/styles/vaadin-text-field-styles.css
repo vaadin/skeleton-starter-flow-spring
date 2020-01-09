@@ -4,8 +4,8 @@
    https://vaadin.com/themes/lumo for more information.
 */
 
-/* Example: Make all Vaadin textfield label larger than normal using Lumo variables. */
-[part="label"] {
-    font-size: var(--lumo-font-size-xxl);
-    height: var(--lumo-size-xxl);
+/* Example: border-only style for all Vaadin textfields . */
+[part="input-field"] {
+    box-shadow: inset 0 0 0 1px var(--lumo-contrast-30pct);
+    background-color: var(--lumo-base-color);
 }

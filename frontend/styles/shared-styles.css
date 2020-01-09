@@ -4,9 +4,9 @@
    https://vaadin.com/themes/lumo for more information.
 */
 
-/* Example: Apply a Lumo "success" colors color to buttons using CSS class name. */
+/* Example: CSS class name to center align the content . */
 .my-style {
-  background-color: var(--lumo-success-color-10pct);
-  color: var(--lumo-success-text-color);
+  margin: 0 auto;
+  max-width: 250px;
 }
 
