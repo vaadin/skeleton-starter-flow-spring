@@ -8,7 +8,11 @@ import org.springframework.stereotype.Service;
 public class GreetService implements Serializable {
 
     public String greet(String name) {
-        return "Hello " + (name != null && !"".equals(name)? name : "anonymous user");
+        if (name == null || name.isEmpty()) {
+            return "Hello anonymous user";
+        } else {
+            return "Hello " + name;
+        }
     }
 
 }
