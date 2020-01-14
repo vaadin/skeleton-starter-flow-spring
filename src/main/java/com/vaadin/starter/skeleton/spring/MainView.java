@@ -11,15 +11,16 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
 import org.springframework.beans.factory.annotation.Autowired;
 
-/** A sample Vaadin view class.
- *
- *  To implement a Vaadin view just extend any Vaadin component and
- *  use @Route annotation to announce it in a URL as a Spring managed
- *  bean.
- *  Use the @PWA annotation make the application installable on phones,
- *  tablets and some desktop browsers.
- *  New instance of this class is created for every new user and every
- *  browser tab/window.
+/**
+ * A sample Vaadin view class.
+ * <p>
+ * To implement a Vaadin view just extend any Vaadin component and
+ * use @Route annotation to announce it in a URL as a Spring managed
+ * bean.
+ * Use the @PWA annotation make the application installable on phones,
+ * tablets and some desktop browsers.
+ * New instance of this class is created for every new user and every
+ * browser tab/window.
  */
 @Route
 @PWA(name = "Vaadin Application",
@@ -30,8 +31,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 @CssImport(value = "./styles/vaadin-text-field-styles.css", themeFor = "vaadin-text-field")
 public class MainView extends VerticalLayout {
 
-    /** Construct a new Vaadin view.
-     *
+    /**
+     * Construct a new Vaadin view.
+     * <p>
      * Build the initial UI state for the user accessing the application.
      *
      * @param service The message service. Automatically injected Spring managed bean.
@@ -56,7 +58,7 @@ public class MainView extends VerticalLayout {
         // Use custom CSS classes to apply styling. This is defined in shared-styles.css.
         addClassName("centered-content");
 
-        add(textField,button);
+        add(textField, button);
     }
 
 }
