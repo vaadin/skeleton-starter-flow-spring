@@ -19,7 +19,8 @@ import org.springframework.beans.factory.annotation.Autowired;
  * bean.
  * Use the @PWA annotation make the application installable on phones,
  * tablets and some desktop browsers.
- * New instance of this class is created for every new user and every
+ * <p>
+ * A new instance of this class is created for every new user and every
  * browser tab/window.
  */
 @Route
