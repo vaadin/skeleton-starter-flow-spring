@@ -54,7 +54,6 @@ public abstract class AbstractViewTest extends ParallelTest {
             setDriver(TestBench.createDriver(new ChromeDriver()));
         }
         getDriver().get(getURL(route));
-        waitUntil(ExpectedConditions.presenceOfElementLocated(this.rootSelector));
     }
 
     /**
