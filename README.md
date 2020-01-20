@@ -15,6 +15,8 @@ Open http://localhost:8080/ in your browser.
 
 If you want to run the application locally in the production mode, run `mvn spring-boot:run -Pproduction`.
 
+To run Integration Tests, execute `mvn verify -Pintegration-tests`.
+
 ## Structure
 
 Vaadin web applications are full-stack and include both client-side and server-side code in the same project.
