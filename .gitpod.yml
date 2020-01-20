@@ -1,5 +1,5 @@
 tasks:
-  - init: mvn install -Pproduction && node_modules/.bin/webpack-dev-server | while read line; do if [[ $line == *"Compile"* ]] ; then kill -9 `ps a|grep webpack-dev-server|grep -v grep|cut -c1-8` ; fi ; done
+  - init: mvn install -Pproduction && node_modules/.bin/webpack-dev-server | while read line; do if [[ $line == *"Compile"* ]] ; then pkill -9 -f webpack-dev-server ; fi ; done
 
     command: mvn
 ports:
