@@ -1,9 +1,7 @@
 # Project Base for Vaadin and Spring Boot
 
-This project can be used as a starting point to create your own Vaadin application with Spring Boot.
+This is an example project that can be used as a starting point to create your own Vaadin application with Spring Boot.
 It contains all the necessary configuration and some placeholder files to get you started.
-
-The best way to create your own project based on this starter is [start.vaadin.com](https://start.vaadin.com/) - you can get only the necessary parts and choose the package naming you want to use.
 
 ## Running the Application
 
@@ -11,14 +9,30 @@ Import the project to the IDE of your choosing as a Maven project.
 
 Run the application using `mvn spring-boot:run` or by running the `Application` class directly from your IDE.
 
-Open http://localhost:8080/ in your browser.
 
-If you want to run the application locally in the production mode, run `mvn spring-boot:run -Pproduction`.
+In order to start the project a `spring-boot:run` command should be executed. You can use any IDE of your preference,but we suggest Eclipse or Intellij IDEA. 
+Configuration for both can be found below.
+#### Eclipse
+Right click on a project folder and select `Run As` --> `Maven build..` 
+![Eclipse Configuration](eclipseSpringBoot.PNG)
+#### Intellij IDEA
+On the right of the window, select _Maven_--> Plugins--> `spring-boot` --> `spring-boot:run` 
+![Intellij Configuration](intellijrunningSpringBoot.PNG)
 
-To run Integration Tests, execute `mvn verify -Pintegration-tests`.
+After application has started, you can view your it at http://localhost:8080/ in your browser.
 
-## More Information
+
+If you want to run the application locally in the production mode, use `spring-boot:run -Pproduction` command instead.
+
+To run Integration Tests, execute `verify -Pintegration-tests`.
+## Project overview
+
+## More Information and Next Steps
 
 - [Vaadin Flow](https://vaadin.com/flow) documentation
+- [Vaadin Components](https://vaadin.com/components)
 - [Using Vaadin and Spring](https://vaadin.com/docs/v14/flow/spring/tutorial-spring-basic.html) article
 
+## Notes
+
+If you run application from command line, remember to prepend a `mvn` to a command.
