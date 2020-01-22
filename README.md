@@ -46,9 +46,11 @@ If you would like to run a separate test make sure you have added these paramete
 
 ## More Information and Next Steps
 
-- [Vaadin Flow](https://vaadin.com/flow) documentation
-- [Vaadin Components](https://vaadin.com/components)
-- [Using Vaadin and Spring](https://vaadin.com/docs/v14/flow/spring/tutorial-spring-basic.html) article
+- Vaadin Basics [https://vaadin.com/flow](https://vaadin.com/flow)
+- More components at [https://vaadin.com/components](https://vaadin.com/components) and [https://vaadin.com/directory](https://vaadin.com/directory)
+- Using Vaadin and Spring :[Using Vaadin and Spring](https://vaadin.com/docs/v14/flow/spring/tutorial-spring-basic.html) article
+- Join discussion and ask a question at [https://vaadin.com/forum](https://vaadin.com/forum)
+
 
 ## Notes
 
