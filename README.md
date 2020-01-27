@@ -14,10 +14,19 @@ Run the application using `mvn spring-boot:run` or by running the `Application` 
 In order to start the project a `spring-boot:run` command should be executed. You can use any IDE of your preference,but we suggest Eclipse or Intellij IDEA. 
 Configuration for both can be found below.
 #### Eclipse
-Right click on a project folder and select `Run As` --> `Maven build..` 
+- Right click on a project folder and select `Run As` --> `Maven build..`  
+- In the opened window in the **Goals** field, you should put 'spring-boot:run' 
+- Then, you can optionally select `Skip tests` checkbox
+- All the other settings can be left to default
+
+After that clicking `Run` will start the application
+
 ![Eclipse Configuration](eclipseSpringBoot.PNG)
 #### Intellij IDEA
-On the right of the window, select _Maven_--> Plugins--> `spring-boot` --> `spring-boot:run` 
+- On the right of the window, select _Maven_--> Plugins--> `spring-boot` --> `spring-boot:run` 
+- Optionally, you can disable tests by clicking on a `Skip Tests mode` blue button.
+
+Clicking on the green run button will start the application.
 ![Intellij Configuration](intellijrunningSpringBoot.PNG)
 
 After application has started, you can view your it at http://localhost:8080/ in your browser.
