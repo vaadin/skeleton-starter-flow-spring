@@ -5,14 +5,11 @@ It contains all the necessary configuration and some placeholder files to get yo
 
 
 ## Running the Application
+There are two ways to run the application :  using `mvn spring-boot:run` or by running the `Application` class directly from your IDE.
 
-Import the project to the IDE of your choosing as a Maven project.
+You can use any IDE of your preference,but we suggest Eclipse or Intellij IDEA.
+Below are the configuration details to start the project using a `spring-boot:run` command. Both Eclipse and Intellij IDEA are covered.
 
-Run the application using `mvn spring-boot:run` or by running the `Application` class directly from your IDE.
-
-
-In order to start the project a `spring-boot:run` command should be executed. You can use any IDE of your preference,but we suggest Eclipse or Intellij IDEA. 
-Configuration for both can be found below.
 #### Eclipse
 - Right click on a project folder and select `Run As` --> `Maven build..`  
 - In the opened window in the **Goals** field, you should put 'spring-boot:run' 
@@ -49,6 +46,16 @@ If you would like to run a separate test make sure you have added these paramete
 
 ## Project overview
 
+Project follow the Maven's [standard directory layout structure](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html):
+- Under the 'srs/main/java' are located Application sources
+   - `Application.java` is a starting point
+   - `GreetService.java` is a  Spring service class
+   - `MainView.java` is the class defining the entry point of the application
+- Under the 'srs\test' are located test files
+- `src\main\resources` contains configuration files and static resources
+- The `\frontend\` directory in the root folder contains client-side dependencies and resource files
+   - All CSS styles used by the application are located under the root directory 'frontend\styles'    
+   - Templates would be stored under the `\frontend\src`
 
 
 ## More Information and Next Steps
