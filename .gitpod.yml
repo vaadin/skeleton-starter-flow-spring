@@ -5,3 +5,7 @@ tasks:
 ports:
   - port: 8080
     onOpen: open-preview
+github:
+  prebuilds:
+    # enable prebuilds for all branches in this repo
+    branches: true 
