@@ -1,4 +1,4 @@
-package com.vaadin.starter.skeleton.spring;
+package org.vaadin.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
