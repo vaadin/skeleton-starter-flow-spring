@@ -1,4 +1,4 @@
-package com.vaadin.starter.skeleton.spring;
+package org.vaadin.example;
 
 import org.junit.Assert;
 import org.junit.Before;
