@@ -1,4 +1,4 @@
-package com.vaadin.starter.skeleton.spring;
+package org.vaadin.example;
 
 import com.vaadin.flow.component.page.AppShellConfigurator;
 import com.vaadin.flow.server.PWA;
