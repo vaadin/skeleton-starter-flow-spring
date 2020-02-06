@@ -22,6 +22,9 @@ import com.vaadin.flow.router.Route;
  * <p>
  * A new instance of this class is created for every new user and every
  * browser tab/window.
+ * <p>
+ * The main view contains a text field for getting the user name and a button
+ * that shows a greeting message in a notification.
  */
 @Route
 @CssImport("./styles/shared-styles.css")
