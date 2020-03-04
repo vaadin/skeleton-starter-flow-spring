@@ -62,7 +62,8 @@ Project follow the Maven's [standard directory layout structure](https://maven.a
 
 - Vaadin Basics [https://vaadin.com/docs](https://vaadin.com/docs)
 - More components at [https://vaadin.com/components](https://vaadin.com/components) and [https://vaadin.com/directory](https://vaadin.com/directory)
-- Using Vaadin and Spring :[Using Vaadin and Spring](https://vaadin.com/docs/v14/flow/spring/tutorial-spring-basic.html) article
+- Download this and other examples at [https://vaadin.com/start](https://vaadin.com/start)
+- Using Vaadin and Spring [https://vaadin.com/docs/v14/flow/spring/tutorial-spring-basic.html](https://vaadin.com/docs/v14/flow/spring/tutorial-spring-basic.html) article
 - Join discussion and ask a question at [https://vaadin.com/forum](https://vaadin.com/forum)
 
 
