@@ -97,7 +97,6 @@
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-spring-boot-starter</artifactId>
             <exclusions>
-                <!-- Excluding so that webjars are not included. -->
                 <exclusion>
                     <groupId>com.vaadin</groupId>
                     <artifactId>vaadin-core</artifactId>
