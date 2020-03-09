@@ -19,11 +19,12 @@ To run Integration Tests, execute `mvn verify -Pintegration-tests`.
 
 ### Live Reload (optional)
 
-When you change your Java code and recompile it, the application will be automatically reloaded without need to restart it.
+With live reload, you can see the results of your code changes immediately. 
+When you edit your Java code and recompile it, the application changes will be automatically reloaded and the browser is refreshed.
 This is done by leveraging [Spring Boot Developer Tools](https://docs.spring.io/spring-boot/docs/2.1.5.RELEASE/reference/html/using-boot-devtools.html). 
 To be able to see the changes in the browser tab, the page still needs to be reloaded. 
 That can also  be automated via a LiveReload browser extension. 
-One such extension for Google Chrome is [RemoteLiveReload](https://chrome.google.com/webstore/detail/remotelivereload/jlppknnillhjgiengoigajegdpieppei?hl=en-GB). 
+One such extension for Google Chrome is [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei). 
 In Firefox, [LiveReload - Web extension](https://addons.mozilla.org/en-US/firefox/addon/livereload-web-extension/) can be used.
 You can find such similar extensions for other major browsers too.
 These extensions add an icon to your browser next to the address bar.
