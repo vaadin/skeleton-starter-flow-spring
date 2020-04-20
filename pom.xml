@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <vaadin.version>15.0.3</vaadin.version>
+        <vaadin.version>15.0.5</vaadin.version>
     </properties>
 
     <parent>
@@ -41,9 +41,6 @@
             <url>
                 https://maven.vaadin.com/vaadin-prereleases/
             </url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
         </repository>
         <!-- Repository used by many Vaadin add-ons -->
         <repository>
@@ -69,9 +66,6 @@
             <url>
                 https://maven.vaadin.com/vaadin-prereleases/
             </url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
         </pluginRepository>
     </pluginRepositories>
 
@@ -107,8 +101,6 @@
             <artifactId>vaadin-testbench</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
