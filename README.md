@@ -12,19 +12,19 @@ Below are the configuration details to start the project using a `spring-boot:ru
 
 #### Eclipse
 - Right click on a project folder and select `Run As` --> `Maven build..` . After that a configuration window is opened.
-- In the window set the value of the **Goals** field to 'spring-boot:run' 
+- In the window set the value of the **Goals** field to `spring-boot:run` 
 - You can optionally select `Skip tests` checkbox
 - All the other settings can be left to default
 
 Once configurations are set clicking `Run` will start the application
 
 #### Intellij IDEA
-- On the right side of the window, select _Maven_--> Plugins--> `spring-boot` --> `spring-boot:run` goal
+- On the right side of the window, select Maven --> Plugins--> `spring-boot` --> `spring-boot:run` goal
 - Optionally, you can disable tests by clicking on a `Skip Tests mode` blue button.
 
 Clicking on the green run button will start the application.
 
-After application has started, you can view your it at http://localhost:8080/ in your browser.
+After the application has started, you can view your it at http://localhost:8080/ in your browser.
 
 
 If you want to run the application locally in the production mode, use `spring-boot:run -Pproduction` command instead.
@@ -34,7 +34,7 @@ Integration tests are implemented using [Vaadin TestBench](https://vaadin.com/te
 
 `mvn verify -Pit`
 
-and make sure you have a valid TestBench license installed. If the tests fail because of an old Chrome Driver or you want to use a different browser, you'll need to update the webdrivers.xml file in the project root.
+and make sure you have a valid TestBench license installed. If the tests fail because of an old Chrome Driver or you want to use a different browser, you'll need to update the `webdrivers.xml` file in the project root.
 
 Profile `it` adds the following parameters to run integration tests:
 ```sh
@@ -47,15 +47,15 @@ If you would like to run a separate test make sure you have added these paramete
 ## Project overview
 
 Project follow the Maven's [standard directory layout structure](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html):
-- Under the 'srs/main/java' are located Application sources
+- Under the `srs/main/java` are located Application sources
    - `Application.java` is a runnable Java application class and a starting point
    - `GreetService.java` is a  Spring service class
    - `MainView.java` is a default view and entry point of the application
-- Under the 'srs\test' are located test files
-- `src\main\resources` contains configuration files and static resources
-- The `\frontend\` directory in the root folder contains client-side dependencies and resource files
-   - All CSS styles used by the application are located under the root directory 'frontend\styles'    
-   - Templates would be stored under the `\frontend\src`
+- Under the `srs/test` are located test files
+- `src/main/resources` contains configuration files and static resources
+- The `frontend` directory in the root folder contains client-side dependencies and resource files
+   - All CSS styles used by the application are located under the root directory `frontend/styles`    
+   - Templates would be stored under the `frontend/src`
 
 
 ## More Information and Next Steps
