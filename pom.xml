@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <vaadin.version>16.0.0.beta1</vaadin.version>
+        <vaadin.version>16.0.0.beta2</vaadin.version>
     </properties>
 
     <parent>
