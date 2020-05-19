@@ -203,7 +203,7 @@
         </profile>
 
         <profile>
-            <id>integration-tests</id>
+            <id>it</id>
             <build>
                 <plugins>
                     <plugin>
