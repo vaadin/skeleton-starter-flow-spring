@@ -32,11 +32,11 @@ If you want to run the application locally in the production mode, use `spring-b
 
 Integration tests are implemented using [Vaadin TestBench](https://vaadin.com/testbench). The tests take a few minutes to run and are therefore included in a separate Maven profile. To run the tests using Google Chrome, execute
 
-`mvn verify -Pintegration-tests`
+`mvn verify -Pit`
 
 and make sure you have a valid TestBench license installed. If the tests fail because of an old Chrome Driver or you want to use a different browser, you'll need to update the `webdrivers.xml` file in the project root.
 
-Profile `integration-tests` adds the following parameters to run integration tests:
+Profile `it` adds the following parameters to run integration tests:
 ```sh
 -Dwebdriver.chrome.driver=path_to_driver
 -Dcom.vaadin.testbench.Parameters.runLocally=chrome
