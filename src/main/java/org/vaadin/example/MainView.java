@@ -47,7 +47,7 @@ public class MainView extends VerticalLayout {
                 e -> Notification.show(service.greet(textField.getValue())));
 
         // Theme variants give you predefined extra styles for components.
-        // Example: Primary button is more prominent look.
+        // Example: Primary button has a more prominent look.
         button.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
 
         // You can specify keyboard shortcuts for buttons.
