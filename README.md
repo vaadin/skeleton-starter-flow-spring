@@ -30,11 +30,11 @@ After the application has started, you can view your it at http://localhost:8080
 If you want to run the application locally in the production mode, use `spring-boot:run -Pproduction` command instead.
 ### Running Integration Tests
 
-Integration tests are implemented using [Vaadin TestBench](https://vaadin.com/testbench). The tests take a few minutes to run and are therefore included in a separate Maven profile. To run the tests using Google Chrome, execute
+Integration tests are implemented using [Vaadin TestBench](https://vaadin.com/testbench). The tests take a few minutes to run and are therefore included in a separate Maven profile. We recommend running tests with a production build to minimize the chance of development time toolchains affecting test stability. To run the tests using Google Chrome, execute
 
-`mvn verify -Pit`
+`mvn verify -Pit -Pproduction`
 
-and make sure you have a valid TestBench license installed. If the tests fail because of an old Chrome Driver or you want to use a different browser, you'll need to update the `webdrivers.xml` file in the project root.
+and make sure you have a valid TestBench license installed.
 
 Profile `it` adds the following parameters to run integration tests:
 ```sh
