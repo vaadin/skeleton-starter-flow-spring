@@ -4,8 +4,8 @@
    https://vaadin.com/themes/lumo for more information.
 */
 
-/* Example: border-only style for all Vaadin textfields . */
-[part="input-field"] {
+/* Example: the style is applied only to the textfields which has the `bordered` theme attribute. */
+:host([theme~="bordered"]) [part="input-field"] {
     box-shadow: inset 0 0 0 1px var(--lumo-contrast-30pct);
     background-color: var(--lumo-base-color);
 }
