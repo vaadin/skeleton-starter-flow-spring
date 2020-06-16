@@ -6,16 +6,44 @@ It contains all the necessary configuration and some placeholder files to get yo
 The best way to create your own project based on this starter is [start.vaadin.com](https://start.vaadin.com/) - you can get only the necessary parts and choose the package naming you want to use.
 
 ## Running the Application
+There are two ways to run the application :  using `mvn spring-boot:run` or by running the `Application` class directly from your IDE.
 
-Import the project to the IDE of your choosing as a Maven project.
+You can use any IDE of your preference,but we suggest Eclipse or Intellij IDEA.
+Below are the configuration details to start the project using a `spring-boot:run` command. Both Eclipse and Intellij IDEA are covered.
 
-Run the application using `mvn spring-boot:run` or by running the `Application` class directly from your IDE.
+#### Eclipse
+- Right click on a project folder and select `Run As` --> `Maven build..` . After that a configuration window is opened.
+- In the window set the value of the **Goals** field to `spring-boot:run` 
+- You can optionally select `Skip tests` checkbox
+- All the other settings can be left to default
 
-Open http://localhost:8080/ in your browser.
+Once configurations are set clicking `Run` will start the application
 
-If you want to run the application locally in the production mode, run `mvn spring-boot:run -Pproduction`.
+#### Intellij IDEA
+- On the right side of the window, select Maven --> Plugins--> `spring-boot` --> `spring-boot:run` goal
+- Optionally, you can disable tests by clicking on a `Skip Tests mode` blue button.
 
-To run Integration Tests, execute `mvn verify -Pit`.
+Clicking on the green run button will start the application.
+
+After the application has started, you can view your it at http://localhost:8080/ in your browser.
+
+
+If you want to run the application locally in the production mode, use `spring-boot:run -Pproduction` command instead.
+### Running Integration Tests
+
+Integration tests are implemented using [Vaadin TestBench](https://vaadin.com/testbench). The tests take a few minutes to run and are therefore included in a separate Maven profile. We recommend running tests with a production build to minimize the chance of development time toolchains affecting test stability. To run the tests using Google Chrome, execute
+
+`mvn verify -Pit,production`
+
+and make sure you have a valid TestBench license installed.
+
+Profile `it` adds the following parameters to run integration tests:
+```sh
+-Dwebdriver.chrome.driver=path_to_driver
+-Dcom.vaadin.testbench.Parameters.runLocally=chrome
+```
+
+If you would like to run a separate test make sure you have added these parameters to VM Options of JUnit run configuration
 
 ### Live Reload (optional)
 
