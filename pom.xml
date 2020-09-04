@@ -99,7 +99,7 @@
         <dependency>
             <groupId>org.vaadin.artur</groupId>
             <artifactId>a-vaadin-helper</artifactId>
-            <version>1.2.2</version>
+            <version>1.4.0</version>
         </dependency>
 
         <dependency>
