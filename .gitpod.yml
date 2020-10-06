@@ -1,6 +1,5 @@
 tasks:
-  - init: mvn install spring-boot:start spring-boot:stop
-
+  - init: mvn install -Pproduction
     command: mvn
 ports:
   - port: 8080
