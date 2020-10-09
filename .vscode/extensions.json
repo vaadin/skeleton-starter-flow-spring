@@ -1,5 +1,4 @@
 {
-  // Recommended extensions for Visual Studio Code
   "recommendations": [
     "runem.lit-plugin",
     "vscjava.vscode-java-pack",
