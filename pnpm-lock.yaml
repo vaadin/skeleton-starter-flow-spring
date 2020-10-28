@@ -15,7 +15,7 @@ dependencies:
   '@vaadin/vaadin-confirm-dialog': 1.3.0
   '@vaadin/vaadin-context-menu': 4.5.0
   '@vaadin/vaadin-cookie-consent': 1.2.0
-  '@vaadin/vaadin-core-shrinkwrap': 17.0.7
+  '@vaadin/vaadin-core-shrinkwrap': 17.0.8
   '@vaadin/vaadin-crud': 1.3.0
   '@vaadin/vaadin-custom-field': 1.2.0
   '@vaadin/vaadin-date-picker': 4.3.0
@@ -23,7 +23,7 @@ dependencies:
   '@vaadin/vaadin-details': 1.2.0
   '@vaadin/vaadin-dialog': 2.5.2
   '@vaadin/vaadin-form-layout': 2.3.0
-  '@vaadin/vaadin-grid': 5.7.4
+  '@vaadin/vaadin-grid': 5.7.5
   '@vaadin/vaadin-grid-pro': 2.2.2
   '@vaadin/vaadin-icons': 4.3.1
   '@vaadin/vaadin-item': 2.3.0
@@ -38,7 +38,7 @@ dependencies:
   '@vaadin/vaadin-radio-button': 1.4.1
   '@vaadin/vaadin-rich-text-editor': 1.3.0
   '@vaadin/vaadin-select': 2.3.0
-  '@vaadin/vaadin-shrinkwrap': 17.0.7
+  '@vaadin/vaadin-shrinkwrap': 17.0.8
   '@vaadin/vaadin-split-layout': 4.3.0
   '@vaadin/vaadin-tabs': 3.2.0
   '@vaadin/vaadin-text-field': 2.7.1
@@ -50,7 +50,7 @@ devDependencies:
   awesome-typescript-loader: 5.2.1_typescript@3.8.3
   chokidar: 3.4.0
   compression-webpack-plugin: 4.0.1_webpack@4.42.0
-  copy-webpack-plugin: 5.1.1_webpack@4.42.0
+  copy-webpack-plugin: 5.1.2_webpack@4.42.0
   html-webpack-plugin: 3.2.0_webpack@4.42.0
   lit-html: 1.2.1
   progress-webpack-plugin: 0.0.24
@@ -60,9 +60,9 @@ devDependencies:
   typescript: 3.8.3
   validator: 12.0.0
   webpack: 4.42.0_webpack@4.42.0
-  webpack-babel-multi-target-plugin: 2.3.3_3058478e3b6ebc6bc7e5c30c5916785a
+  webpack-babel-multi-target-plugin: 2.3.3_f17e7dc3686dc4072a83e169fb8b83a8
   webpack-cli: 3.3.11_webpack@4.42.0
-  webpack-dev-server: 3.10.3_a99e8271b7943dfdc7dfc6c27536d940
+  webpack-dev-server: 3.11.0_a99e8271b7943dfdc7dfc6c27536d940
   webpack-merge: 4.2.2
 lockfileVersion: 5.1
 packages:
@@ -1178,7 +1178,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-F+KbxaauVmJsjbT5rhJ4lgPDtk9w8HmmFScE9FOHa0DnwlBNbpo26AE68+BcjeYmGHmXjQsndfvTqFQ10r3yZw==
-  /@vaadin/vaadin-core-shrinkwrap/17.0.7:
+  /@vaadin/vaadin-core-shrinkwrap/17.0.8:
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
@@ -1208,7 +1208,7 @@ packages:
       '@vaadin/vaadin-dialog': 2.5.2
       '@vaadin/vaadin-element-mixin': 2.4.2
       '@vaadin/vaadin-form-layout': 2.3.0
-      '@vaadin/vaadin-grid': 5.7.4
+      '@vaadin/vaadin-grid': 5.7.5
       '@vaadin/vaadin-icons': 4.3.1
       '@vaadin/vaadin-item': 2.3.0
       '@vaadin/vaadin-list-box': 1.4.0
@@ -1233,7 +1233,7 @@ packages:
       '@webcomponents/shadycss': 1.9.4
     dev: false
     resolution:
-      integrity: sha512-eUJN5hjq68Z17hKlY7L4xKJ6XOnRHafWc/AaCZliJsqaKM8eCBqg7TYtDy7kmBLKMzUiPSsQ5Lf+9EJmsuzEbg==
+      integrity: sha512-5L8549HHvQ37Lm+SK2d9sbAynozpvXNp3/mINuCz15W90Eire7a9r+wYwfuFiTxd5LjWhseyMrvyt3vvycaIAw==
   /@vaadin/vaadin-crud/1.3.0:
     dependencies:
       '@polymer/iron-media-query': 3.0.1
@@ -1243,7 +1243,7 @@ packages:
       '@vaadin/vaadin-dialog': 2.5.2
       '@vaadin/vaadin-element-mixin': 2.4.2
       '@vaadin/vaadin-form-layout': 2.3.0
-      '@vaadin/vaadin-grid': 5.7.4
+      '@vaadin/vaadin-grid': 5.7.5
       '@vaadin/vaadin-license-checker': 2.1.2
       '@vaadin/vaadin-lumo-styles': 1.6.0
       '@vaadin/vaadin-material-styles': 1.3.2
@@ -1344,7 +1344,7 @@ packages:
       '@polymer/polymer': 3.2.0
       '@vaadin/vaadin-checkbox': 2.4.0
       '@vaadin/vaadin-element-mixin': 2.4.2
-      '@vaadin/vaadin-grid': 5.7.4
+      '@vaadin/vaadin-grid': 5.7.5
       '@vaadin/vaadin-item': 2.3.0
       '@vaadin/vaadin-license-checker': 2.1.2
       '@vaadin/vaadin-list-box': 1.4.0
@@ -1356,7 +1356,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-AbAvSzsVRlCrYvneA/zXkqW80xPtYw+CLeyAvpEPet3csuQiDcWYp16Opl7BB2BDeo9jHMANyR9w4L1haKImBQ==
-  /@vaadin/vaadin-grid/5.7.4:
+  /@vaadin/vaadin-grid/5.7.5:
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
@@ -1371,7 +1371,7 @@ packages:
       '@vaadin/vaadin-themable-mixin': 1.6.1
     dev: false
     resolution:
-      integrity: sha512-mlkdyUZVj5gChx/AQQrQ6FINuqT+Iz6QZ9t/Oo5w+6EpUlaXX6/gFp/SLUGqFafC68V3nvc0FVXejfEgzsKRmQ==
+      integrity: sha512-7y7Sc/pNHm2JWQxiKGvctBIX+WOcI8GODhRM0rSEzmGJtCwtNXYDge5jQPnGXHS9SLwSbbsRoenC75tY6KTvHw==
   /@vaadin/vaadin-icons/4.3.1:
     dependencies:
       '@polymer/iron-icon': 3.0.1
@@ -1538,7 +1538,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-TKX43i9yncl9ujfdcO822mcEMW3rT8kbX1Qk59FIXHDwEBbOg7mz+BmWr/LctF7ot4AlC/4olCuLO7/NXtOiAA==
-  /@vaadin/vaadin-shrinkwrap/17.0.7:
+  /@vaadin/vaadin-shrinkwrap/17.0.8:
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
@@ -1573,7 +1573,7 @@ packages:
       '@vaadin/vaadin-dialog': 2.5.2
       '@vaadin/vaadin-element-mixin': 2.4.2
       '@vaadin/vaadin-form-layout': 2.3.0
-      '@vaadin/vaadin-grid': 5.7.4
+      '@vaadin/vaadin-grid': 5.7.5
       '@vaadin/vaadin-grid-pro': 2.2.2
       '@vaadin/vaadin-icons': 4.3.1
       '@vaadin/vaadin-item': 2.3.0
@@ -1600,7 +1600,7 @@ packages:
       '@webcomponents/shadycss': 1.9.4
     dev: false
     resolution:
-      integrity: sha512-+df+g9nYG2BhkSwFqNBoZoaDN4CfdFoMPIej3/MZ3yDsxebEdTjn2dTTcrtez6B5Y0FRK3Sbvu7jWDmrlJzrcA==
+      integrity: sha512-nwY3kGIXuxeVCjaMtOLWq0RCFB1eT1Q9wtS0NHn3OxwEqoe1fdUYcKexGI5FwbQVgYz4sFUpJeRJxwoqA7O/Sw==
   /@vaadin/vaadin-split-layout/4.3.0:
     dependencies:
       '@polymer/iron-resizable-behavior': 3.0.1
@@ -2423,14 +2423,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-s12sN2R5+sw+lHR9QdDQ9SOP/LU=
-  /cliui/4.1.0:
-    dependencies:
-      string-width: 2.1.1
-      strip-ansi: 4.0.0
-      wrap-ansi: 2.1.0
-    dev: true
-    resolution:
-      integrity: sha512-4FG+RSG9DL7uEwRUZXZn3SS34DiDPfzP0VOiEwtUWlE+AR2EIg+hSyvrIgUUfhdgR/UkAeW2QHgeP+hWrXs7jQ==
   /cliui/5.0.0:
     dependencies:
       string-width: 3.1.0
@@ -2439,12 +2431,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-PYeGSEmmHM6zvoef2w8TPzlrnNpXIjTipYK780YswmIP9vjxmd6Y2a3CB2Ks6/AU8NHjZugXvo8w3oWM2qnwXA==
-  /code-point-at/1.1.0:
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
   /collection-visit/1.0.0:
     dependencies:
       map-visit: 1.0.0
@@ -2607,7 +2593,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
-  /copy-webpack-plugin/5.1.1_webpack@4.42.0:
+  /copy-webpack-plugin/5.1.2_webpack@4.42.0:
     dependencies:
       cacache: 12.0.4
       find-cache-dir: 2.1.0
@@ -2619,7 +2605,7 @@ packages:
       normalize-path: 3.0.0
       p-limit: 2.3.0
       schema-utils: 1.0.0
-      serialize-javascript: 2.1.2
+      serialize-javascript: 4.0.0
       webpack: 4.42.0_webpack@4.42.0
       webpack-log: 2.0.0
     dev: true
@@ -2628,7 +2614,7 @@ packages:
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
     resolution:
-      integrity: sha512-P15M5ZC8dyCjQHWwd4Ia/dm0SgVvZJMYeykVIVYXbGyqO4dWB5oyPHp9i7wjwo5LhtlhKbiBCdS2NvM07Wlybg==
+      integrity: sha512-Uh7crJAco3AjBvgAy9Z75CjK8IG+gxaErro71THQ+vv/bl4HaQcpkexAY8KVW/T6D2W2IRr+couF/knIRkZMIQ==
   /core-js-compat/3.6.5:
     dependencies:
       browserslist: 4.12.0
@@ -3472,10 +3458,6 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-r8EC6NO1sngH/zdD9fiRDLdcgnbayXah+mLgManTaIZJqEC1MZstmnox8KpnI2/fxQwrp5OpCOYWLp4rBl4Jcg==
-  /get-caller-file/1.0.3:
-    dev: true
-    resolution:
-      integrity: sha512-3t6rVToeoZfYSGd8YoLFR2DJkiQrIiUrGcjvFX2mDw3bn6k2OtwHN0TNCLbBO+w8qTvimhDkv+LSscbJY1vE6w==
   /get-caller-file/2.0.5:
     dev: true
     engines:
@@ -4041,14 +4023,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=
-  /is-fullwidth-code-point/1.0.0:
-    dependencies:
-      number-is-nan: 1.0.1
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-754xOG8DGn8NZDr4L95QxFfvAMs=
   /is-fullwidth-code-point/2.0.0:
     dev: true
     engines:
@@ -4801,12 +4775,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg==
-  /number-is-nan/1.0.1:
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
   /object-assign/4.1.1:
     dev: true
     engines:
@@ -5512,10 +5480,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-jGStX9MNqxyXbiNE/+f3kqam30I=
-  /require-main-filename/1.0.1:
-    dev: true
-    resolution:
-      integrity: sha1-l/cXtp1IeE9fUmpsWqj/3aBVpNE=
   /require-main-filename/2.0.0:
     dev: true
     resolution:
@@ -5846,13 +5810,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-5zaLyO8/nri5cua0VtOrFXBPK1jbL4+1cebT/mmKA1E1ZXOvJrII75bPu0l0k843G/+iAbhEqzyKr0w/eCCj7g==
-  /sockjs/0.3.19:
+  /sockjs/0.3.20:
     dependencies:
       faye-websocket: 0.10.0
       uuid: 3.4.0
+      websocket-driver: 0.6.5
     dev: true
     resolution:
-      integrity: sha512-V48klKZl8T6MzatbLlzzRNhMepEys9Y4oGFpypBFFn1gLI/QQ9HtLLyWJNbPlwGLelOVOEijUbTTJeLLI59jLw==
+      integrity: sha512-SpmVOVpdq0DJc0qArhF3E5xsxvaiqGNb73XfgBpK1y3UD5gs8DSo8aCTsuT5pX8rssdc2NDIzANwP9eCAiSdTA==
   /source-list-map/2.0.1:
     dev: true
     resolution:
@@ -5978,16 +5943,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-AiisoFqQ0vbGcZgQPY1cdP2I76glaVA/RauYR4G4thNFgkTqr90yXTo4LYX60Jl+sIlPNHHdGSwo01AvbKUSVQ==
-  /string-width/1.0.2:
-    dependencies:
-      code-point-at: 1.1.0
-      is-fullwidth-code-point: 1.0.0
-      strip-ansi: 3.0.1
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-EYvfW4zcUaKn5w0hHgfisLmxB9M=
   /string-width/2.1.1:
     dependencies:
       is-fullwidth-code-point: 2.0.0
@@ -6441,7 +6396,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==
-  /webpack-babel-multi-target-plugin/2.3.3_3058478e3b6ebc6bc7e5c30c5916785a:
+  /webpack-babel-multi-target-plugin/2.3.3_f17e7dc3686dc4072a83e169fb8b83a8:
     dependencies:
       '@babel/cli': 7.8.4_@babel+core@7.9.0
       '@babel/core': 7.9.0
@@ -6453,7 +6408,7 @@ packages:
       core-js: 2.6.11
       tapable: 1.1.3
       webpack: 4.42.0_webpack@4.42.0
-      webpack-dev-server: 3.10.3_a99e8271b7943dfdc7dfc6c27536d940
+      webpack-dev-server: 3.11.0_a99e8271b7943dfdc7dfc6c27536d940
       webpack-merge: 4.2.2
       webpack-sources: 1.4.3
     dev: true
@@ -6501,7 +6456,7 @@ packages:
       webpack: ^4.0.0
     resolution:
       integrity: sha512-1xC42LxbYoqLNAhV6YzTYacicgMZQTqRd27Sim9wn5hJrX3I5nxYy1SxSd4+gjUFsz1dQFj+yEe6zEVmSkeJjw==
-  /webpack-dev-server/3.10.3_a99e8271b7943dfdc7dfc6c27536d940:
+  /webpack-dev-server/3.11.0_a99e8271b7943dfdc7dfc6c27536d940:
     dependencies:
       ansi-html: 0.0.7
       bonjour: 3.5.0
@@ -6526,7 +6481,7 @@ packages:
       selfsigned: 1.10.7
       semver: 6.3.0
       serve-index: 1.9.1
-      sockjs: 0.3.19
+      sockjs: 0.3.20
       sockjs-client: 1.4.0
       spdy: 4.0.2
       strip-ansi: 3.0.1
@@ -6537,7 +6492,7 @@ packages:
       webpack-dev-middleware: 3.7.2_webpack@4.42.0
       webpack-log: 2.0.0
       ws: 6.2.1
-      yargs: 12.0.5
+      yargs: 13.3.2
     dev: true
     engines:
       node: '>= 6.11.5'
@@ -6549,7 +6504,7 @@ packages:
       webpack-cli:
         optional: true
     resolution:
-      integrity: sha512-e4nWev8YzEVNdOMcNzNeCN947sWJNd43E5XvsJzbAL08kGc2frm1tQ32hTJslRS+H65LCb/AaUCYU7fjHCpDeQ==
+      integrity: sha512-PUxZ+oSTxogFQgkTtFndEtJIPNmml7ExwufBZ9L2/Xyyd5PnOL5UreWe5ZT7IU25DSdykL9p1MLQzmLh2ljSeg==
   /webpack-log/1.2.0:
     dependencies:
       chalk: 2.4.2
@@ -6616,6 +6571,14 @@ packages:
       webpack: '*'
     resolution:
       integrity: sha512-EzJRHvwQyBiYrYqhyjW9AqM90dE4+s1/XtCfn7uWg6cS72zH+2VPFAlsnW0+W0cDi0XRjNKUMoJtpSi50+Ph6w==
+  /websocket-driver/0.6.5:
+    dependencies:
+      websocket-extensions: 0.1.3
+    dev: true
+    engines:
+      node: '>=0.6.0'
+    resolution:
+      integrity: sha1-XLJVbOuF9Dc8bYI4qmkchFThOjY=
   /websocket-driver/0.7.3:
     dependencies:
       http-parser-js: 0.4.10
@@ -6649,15 +6612,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-rvw3QTZc8lAxyVrqcSGVm5yP/IJ2UcB3U0graE3LCFoZ0Yn2x4EoVSqJKdB/T5M+FLcRPjz4TDacRf3OCfNUzw==
-  /wrap-ansi/2.1.0:
-    dependencies:
-      string-width: 1.0.2
-      strip-ansi: 3.0.1
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-2Pw9KE3QV5T+hJc8rs3Rz4JP3YU=
   /wrap-ansi/3.0.1:
     dependencies:
       string-width: 2.1.1
@@ -6705,13 +6659,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
-  /yargs-parser/11.1.1:
-    dependencies:
-      camelcase: 5.3.1
-      decamelize: 1.2.0
-    dev: true
-    resolution:
-      integrity: sha512-C6kB/WJDiaxONLJQnF8ccx9SEeoTTLek8RVbaOIsrAUS8VrBEXfmeSnCZxygc+XC2sNMBIwOOnfcxiynjHsVSQ==
   /yargs-parser/13.1.2:
     dependencies:
       camelcase: 5.3.1
@@ -6719,23 +6666,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-3lbsNRf/j+A4QuSZfDRA7HRSfWrzO0YjqTJd5kjAq37Zep1CEgaYmrH9Q3GwPiB9cHyd1Y1UwggGhJGoxipbzg==
-  /yargs/12.0.5:
-    dependencies:
-      cliui: 4.1.0
-      decamelize: 1.2.0
-      find-up: 3.0.0
-      get-caller-file: 1.0.3
-      os-locale: 3.1.0
-      require-directory: 2.1.1
-      require-main-filename: 1.0.1
-      set-blocking: 2.0.0
-      string-width: 2.1.1
-      which-module: 2.0.0
-      y18n: 4.0.0
-      yargs-parser: 11.1.1
-    dev: true
-    resolution:
-      integrity: sha512-Lhz8TLaYnxq/2ObqHDql8dX8CJi97oHxrjUcYtzKbbykPtVW9WB+poxI+NM2UIzsMgNCZTIf0AQwsjK5yMAqZw==
   /yargs/13.2.4:
     dependencies:
       cliui: 5.0.0
@@ -6752,6 +6682,21 @@ packages:
     dev: true
     resolution:
       integrity: sha512-HG/DWAJa1PAnHT9JAhNa8AbAv3FPaiLzioSjCcmuXXhP8MlpHO5vwls4g4j6n30Z74GVQj8Xa62dWVx1QCGklg==
+  /yargs/13.3.2:
+    dependencies:
+      cliui: 5.0.0
+      find-up: 3.0.0
+      get-caller-file: 2.0.5
+      require-directory: 2.1.1
+      require-main-filename: 2.0.0
+      set-blocking: 2.0.0
+      string-width: 3.1.0
+      which-module: 2.0.0
+      y18n: 4.0.0
+      yargs-parser: 13.1.2
+    dev: true
+    resolution:
+      integrity: sha512-AX3Zw5iPruN5ie6xGRIDgqkT+ZhnRlZMLMHAs8tg7nRruy2Nb+i5o9bwghAogtM08q1dpr2LVoS8KSTMYpWXUw==
 specifiers:
   '@polymer/iron-icon': 3.0.1
   '@polymer/iron-list': 3.1.0
@@ -6770,7 +6715,7 @@ specifiers:
   '@vaadin/vaadin-confirm-dialog': 1.3.0
   '@vaadin/vaadin-context-menu': 4.5.0
   '@vaadin/vaadin-cookie-consent': 1.2.0
-  '@vaadin/vaadin-core-shrinkwrap': 17.0.7
+  '@vaadin/vaadin-core-shrinkwrap': 17.0.8
   '@vaadin/vaadin-crud': 1.3.0
   '@vaadin/vaadin-custom-field': 1.2.0
   '@vaadin/vaadin-date-picker': 4.3.0
@@ -6778,7 +6723,7 @@ specifiers:
   '@vaadin/vaadin-details': 1.2.0
   '@vaadin/vaadin-dialog': 2.5.2
   '@vaadin/vaadin-form-layout': 2.3.0
-  '@vaadin/vaadin-grid': 5.7.4
+  '@vaadin/vaadin-grid': 5.7.5
   '@vaadin/vaadin-grid-pro': 2.2.2
   '@vaadin/vaadin-icons': 4.3.1
   '@vaadin/vaadin-item': 2.3.0
@@ -6793,7 +6738,7 @@ specifiers:
   '@vaadin/vaadin-radio-button': 1.4.1
   '@vaadin/vaadin-rich-text-editor': 1.3.0
   '@vaadin/vaadin-select': 2.3.0
-  '@vaadin/vaadin-shrinkwrap': 17.0.7
+  '@vaadin/vaadin-shrinkwrap': 17.0.8
   '@vaadin/vaadin-split-layout': 4.3.0
   '@vaadin/vaadin-tabs': 3.2.0
   '@vaadin/vaadin-text-field': 2.7.1
@@ -6802,7 +6747,7 @@ specifiers:
   awesome-typescript-loader: 5.2.1
   chokidar: ^3.4.0
   compression-webpack-plugin: 4.0.1
-  copy-webpack-plugin: 5.1.1
+  copy-webpack-plugin: 5.1.2
   html-webpack-plugin: 3.2.0
   lit-element: 2.3.1
   lit-html: 1.2.1
@@ -6815,5 +6760,5 @@ specifiers:
   webpack: 4.42.0
   webpack-babel-multi-target-plugin: 2.3.3
   webpack-cli: 3.3.11
-  webpack-dev-server: 3.10.3
+  webpack-dev-server: 3.11.0
   webpack-merge: 4.2.2
