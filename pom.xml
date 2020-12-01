@@ -34,14 +34,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <!-- The current version of Flow 3.0 is a pre-release version, so vaadin-prereleases repository is needed. -->
-        <repository>
-            <id>vaadin-prereleases</id>
-            <url>
-                https://maven.vaadin.com/vaadin-prereleases/
-            </url>
-        </repository>
-        <!-- Repository used by many Vaadin add-ons -->
+        <!-- Repository used by Vaadin add-ons -->
         <repository>
             <id>Vaadin Directory</id>
             <url>https://maven.vaadin.com/vaadin-addons</url>
@@ -50,23 +43,6 @@
             </snapshots>
         </repository>
     </repositories>
-
-    <pluginRepositories>
-        <!-- Main Maven repository -->
-        <pluginRepository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>vaadin-prereleases</id>
-            <url>
-                https://maven.vaadin.com/vaadin-prereleases/
-            </url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <dependencyManagement>
         <dependencies>
