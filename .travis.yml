@@ -12,10 +12,6 @@ script:
   - mvn -B -e -V clean verify
 
 # Cache requires a master build
-branches:
-  only:
-    - master
-    - ccdm
 cache:
   directories:
   - $HOME/.m2
