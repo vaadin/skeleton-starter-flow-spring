@@ -3,7 +3,6 @@
 .settings
 .project
 .classpath
-types.d.ts
 
 *.iml
 .DS_Store
