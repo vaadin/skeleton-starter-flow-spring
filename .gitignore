@@ -11,6 +11,7 @@
 node_modules/
 frontend/generated/
 pnpmfile.js
+types.d.ts
 
 # Browser drivers for local integration tests
 drivers/
