@@ -5,6 +5,8 @@ tasks:
 ports:
   - port: 8080
     onOpen: open-preview
+image:
+  file: .gitpod.Dockerfile
 vscode:
   extensions:
     - runem.lit-plugin@1.2.1:llHUlx8TJ6tFKGa1t6dpLQ==
