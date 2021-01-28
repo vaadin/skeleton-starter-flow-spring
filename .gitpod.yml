@@ -1,5 +1,5 @@
 tasks:
-  - init: mvn install spring-boot:start spring-boot:stop
+  - init: mvn package -Pproduction
 
     command: mvn
 ports:
