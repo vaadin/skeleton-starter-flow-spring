@@ -71,6 +71,7 @@
     "progress-webpack-plugin": "0.0.24",
     "raw-loader": "4.0.0",
     "script-ext-html-webpack-plugin": "2.1.4",
+    "style-loader": "^2.0.0",
     "terser": "4.6.7",
     "typescript": "4.0.3",
     "validator": "13.1.17",
@@ -167,6 +168,6 @@
       "workbox-precaching": "5.1.4",
       "webpack-manifest-plugin": "2.2.0"
     },
-    "hash": "485c7583d2c328811354b0759f7430d15d8524aaaf7ef850bc37e29a26bf59f0"
+    "hash": "a802c064fa573303e6bb02db6bf3251d60d451240aae8a22eb5fb0f7f588318f"
   }
 }
