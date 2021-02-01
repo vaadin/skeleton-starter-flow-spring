@@ -52,7 +52,6 @@
   },
   "devDependencies": {
     "@types/validator": "13.1.0",
-    "awesome-typescript-loader": "5.2.1",
     "chokidar": "^3.5.0",
     "compression-webpack-plugin": "4.0.1",
     "construct-style-sheets-polyfill": "2.4.6",
@@ -68,16 +67,10 @@
     "lit-element": "2.3.1",
     "lit-html": "1.2.1",
     "loader-utils": "1.4.0",
-    "progress-webpack-plugin": "0.0.24",
-    "raw-loader": "4.0.0",
-    "script-ext-html-webpack-plugin": "2.1.4",
-    "style-loader": "^2.0.0",
-    "terser": "4.6.7",
     "ts-loader": "8.0.12",
     "typescript": "4.0.3",
     "validator": "13.1.17",
     "webpack": "4.42.0",
-    "webpack-babel-multi-target-plugin": "2.3.3",
     "webpack-cli": "3.3.11",
     "webpack-dev-server": "3.11.0",
     "webpack-manifest-plugin": "2.2.0",
@@ -132,12 +125,10 @@
       "@vaadin/vaadin-text-field": "3.0.0-alpha1",
       "@vaadin/vaadin-time-picker": "3.0.0-alpha1",
       "@vaadin/vaadin-upload": "5.0.0-alpha1",
-      "@webcomponents/webcomponentsjs": "^2.2.10",
       "lit-element": "2.3.1"
     },
     "devDependencies": {
       "@types/validator": "13.1.0",
-      "awesome-typescript-loader": "5.2.1",
       "chokidar": "^3.5.0",
       "compression-webpack-plugin": "4.0.1",
       "construct-style-sheets-polyfill": "2.4.6",
@@ -153,15 +144,10 @@
       "lit-element": "2.3.1",
       "lit-html": "1.2.1",
       "loader-utils": "1.4.0",
-      "progress-webpack-plugin": "0.0.24",
-      "raw-loader": "4.0.0",
-      "script-ext-html-webpack-plugin": "2.1.4",
-      "terser": "4.6.7",
       "ts-loader": "8.0.12",
       "typescript": "4.0.3",
       "validator": "13.1.17",
       "webpack": "4.42.0",
-      "webpack-babel-multi-target-plugin": "2.3.3",
       "webpack-cli": "3.3.11",
       "webpack-dev-server": "3.11.0",
       "webpack-manifest-plugin": "2.2.0",
@@ -170,6 +156,6 @@
       "workbox-precaching": "5.1.4",
       "workbox-webpack-plugin": "5.1.4"
     },
-    "hash": "b3e588e42432800bfb7b6d8a26068bdcf86aa7f0c15169a5f26e3450391bb35e"
+    "hash": "e9cb78611a9fbdda583cd2a2fded8ba12ad26e888b17e3ae368506ddcedbf94d"
   }
 }
