@@ -62,6 +62,7 @@ devDependencies:
   lit-css-loader: 0.0.4
   lit-html: 1.2.1
   loader-utils: 1.4.0
+  style-loader: 2.0.0_webpack@4.42.0
   ts-loader: 8.0.12_typescript@4.0.3+webpack@4.42.0
   typescript: 4.0.3
   validator: 13.1.17
@@ -6644,6 +6645,16 @@ packages:
       node: '>= 8.9.0'
     resolution:
       integrity: sha512-SHiNtMOUGWBQJwzISiVYKu82GiV4QYGePp3odlY1tuKO7gPtphAT5R/py0fA6xtbgLL/RvtJZnU9b8s0F1q0Xg==
+  /schema-utils/3.0.0:
+    dependencies:
+      '@types/json-schema': 7.0.7
+      ajv: 6.12.6
+      ajv-keywords: 3.5.2_ajv@6.12.6
+    dev: true
+    engines:
+      node: '>= 10.13.0'
+    resolution:
+      integrity: sha512-6D82/xSzO094ajanoOSbe4YvXWMfn2A//8Y1+MUqFAJul5Bs+yn36xbK9OtNDcRVSBJ9jjeoXftM6CfztsjOAA==
   /select-hose/2.0.0:
     dev: true
     resolution:
@@ -7062,6 +7073,18 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-u0P/VZim6wXYm1n80SnJgzE2Br8=
+  /style-loader/2.0.0_webpack@4.42.0:
+    dependencies:
+      loader-utils: 2.0.0
+      schema-utils: 3.0.0
+      webpack: 4.42.0
+    dev: true
+    engines:
+      node: '>= 10.13.0'
+    peerDependencies:
+      webpack: ^4.0.0 || ^5.0.0
+    resolution:
+      integrity: sha512-Z0gYUJmzZ6ZdRUqpg1r8GsaFKypE+3xAzuFeMuoHgjc9KZv3wMyCRjQIWEbhoFSq7+7yoHXySDJyyWQaPajeiQ==
   /supports-color/2.0.0:
     dev: true
     engines:
@@ -7965,6 +7988,7 @@ specifiers:
   lit-element: 2.3.1
   lit-html: 1.2.1
   loader-utils: 1.4.0
+  style-loader: ^2.0.0
   ts-loader: 8.0.12
   typescript: 4.0.3
   validator: 13.1.17
