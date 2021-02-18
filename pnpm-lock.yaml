@@ -16,7 +16,7 @@ dependencies:
   '@vaadin/vaadin-confirm-dialog': 2.0.0
   '@vaadin/vaadin-context-menu': 5.0.0
   '@vaadin/vaadin-cookie-consent': 2.0.0
-  '@vaadin/vaadin-core-shrinkwrap': 19.0.0-beta2
+  '@vaadin/vaadin-core-shrinkwrap': 19.0.0-beta3
   '@vaadin/vaadin-crud': 2.0.0
   '@vaadin/vaadin-custom-field': 2.0.0
   '@vaadin/vaadin-date-picker': 5.0.0
@@ -39,7 +39,7 @@ dependencies:
   '@vaadin/vaadin-radio-button': 1.5.1
   '@vaadin/vaadin-rich-text-editor': 2.0.0
   '@vaadin/vaadin-select': 3.0.0
-  '@vaadin/vaadin-shrinkwrap': 19.0.0-beta2
+  '@vaadin/vaadin-shrinkwrap': 19.0.0-beta3
   '@vaadin/vaadin-split-layout': 4.3.0
   '@vaadin/vaadin-tabs': 4.0.0
   '@vaadin/vaadin-text-field': 3.0.1
@@ -1377,7 +1377,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-sT5EaPMMBHMjxjFCMZccgKLt4jVx0c3LOxlJT4fQ4N1quWA5sHfgKi4ih6Keq2AAKkXffMzdWkn7VyLKeP9RZw==
-  /@vaadin/vaadin-core-shrinkwrap/19.0.0-beta2:
+  /@vaadin/vaadin-core-shrinkwrap/19.0.0-beta3:
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
@@ -1433,7 +1433,7 @@ packages:
       '@webcomponents/shadycss': 1.9.6
     dev: false
     resolution:
-      integrity: sha512-BczNM7Ek65d6xU1PHLRwcNlyKe87oKwS0CNRze6cwtq69j+AUr/Lpd6HPoe2JiKfIj7CpzYeOo3GAbKObGHTPw==
+      integrity: sha512-cU40+S9CvuRxQDJbkXl4Fe9PGdB0id6j6QMqqy7PATokIjNjYR2UZR1ywT6GnAxXoH06EeBvB+KfTWr/pvrQdg==
   /@vaadin/vaadin-crud/2.0.0:
     dependencies:
       '@polymer/iron-media-query': 3.0.1
@@ -1736,7 +1736,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-5euXZ8cCEMDbby8iZtce+z5zsg+AFc9SN5OJSBrLNDknDWcx8Yc5JNH4fR8bLWhhMr0iOYM2BFDg6NkjzDC/Tg==
-  /@vaadin/vaadin-shrinkwrap/19.0.0-beta2:
+  /@vaadin/vaadin-shrinkwrap/19.0.0-beta3:
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
@@ -1799,7 +1799,7 @@ packages:
       '@webcomponents/shadycss': 1.9.6
     dev: false
     resolution:
-      integrity: sha512-LNWSefOsQNX+QzBYvYjjHsx88iKXkqPmHy3CQMSK6Gg5bSpPEUb/shXHHkIT8VtO1a2TFjQPWtRu8I9R1SOraQ==
+      integrity: sha512-isyWO6Amm6XH1109fPsmo3mHvQgM39wfjyt/JlPIN/Khr3EdzKMGhRQoJtkqvfWFd70PdTdqtjDrPRcgdRbEGQ==
   /@vaadin/vaadin-split-layout/4.3.0:
     dependencies:
       '@polymer/iron-resizable-behavior': 3.0.1
@@ -2015,7 +2015,7 @@ packages:
       integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
   /accepts/1.3.7:
     dependencies:
-      mime-types: 2.1.28
+      mime-types: 2.1.29
       negotiator: 0.6.2
     dev: true
     engines:
@@ -2869,7 +2869,7 @@ packages:
   /browserslist/3.2.8:
     dependencies:
       caniuse-lite: 1.0.30001187
-      electron-to-chromium: 1.3.664
+      electron-to-chromium: 1.3.667
     dev: true
     hasBin: true
     resolution:
@@ -2878,7 +2878,7 @@ packages:
     dependencies:
       caniuse-lite: 1.0.30001187
       colorette: 1.2.1
-      electron-to-chromium: 1.3.664
+      electron-to-chromium: 1.3.667
       escalade: 3.1.1
       node-releases: 1.1.70
     dev: true
@@ -3664,10 +3664,10 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-7vmuyh5+kuUyJKePhQfRQBhXV5Ce+RnaeeQArKu1EAMpL3WbgMt5WG6uQZpEVvYSSsxMXRKOewtDk9RaTKXRlA==
-  /electron-to-chromium/1.3.664:
+  /electron-to-chromium/1.3.667:
     dev: true
     resolution:
-      integrity: sha512-yb8LrTQXQnh9yhnaIHLk6CYugF/An50T20+X0h++hjjhVfgSp1DGoMSYycF8/aD5eiqS4QwaNhiduFvK8rifRg==
+      integrity: sha512-Ot1pPtAVb5nd7jeVF651zmfLFilRVFomlDzwXmdlWe5jyzOGa6mVsQ06XnAurT7wWfg5VEIY+LopbAdD/bpo5w==
   /elliptic/6.5.4:
     dependencies:
       bn.js: 4.11.9
@@ -5339,26 +5339,20 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-115fLhvZVqWwHPbClyntxEVfVDfl9DLLTuJvq3g2O/Oxi8AiNouAHvDSzHS0viUJc+V5vm3eq91Xwqn9dp4jRA==
-  /mime-db/1.45.0:
-    dev: true
-    engines:
-      node: '>= 0.6'
-    resolution:
-      integrity: sha512-CkqLUxUk15hofLoLyljJSrukZi8mAtgd+yE5uO4tqRZsdsAJKv0O+rFMhVDRJgozy+yG6md5KwuXhD4ocIoP+w==
   /mime-db/1.46.0:
     dev: true
     engines:
       node: '>= 0.6'
     resolution:
       integrity: sha512-svXaP8UQRZ5K7or+ZmfNhg2xX3yKDMUzqadsSqi4NCH/KomcH75MAMYAGVlvXn4+b/xOPhS3I2uHKRUzvjY7BQ==
-  /mime-types/2.1.28:
+  /mime-types/2.1.29:
     dependencies:
-      mime-db: 1.45.0
+      mime-db: 1.46.0
     dev: true
     engines:
       node: '>= 0.6'
     resolution:
-      integrity: sha512-0TO2yJ5YHYr7M2zzT7gDU1tbwHxEUWBCLt0lscSNpcdAfFyJOVEpRYNS7EXVcTLNj/25QO8gulHC5JtTzSE2UQ==
+      integrity: sha512-Y/jMt/S5sR9OaqteJtslsFZKWOIIqMACsJSiHghlCAyhf7jfVYjKBmLiX8OgpWeW+fjJ2b+Az69aPFPkUOY6xQ==
   /mime/1.6.0:
     dev: true
     engines:
@@ -5366,13 +5360,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
-  /mime/2.5.0:
+  /mime/2.5.2:
     dev: true
     engines:
       node: '>=4.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-ft3WayFSFUVBuJj7BMLKAQcSlItKtfjsKDDsii3rqFDAZ7t11zRe8ASw/GlmivGwVUYtwkQrxiGGpL6gFvB0ag==
+      integrity: sha512-tqkh47FzKeCPD2PUiPB6pkbMzsCasjxAfC62/Wap5qrUWcb+sFasXUC5I3gYM5iBM8v/Qpn4UK0x+j0iHyFPDg==
   /mimic-fn/2.1.0:
     dev: true
     engines:
@@ -5720,7 +5714,7 @@ packages:
       integrity: sha512-PqHpggC9bLV0VeWcdKhkpxY+3JTzetLSqTCWL/z/tFIbI6G8JCjondXklT1JinczLz2Xib62sSp0T/gKT4KksA==
   /original/1.0.2:
     dependencies:
-      url-parse: 1.4.7
+      url-parse: 1.5.0
     dev: true
     resolution:
       integrity: sha512-hyBVl6iqqUOJ8FqRe+l/gS8H+kKYjrEndd5Pm1MfBtsEKA038HkkdbAl/72EAXGyonD/PFsvmVG+EvcIpliMBg==
@@ -6613,7 +6607,7 @@ packages:
       debug: 2.6.9
       escape-html: 1.0.3
       http-errors: 1.6.3
-      mime-types: 2.1.28
+      mime-types: 2.1.29
       parseurl: 1.3.3
     dev: true
     engines:
@@ -6730,7 +6724,7 @@ packages:
       faye-websocket: 0.11.3
       inherits: 2.0.4
       json3: 3.3.3
-      url-parse: 1.4.7
+      url-parse: 1.5.0
     dev: true
     resolution:
       integrity: sha512-5zaLyO8/nri5cua0VtOrFXBPK1jbL4+1cebT/mmKA1E1ZXOvJrII75bPu0l0k843G/+iAbhEqzyKr0w/eCCj7g==
@@ -7190,7 +7184,7 @@ packages:
   /type-is/1.6.18:
     dependencies:
       media-typer: 0.3.0
-      mime-types: 2.1.28
+      mime-types: 2.1.29
     dev: true
     engines:
       node: '>= 0.6'
@@ -7307,13 +7301,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
-  /url-parse/1.4.7:
+  /url-parse/1.5.0:
     dependencies:
       querystringify: 2.2.0
       requires-port: 1.0.0
     dev: true
     resolution:
-      integrity: sha512-d3uaVyzDB9tQoSXFvuSUNFibTd9zxd2bkVrDRvF5TmvWWQwqE4lgYJ5m+x1DbecWkw+LK4RNl2CU1hHuOKPVlg==
+      integrity: sha512-9iT6N4s93SMfzunOyDPe4vo4nLcSu1yq0IQK1gURmjm8tQNlM6loiuCRrKG1hHGXfB2EWd6H4cGi7tGdaygMFw==
   /url/0.11.0:
     dependencies:
       punycode: 1.3.2
@@ -7433,7 +7427,7 @@ packages:
   /webpack-dev-middleware/3.7.3_webpack@4.46.0:
     dependencies:
       memory-fs: 0.4.1
-      mime: 2.5.0
+      mime: 2.5.2
       mkdirp: 0.5.5
       range-parser: 1.2.1
       webpack: 4.46.0_webpack-cli@3.3.11
@@ -7857,7 +7851,7 @@ specifiers:
   '@vaadin/vaadin-confirm-dialog': 2.0.0
   '@vaadin/vaadin-context-menu': 5.0.0
   '@vaadin/vaadin-cookie-consent': 2.0.0
-  '@vaadin/vaadin-core-shrinkwrap': 19.0.0-beta2
+  '@vaadin/vaadin-core-shrinkwrap': 19.0.0-beta3
   '@vaadin/vaadin-crud': 2.0.0
   '@vaadin/vaadin-custom-field': 2.0.0
   '@vaadin/vaadin-date-picker': 5.0.0
@@ -7880,7 +7874,7 @@ specifiers:
   '@vaadin/vaadin-radio-button': 1.5.1
   '@vaadin/vaadin-rich-text-editor': 2.0.0
   '@vaadin/vaadin-select': 3.0.0
-  '@vaadin/vaadin-shrinkwrap': 19.0.0-beta2
+  '@vaadin/vaadin-shrinkwrap': 19.0.0-beta3
   '@vaadin/vaadin-split-layout': 4.3.0
   '@vaadin/vaadin-tabs': 4.0.0
   '@vaadin/vaadin-text-field': 3.0.1
