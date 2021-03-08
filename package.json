@@ -19,7 +19,7 @@
     "@vaadin/vaadin-confirm-dialog": "2.0.0",
     "@vaadin/vaadin-context-menu": "5.0.0",
     "@vaadin/vaadin-cookie-consent": "2.0.0",
-    "@vaadin/vaadin-core-shrinkwrap": "19.0.0-rc1",
+    "@vaadin/vaadin-core-shrinkwrap": "20.0.0-alpha2",
     "@vaadin/vaadin-crud": "2.0.0",
     "@vaadin/vaadin-custom-field": "2.0.0",
     "@vaadin/vaadin-date-picker": "5.0.0",
@@ -42,13 +42,14 @@
     "@vaadin/vaadin-radio-button": "1.5.1",
     "@vaadin/vaadin-rich-text-editor": "2.0.0",
     "@vaadin/vaadin-select": "3.0.0",
-    "@vaadin/vaadin-shrinkwrap": "19.0.0-rc1",
+    "@vaadin/vaadin-shrinkwrap": "20.0.0-alpha2",
     "@vaadin/vaadin-split-layout": "4.3.0",
     "@vaadin/vaadin-tabs": "4.0.0",
     "@vaadin/vaadin-text-field": "3.0.1",
     "@vaadin/vaadin-time-picker": "3.0.0",
     "@vaadin/vaadin-upload": "5.0.0",
-    "lit-element": "2.3.1"
+    "lit-element": "2.3.1",
+    "@vaadin/vaadin-messages": "2.0.0-alpha1"
   },
   "devDependencies": {
     "@types/validator": "13.1.0",
@@ -96,7 +97,7 @@
       "@vaadin/vaadin-confirm-dialog": "2.0.0",
       "@vaadin/vaadin-context-menu": "5.0.0",
       "@vaadin/vaadin-cookie-consent": "2.0.0",
-      "@vaadin/vaadin-core-shrinkwrap": "19.0.0-rc1",
+      "@vaadin/vaadin-core-shrinkwrap": "20.0.0-alpha2",
       "@vaadin/vaadin-crud": "2.0.0",
       "@vaadin/vaadin-custom-field": "2.0.0",
       "@vaadin/vaadin-date-picker": "5.0.0",
@@ -119,13 +120,14 @@
       "@vaadin/vaadin-radio-button": "1.5.1",
       "@vaadin/vaadin-rich-text-editor": "2.0.0",
       "@vaadin/vaadin-select": "3.0.0",
-      "@vaadin/vaadin-shrinkwrap": "19.0.0-rc1",
+      "@vaadin/vaadin-shrinkwrap": "20.0.0-alpha2",
       "@vaadin/vaadin-split-layout": "4.3.0",
       "@vaadin/vaadin-tabs": "4.0.0",
       "@vaadin/vaadin-text-field": "3.0.1",
       "@vaadin/vaadin-time-picker": "3.0.0",
       "@vaadin/vaadin-upload": "5.0.0",
-      "lit-element": "2.3.1"
+      "lit-element": "2.3.1",
+      "@vaadin/vaadin-messages": "2.0.0-alpha1"
     },
     "devDependencies": {
       "@types/validator": "13.1.0",
@@ -155,6 +157,6 @@
       "workbox-precaching": "5.1.4",
       "workbox-webpack-plugin": "5.1.4"
     },
-    "hash": "1b88ee10d9cc2711eed37ea5a74d690d4cd59525e5bd4385234c6500053632a6"
+    "hash": "0ac3b816778b36dd1c4a6dae24d1e4bef93a0b8aefc3a2234a97df42471378b1"
   }
 }
