@@ -16,7 +16,7 @@ dependencies:
   '@vaadin/vaadin-confirm-dialog': 2.0.0
   '@vaadin/vaadin-context-menu': 5.0.0
   '@vaadin/vaadin-cookie-consent': 2.0.0
-  '@vaadin/vaadin-core-shrinkwrap': 19.0.4
+  '@vaadin/vaadin-core-shrinkwrap': 19.0.5
   '@vaadin/vaadin-crud': 2.0.1
   '@vaadin/vaadin-custom-field': 2.0.0
   '@vaadin/vaadin-date-picker': 5.0.0
@@ -39,7 +39,7 @@ dependencies:
   '@vaadin/vaadin-radio-button': 1.5.1
   '@vaadin/vaadin-rich-text-editor': 2.0.0
   '@vaadin/vaadin-select': 3.0.0
-  '@vaadin/vaadin-shrinkwrap': 19.0.4
+  '@vaadin/vaadin-shrinkwrap': 19.0.5
   '@vaadin/vaadin-split-layout': 4.3.0
   '@vaadin/vaadin-tabs': 4.0.0
   '@vaadin/vaadin-text-field': 3.0.2
@@ -57,7 +57,6 @@ devDependencies:
   file-loader: 6.2.0_webpack@4.46.0
   glob: 7.1.6
   html-webpack-plugin: 4.5.1_webpack@4.46.0
-  idb: 5.0.6
   lit-css-loader: 0.0.4
   lit-html: 1.3.0
   loader-utils: 2.0.0
@@ -133,7 +132,7 @@ packages:
       '@babel/compat-data': 7.13.15
       '@babel/core': 7.13.15
       '@babel/helper-validator-option': 7.12.17
-      browserslist: 4.16.3
+      browserslist: 4.16.4
       semver: 6.3.0
     dev: true
     peerDependencies:
@@ -1197,7 +1196,7 @@ packages:
   /@types/glob/7.1.3:
     dependencies:
       '@types/minimatch': 3.0.4
-      '@types/node': 14.14.37
+      '@types/node': 14.14.41
     dev: true
     resolution:
       integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==
@@ -1213,13 +1212,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-1z8k4wzFnNjVK/tlxvrWuK5WMt6mydWWP7+zvH5eFep4oj+UkrfiJTRtjCeBXNpwaA/FYqqtb4/QS4ianFpIRA==
-  /@types/node/14.14.37:
+  /@types/node/14.14.41:
     dev: true
     resolution:
-      integrity: sha512-XYmBiy+ohOR4Lh5jE379fV2IU+6Jn4g5qASinhitfyO71b/sCo6MKsMLF5tc7Zf2CE8hViVQyYSobJNke8OvUw==
+      integrity: sha512-dueRKfaJL4RTtSa7bWeTK1M+VH+Gns73oCgzvYfHZywRCoPSd8EkXBL0mZ9unPTveBn+D9phZBaxuzpwjWkW0g==
   /@types/resolve/0.0.8:
     dependencies:
-      '@types/node': 14.14.37
+      '@types/node': 14.14.41
     dev: true
     resolution:
       integrity: sha512-auApPaJf3NPfe18hSoJkp8EbZzer2ISk7o8mCC3M9he/a04+gbMF97NkpD2S8riMGvm4BMRI59/SZQSaLTKpsQ==
@@ -1243,7 +1242,7 @@ packages:
       integrity: sha512-gHUHI6pJaANIO2r6WcbT7+WMgbL9GZooR4tWpuBOETpDIqFNxwaJluE+6rj6VGYe8k6OkfhbHz2Fkm8kl06Igw==
   /@types/webpack-sources/2.1.0:
     dependencies:
-      '@types/node': 14.14.37
+      '@types/node': 14.14.41
       '@types/source-list-map': 0.1.2
       source-map: 0.7.3
     dev: true
@@ -1252,7 +1251,7 @@ packages:
   /@types/webpack/4.41.27:
     dependencies:
       '@types/anymatch': 1.3.1
-      '@types/node': 14.14.37
+      '@types/node': 14.14.41
       '@types/tapable': 1.0.7
       '@types/uglify-js': 3.13.0
       '@types/webpack-sources': 2.1.0
@@ -1408,7 +1407,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-sT5EaPMMBHMjxjFCMZccgKLt4jVx0c3LOxlJT4fQ4N1quWA5sHfgKi4ih6Keq2AAKkXffMzdWkn7VyLKeP9RZw==
-  /@vaadin/vaadin-core-shrinkwrap/19.0.4:
+  /@vaadin/vaadin-core-shrinkwrap/19.0.5:
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
@@ -1464,7 +1463,7 @@ packages:
       '@webcomponents/shadycss': 1.9.6
     dev: false
     resolution:
-      integrity: sha512-f8rPChgwKlzBIYW0eSLleYQb4NHPXlu1AT0vyx7dVUXkcHU4KwtxoxIqJdzjKPMKhrFkyBucZH0MVM1RnR+NrQ==
+      integrity: sha512-kO2EtSDd6TOrCSzah43z9juxhn9hfiD89B8I/PP4+e1yMMhdVzzzQJ7lTTCJ3/J8IrTAhqo0apXdL5XDem5DMg==
   /@vaadin/vaadin-crud/2.0.1:
     dependencies:
       '@polymer/iron-media-query': 3.0.1
@@ -1767,7 +1766,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-5euXZ8cCEMDbby8iZtce+z5zsg+AFc9SN5OJSBrLNDknDWcx8Yc5JNH4fR8bLWhhMr0iOYM2BFDg6NkjzDC/Tg==
-  /@vaadin/vaadin-shrinkwrap/19.0.4:
+  /@vaadin/vaadin-shrinkwrap/19.0.5:
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
@@ -1830,7 +1829,7 @@ packages:
       '@webcomponents/shadycss': 1.9.6
     dev: false
     resolution:
-      integrity: sha512-lzEH+AORzJnApKYBFuF2RpFBrxBGJK0//LJJacW+OyB2LDL4qQLIUozVvvzFfJyjE5eFwNAIYB3UlUz4PP+Few==
+      integrity: sha512-qjKXiAVUpdFkGvQBidBk66kofGvOpA16kGMU48ZjrNyx/cYq5l0yKA4cPHKhugEkCCG+IVdCah37O7KIpqCLSA==
   /@vaadin/vaadin-split-layout/4.3.0:
     dependencies:
       '@polymer/iron-resizable-behavior': 3.0.1
@@ -2929,17 +2928,17 @@ packages:
       integrity: sha512-Z942RysHXmJrhqk88FmKBVq/v5tqmSkDz7p54G/MGyjMnCFFnC79XWNbg+Vta8W6Wb2qtSZTSxIGkJrRpCFEiA==
   /browserslist/3.2.8:
     dependencies:
-      caniuse-lite: 1.0.30001208
-      electron-to-chromium: 1.3.712
+      caniuse-lite: 1.0.30001211
+      electron-to-chromium: 1.3.717
     dev: true
     hasBin: true
     resolution:
       integrity: sha512-WHVocJYavUwVgVViC0ORikPHQquXwVh939TaelZ4WDqpWgTX/FsGhl/+P4qBUAGcRvtOgDgC+xftNWWp2RUTAQ==
-  /browserslist/4.16.3:
+  /browserslist/4.16.4:
     dependencies:
-      caniuse-lite: 1.0.30001208
+      caniuse-lite: 1.0.30001211
       colorette: 1.2.2
-      electron-to-chromium: 1.3.712
+      electron-to-chromium: 1.3.717
       escalade: 3.1.1
       node-releases: 1.1.71
     dev: true
@@ -2947,7 +2946,7 @@ packages:
       node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7
     hasBin: true
     resolution:
-      integrity: sha512-vIyhWmIkULaq04Gt93txdh+j02yX/JzlyhLYbV3YQCn/zvES3JnY7TifHHvvr1w5hTDluNKMkV05cs4vy8Q7sw==
+      integrity: sha512-d7rCxYV8I9kj41RH8UKYnvDYCRENUlHRgyXy/Rhr/1BaeLGfiCptEdFE8MIrvGfWbBFNjVYx76SQWvNX1j+/cQ==
   /btoa/1.2.1:
     dev: true
     engines:
@@ -3083,10 +3082,10 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
-  /caniuse-lite/1.0.30001208:
+  /caniuse-lite/1.0.30001211:
     dev: true
     resolution:
-      integrity: sha512-OE5UE4+nBOro8Dyvv0lfx+SRtfVIOM9uhKqFmJeUbGriqhhStgp1A0OyBpgy3OUF8AhYCT+PVwPC1gMl2ZcQMA==
+      integrity: sha512-v3GXWKofIkN3PkSidLI5d1oqeKNsam9nQkqieoMhP87nxOY0RPDC8X2+jcv8pjV4dRozPLSoMqNii9sDViOlIg==
   /chalk/1.1.3:
     dependencies:
       ansi-styles: 2.2.1
@@ -3351,7 +3350,7 @@ packages:
       integrity: sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
   /core-js-compat/3.10.1:
     dependencies:
-      browserslist: 4.16.3
+      browserslist: 4.16.4
       semver: 7.0.0
     dev: true
     resolution:
@@ -3723,10 +3722,10 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-7vmuyh5+kuUyJKePhQfRQBhXV5Ce+RnaeeQArKu1EAMpL3WbgMt5WG6uQZpEVvYSSsxMXRKOewtDk9RaTKXRlA==
-  /electron-to-chromium/1.3.712:
+  /electron-to-chromium/1.3.717:
     dev: true
     resolution:
-      integrity: sha512-3kRVibBeCM4vsgoHHGKHmPocLqtFAGTrebXxxtgKs87hNUzXrX2NuS3jnBys7IozCnw7viQlozxKkmty2KNfrw==
+      integrity: sha512-OfzVPIqD1MkJ7fX+yTl2nKyOE4FReeVfMCzzxQS+Kp43hZYwHwThlGP+EGIZRXJsxCM7dqo8Y65NOX/HP12iXQ==
   /elliptic/6.5.4:
     dependencies:
       bn.js: 4.12.0
@@ -3814,7 +3813,7 @@ packages:
       is-negative-zero: 2.0.1
       is-regex: 1.1.2
       is-string: 1.0.5
-      object-inspect: 1.9.0
+      object-inspect: 1.10.2
       object-keys: 1.1.1
       object.assign: 4.1.2
       string.prototype.trimend: 1.0.4
@@ -4664,10 +4663,6 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-4aFq7wvWyMHKgxsH8QQtGpvbASCf+eM3wPRLI6R+MgAnTCZ6STYsRvttLvRWK0Nfif5piF394St3HeJDaljGPA==
-  /idb/5.0.6:
-    dev: true
-    resolution:
-      integrity: sha512-/PFvOWPzRcEPmlDt5jEvzVZVs0wyd/EvGvkDIcbBpGuMMLQKrTPG0TxvE2UJtgZtCQCmOtM2QD7yQJBVEjKGOw==
   /ieee754/1.2.1:
     dev: true
     resolution:
@@ -5717,10 +5712,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-fn2Fi3gb18mRpBupde04EnVOmYw=
-  /object-inspect/1.9.0:
+  /object-inspect/1.10.2:
     dev: true
     resolution:
-      integrity: sha512-i3Bp9iTqwhaLZBxGkRfo5ZbE07BQRT7MGu8+nNgwW9ItGp1TzCTw2DLEoWwjClxBjOFI/hWljTAmYGCEwmtnOw==
+      integrity: sha512-gz58rdPpadwztRrPjZE9DZLOABUpTGdcANUgOwBFO1C+HZZhePoP83M65WGDmbpwFYJSWqavbl4SgDn4k8RYTA==
   /object-is/1.1.5:
     dependencies:
       call-bind: 1.0.2
@@ -6564,7 +6559,7 @@ packages:
   /rollup/1.32.1:
     dependencies:
       '@types/estree': 0.0.47
-      '@types/node': 14.14.37
+      '@types/node': 14.14.41
       acorn: 7.4.1
     dev: true
     hasBin: true
@@ -7959,7 +7954,7 @@ specifiers:
   '@vaadin/vaadin-confirm-dialog': 2.0.0
   '@vaadin/vaadin-context-menu': 5.0.0
   '@vaadin/vaadin-cookie-consent': 2.0.0
-  '@vaadin/vaadin-core-shrinkwrap': 19.0.4
+  '@vaadin/vaadin-core-shrinkwrap': 19.0.5
   '@vaadin/vaadin-crud': 2.0.1
   '@vaadin/vaadin-custom-field': 2.0.0
   '@vaadin/vaadin-date-picker': 5.0.0
@@ -7982,7 +7977,7 @@ specifiers:
   '@vaadin/vaadin-radio-button': 1.5.1
   '@vaadin/vaadin-rich-text-editor': 2.0.0
   '@vaadin/vaadin-select': 3.0.0
-  '@vaadin/vaadin-shrinkwrap': 19.0.4
+  '@vaadin/vaadin-shrinkwrap': 19.0.5
   '@vaadin/vaadin-split-layout': 4.3.0
   '@vaadin/vaadin-tabs': 4.0.0
   '@vaadin/vaadin-text-field': 3.0.2
@@ -7997,7 +7992,6 @@ specifiers:
   file-loader: 6.2.0
   glob: 7.1.6
   html-webpack-plugin: 4.5.1
-  idb: 5.0.6
   lit-css-loader: 0.0.4
   lit-element: 2.3.1
   lit-html: 1.3.0
