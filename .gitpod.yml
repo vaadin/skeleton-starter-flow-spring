@@ -7,8 +7,3 @@ ports:
     onOpen: open-preview
 image:
   file: .gitpod.Dockerfile
-vscode:
-  extensions:
-    - runem.lit-plugin@1.2.1:llHUlx8TJ6tFKGa1t6dpLQ==
-    - vscjava.vscode-java-test@0.27.0:gNh98vNbqtZC6ydHasFxAQ==
-    - pivotal.vscode-spring-boot@1.23.0:1iLvjTfznJrV611qRUeOHg==
