@@ -19,7 +19,7 @@
     "@vaadin/vaadin-confirm-dialog": "2.0.0",
     "@vaadin/vaadin-context-menu": "5.0.0",
     "@vaadin/vaadin-cookie-consent": "2.0.0",
-    "@vaadin/vaadin-core-shrinkwrap": "19.0.5",
+    "@vaadin/vaadin-core-shrinkwrap": "19.0.6",
     "@vaadin/vaadin-crud": "2.0.1",
     "@vaadin/vaadin-custom-field": "2.0.0",
     "@vaadin/vaadin-date-picker": "5.0.0",
@@ -42,7 +42,7 @@
     "@vaadin/vaadin-radio-button": "1.5.1",
     "@vaadin/vaadin-rich-text-editor": "2.0.0",
     "@vaadin/vaadin-select": "3.0.0",
-    "@vaadin/vaadin-shrinkwrap": "19.0.5",
+    "@vaadin/vaadin-shrinkwrap": "19.0.6",
     "@vaadin/vaadin-split-layout": "4.3.0",
     "@vaadin/vaadin-tabs": "4.0.0",
     "@vaadin/vaadin-text-field": "3.0.2",
@@ -76,7 +76,8 @@
     "webpack-merge": "4.2.2",
     "workbox-core": "5.1.4",
     "workbox-precaching": "5.1.4",
-    "workbox-webpack-plugin": "5.1.4"
+    "workbox-webpack-plugin": "5.1.4",
+    "fork-ts-checker-webpack-plugin": "6.2.1"
   },
   "vaadin": {
     "dependencies": {
@@ -95,7 +96,7 @@
       "@vaadin/vaadin-confirm-dialog": "2.0.0",
       "@vaadin/vaadin-context-menu": "5.0.0",
       "@vaadin/vaadin-cookie-consent": "2.0.0",
-      "@vaadin/vaadin-core-shrinkwrap": "19.0.5",
+      "@vaadin/vaadin-core-shrinkwrap": "19.0.6",
       "@vaadin/vaadin-crud": "2.0.1",
       "@vaadin/vaadin-custom-field": "2.0.0",
       "@vaadin/vaadin-date-picker": "5.0.0",
@@ -118,7 +119,7 @@
       "@vaadin/vaadin-radio-button": "1.5.1",
       "@vaadin/vaadin-rich-text-editor": "2.0.0",
       "@vaadin/vaadin-select": "3.0.0",
-      "@vaadin/vaadin-shrinkwrap": "19.0.5",
+      "@vaadin/vaadin-shrinkwrap": "19.0.6",
       "@vaadin/vaadin-split-layout": "4.3.0",
       "@vaadin/vaadin-tabs": "4.0.0",
       "@vaadin/vaadin-text-field": "3.0.2",
@@ -151,8 +152,9 @@
       "webpack-merge": "4.2.2",
       "workbox-core": "5.1.4",
       "workbox-precaching": "5.1.4",
-      "workbox-webpack-plugin": "5.1.4"
+      "workbox-webpack-plugin": "5.1.4",
+      "fork-ts-checker-webpack-plugin": "6.2.1"
     },
-    "hash": "e192ad8457f499c39131518904fceab13d665ec8007acccf06ae6f4d0eccd985"
+    "hash": "4436c31b16cfbbc82e217619e9f39c01ce0f7dd1b52bd5da7a4d8971c20c8a80"
   }
 }
