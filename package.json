@@ -19,7 +19,7 @@
     "@vaadin/vaadin-confirm-dialog": "2.0.0",
     "@vaadin/vaadin-context-menu": "5.0.0",
     "@vaadin/vaadin-cookie-consent": "2.0.0",
-    "@vaadin/vaadin-core-shrinkwrap": "19.0.7",
+    "@vaadin/vaadin-core-shrinkwrap": "19.0.8",
     "@vaadin/vaadin-crud": "2.0.1",
     "@vaadin/vaadin-custom-field": "2.0.0",
     "@vaadin/vaadin-date-picker": "5.0.0",
@@ -42,20 +42,20 @@
     "@vaadin/vaadin-radio-button": "1.5.1",
     "@vaadin/vaadin-rich-text-editor": "2.0.0",
     "@vaadin/vaadin-select": "3.0.0",
-    "@vaadin/vaadin-shrinkwrap": "19.0.7",
+    "@vaadin/vaadin-shrinkwrap": "19.0.8",
     "@vaadin/vaadin-split-layout": "4.3.0",
     "@vaadin/vaadin-tabs": "4.0.0",
     "@vaadin/vaadin-text-field": "3.0.2",
     "@vaadin/vaadin-time-picker": "3.0.0",
     "@vaadin/vaadin-upload": "5.0.0",
     "lit-element": "2.5.1",
-    "lit-html": "1.4.1"
+    "lit-html": "1.4.1",
+    "construct-style-sheets-polyfill": "2.4.16"
   },
   "devDependencies": {
     "@types/validator": "13.1.0",
     "chokidar": "^3.5.0",
     "compression-webpack-plugin": "4.0.1",
-    "construct-style-sheets-polyfill": "2.4.16",
     "css-loader": "4.2.1",
     "extra-watch-webpack-plugin": "1.0.3",
     "extract-loader": "5.1.0",
@@ -95,7 +95,7 @@
       "@vaadin/vaadin-confirm-dialog": "2.0.0",
       "@vaadin/vaadin-context-menu": "5.0.0",
       "@vaadin/vaadin-cookie-consent": "2.0.0",
-      "@vaadin/vaadin-core-shrinkwrap": "19.0.7",
+      "@vaadin/vaadin-core-shrinkwrap": "19.0.8",
       "@vaadin/vaadin-crud": "2.0.1",
       "@vaadin/vaadin-custom-field": "2.0.0",
       "@vaadin/vaadin-date-picker": "5.0.0",
@@ -118,20 +118,20 @@
       "@vaadin/vaadin-radio-button": "1.5.1",
       "@vaadin/vaadin-rich-text-editor": "2.0.0",
       "@vaadin/vaadin-select": "3.0.0",
-      "@vaadin/vaadin-shrinkwrap": "19.0.7",
+      "@vaadin/vaadin-shrinkwrap": "19.0.8",
       "@vaadin/vaadin-split-layout": "4.3.0",
       "@vaadin/vaadin-tabs": "4.0.0",
       "@vaadin/vaadin-text-field": "3.0.2",
       "@vaadin/vaadin-time-picker": "3.0.0",
       "@vaadin/vaadin-upload": "5.0.0",
       "lit-element": "2.5.1",
-      "lit-html": "1.4.1"
+      "lit-html": "1.4.1",
+      "construct-style-sheets-polyfill": "2.4.16"
     },
     "devDependencies": {
       "@types/validator": "13.1.0",
       "chokidar": "^3.5.0",
       "compression-webpack-plugin": "4.0.1",
-      "construct-style-sheets-polyfill": "2.4.16",
       "css-loader": "4.2.1",
       "extra-watch-webpack-plugin": "1.0.3",
       "extract-loader": "5.1.0",
@@ -153,6 +153,6 @@
       "workbox-webpack-plugin": "5.1.4",
       "fork-ts-checker-webpack-plugin": "6.2.1"
     },
-    "hash": "984911f225ed0321fc701964fab61be282199ec9bfebdc83fb69cbb36712e78c"
+    "hash": "131533976edb1dcb734e4d7ba3f45a4ae02d43c88c1603c78924523acc8a984b"
   }
 }
