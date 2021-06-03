@@ -16,7 +16,7 @@ dependencies:
   '@vaadin/vaadin-confirm-dialog': 20.0.0
   '@vaadin/vaadin-context-menu': 20.0.0
   '@vaadin/vaadin-cookie-consent': 20.0.0
-  '@vaadin/vaadin-core-shrinkwrap': 20.0.0
+  '@vaadin/vaadin-core-shrinkwrap': 20.0.1
   '@vaadin/vaadin-crud': 20.0.0
   '@vaadin/vaadin-custom-field': 20.0.0
   '@vaadin/vaadin-date-picker': 20.0.0
@@ -40,7 +40,7 @@ dependencies:
   '@vaadin/vaadin-radio-button': 20.0.0
   '@vaadin/vaadin-rich-text-editor': 20.0.0
   '@vaadin/vaadin-select': 20.0.0
-  '@vaadin/vaadin-shrinkwrap': 20.0.0
+  '@vaadin/vaadin-shrinkwrap': 20.0.1
   '@vaadin/vaadin-split-layout': 20.0.0
   '@vaadin/vaadin-tabs': 20.0.0
   '@vaadin/vaadin-text-field': 20.0.0
@@ -1192,12 +1192,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-L6uV1oM6T6xbwbVx6t3biG5T2VSSB03LxnIrUd9M2pr6RkHVPFHJ37pC5MUwBAEhkGFJif7eks7fdMMSGZTeEQ==
-  /@rollup/plugin-babel/5.3.0_@babel+core@7.14.3+rollup@2.50.5:
+  /@rollup/plugin-babel/5.3.0_@babel+core@7.14.3+rollup@2.50.6:
     dependencies:
       '@babel/core': 7.14.3
       '@babel/helper-module-imports': 7.13.12
-      '@rollup/pluginutils': 3.1.0_rollup@2.50.5
-      rollup: 2.50.5
+      '@rollup/pluginutils': 3.1.0_rollup@2.50.6
+      rollup: 2.50.6
     dev: true
     engines:
       node: '>= 10.0.0'
@@ -1210,15 +1210,15 @@ packages:
         optional: true
     resolution:
       integrity: sha512-9uIC8HZOnVLrLHxayq/PTzw+uS25E14KPUBh5ktF+18Mjo5yK0ToMMx6epY0uEgkjwJw0aBW4x2horYXh8juWw==
-  /@rollup/plugin-node-resolve/11.2.1_rollup@2.50.5:
+  /@rollup/plugin-node-resolve/11.2.1_rollup@2.50.6:
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.50.5
+      '@rollup/pluginutils': 3.1.0_rollup@2.50.6
       '@types/resolve': 1.17.1
       builtin-modules: 3.2.0
       deepmerge: 4.2.2
       is-module: 1.0.0
       resolve: 1.20.0
-      rollup: 2.50.5
+      rollup: 2.50.6
     dev: true
     engines:
       node: '>= 10.0.0'
@@ -1226,22 +1226,22 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-yc2n43jcqVyGE2sqV5/YCmocy9ArjVAP/BeXyTtADTBBX6V0e5UMqwO8CdQ0kzjb6zu5P1qMzsScCMRvE9OlVg==
-  /@rollup/plugin-replace/2.4.2_rollup@2.50.5:
+  /@rollup/plugin-replace/2.4.2_rollup@2.50.6:
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.50.5
+      '@rollup/pluginutils': 3.1.0_rollup@2.50.6
       magic-string: 0.25.7
-      rollup: 2.50.5
+      rollup: 2.50.6
     dev: true
     peerDependencies:
       rollup: ^1.20.0 || ^2.0.0
     resolution:
       integrity: sha512-IGcu+cydlUMZ5En85jxHH4qj2hta/11BHq95iHEyb2sbgiN0eCdzvUcHw5gt9pBL5lTi4JDYJ1acCoMGpTvEZg==
-  /@rollup/pluginutils/3.1.0_rollup@2.50.5:
+  /@rollup/pluginutils/3.1.0_rollup@2.50.6:
     dependencies:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.3.0
-      rollup: 2.50.5
+      rollup: 2.50.6
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -1263,7 +1263,7 @@ packages:
   /@types/glob/7.1.3:
     dependencies:
       '@types/minimatch': 3.0.4
-      '@types/node': 15.6.1
+      '@types/node': 15.9.0
     dev: true
     resolution:
       integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==
@@ -1279,17 +1279,17 @@ packages:
     dev: true
     resolution:
       integrity: sha512-1z8k4wzFnNjVK/tlxvrWuK5WMt6mydWWP7+zvH5eFep4oj+UkrfiJTRtjCeBXNpwaA/FYqqtb4/QS4ianFpIRA==
-  /@types/node/15.6.1:
+  /@types/node/15.9.0:
     dev: true
     resolution:
-      integrity: sha512-7EIraBEyRHEe7CH+Fm1XvgqU6uwZN8Q7jppJGcqjROMT29qhAuuOxYB1uEY5UMYQKEmA5D+5tBnhdaPXSsLONA==
+      integrity: sha512-AR1Vq1Ei1GaA5FjKL5PBqblTZsL5M+monvGSZwe6sSIdGiuu7Xr/pNwWJY+0ZQuN8AapD/XMB5IzBAyYRFbocA==
   /@types/parse-json/4.0.0:
     dev: true
     resolution:
       integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
   /@types/resolve/1.17.1:
     dependencies:
-      '@types/node': 15.6.1
+      '@types/node': 15.9.0
     dev: true
     resolution:
       integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==
@@ -1313,7 +1313,7 @@ packages:
       integrity: sha512-gHUHI6pJaANIO2r6WcbT7+WMgbL9GZooR4tWpuBOETpDIqFNxwaJluE+6rj6VGYe8k6OkfhbHz2Fkm8kl06Igw==
   /@types/webpack-sources/2.1.0:
     dependencies:
-      '@types/node': 15.6.1
+      '@types/node': 15.9.0
       '@types/source-list-map': 0.1.2
       source-map: 0.7.3
     dev: true
@@ -1321,7 +1321,7 @@ packages:
       integrity: sha512-LXn/oYIpBeucgP1EIJbKQ2/4ZmpvRl+dlrFdX7+94SKRUV3Evy3FsfMZY318vGhkWUS5MPhtOM3w1/hCOAOXcg==
   /@types/webpack/4.41.29:
     dependencies:
-      '@types/node': 15.6.1
+      '@types/node': 15.9.0
       '@types/tapable': 1.0.7
       '@types/uglify-js': 3.13.0
       '@types/webpack-sources': 2.1.0
@@ -1478,7 +1478,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-bDr4FgzPCCfXpESa+mQYlmGLSm87bCZ0DPKsEXeHVvqECTaM3mqZxYn+Oh84wVusNQBz7hOx2JxpSzigA3p2ig==
-  /@vaadin/vaadin-core-shrinkwrap/20.0.0:
+  /@vaadin/vaadin-core-shrinkwrap/20.0.1:
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
@@ -1535,7 +1535,7 @@ packages:
       '@webcomponents/shadycss': 1.9.6
     dev: false
     resolution:
-      integrity: sha512-jJgrUsupn1eCeLv+5fdR3PAd8OicMmzJprLl2unQgV6HR2XiyN2XfoaAc0ZwxbqWoYFof74ofSPThHqDsa9i6w==
+      integrity: sha512-0qs6Gpd4J5dtB3l1qJ4wwKy8zMshFCk0+gjqC18NEtiY65Y05hQthlDQq2eHtYtRDTRNK49Z7KDQvE64iHhyTw==
   /@vaadin/vaadin-crud/20.0.0:
     dependencies:
       '@polymer/iron-media-query': 3.0.1
@@ -1853,7 +1853,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-gHZm2Kwh2hvIVRLPTUc3NdmrVTM/LOP3RBBuS5XUtZ5mc+bmIeeUsI9JVsgkGy2l1sTK6zCf1ROoIBhEn9LAIw==
-  /@vaadin/vaadin-shrinkwrap/20.0.0:
+  /@vaadin/vaadin-shrinkwrap/20.0.1:
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
@@ -1917,7 +1917,7 @@ packages:
       '@webcomponents/shadycss': 1.9.6
     dev: false
     resolution:
-      integrity: sha512-9i8qaaI+ckwvawV4sPiXhDDK4yNWpb8gR+Kqg2NF0Ip+0i0LMCLb6xZTUUB0TMf4a/bc/uAAmLXst0g5TjnAww==
+      integrity: sha512-hZzsmZstTgK9KR9JsDvxFAyLIbBq7NfgTcHGAjzkJ7y5qJvG9URfsgfPuufjH1OaU2cQEku3iI+amr3CRV91zQ==
   /@vaadin/vaadin-split-layout/20.0.0:
     dependencies:
       '@polymer/iron-resizable-behavior': 3.0.1
@@ -3004,17 +3004,17 @@ packages:
       integrity: sha512-Z942RysHXmJrhqk88FmKBVq/v5tqmSkDz7p54G/MGyjMnCFFnC79XWNbg+Vta8W6Wb2qtSZTSxIGkJrRpCFEiA==
   /browserslist/3.2.8:
     dependencies:
-      caniuse-lite: 1.0.30001232
-      electron-to-chromium: 1.3.743
+      caniuse-lite: 1.0.30001233
+      electron-to-chromium: 1.3.745
     dev: true
     hasBin: true
     resolution:
       integrity: sha512-WHVocJYavUwVgVViC0ORikPHQquXwVh939TaelZ4WDqpWgTX/FsGhl/+P4qBUAGcRvtOgDgC+xftNWWp2RUTAQ==
   /browserslist/4.16.6:
     dependencies:
-      caniuse-lite: 1.0.30001232
+      caniuse-lite: 1.0.30001233
       colorette: 1.2.2
-      electron-to-chromium: 1.3.743
+      electron-to-chromium: 1.3.745
       escalade: 3.1.1
       node-releases: 1.1.72
     dev: true
@@ -3164,10 +3164,10 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
-  /caniuse-lite/1.0.30001232:
+  /caniuse-lite/1.0.30001233:
     dev: true
     resolution:
-      integrity: sha512-e4Gyp7P8vqC2qV2iHA+cJNf/yqUKOShXQOJHQt81OHxlIZl/j/j3soEA0adAQi8CPUQgvOdDENyQ5kd6a6mNSg==
+      integrity: sha512-BmkbxLfStqiPA7IEzQpIk0UFZFf3A4E6fzjPJ6OR+bFC2L8ES9J8zGA/asoi47p8XDVkev+WJo2I2Nc8c/34Yg==
   /chalk/1.1.3:
     dependencies:
       ansi-styles: 2.2.1
@@ -3843,10 +3843,10 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-7vmuyh5+kuUyJKePhQfRQBhXV5Ce+RnaeeQArKu1EAMpL3WbgMt5WG6uQZpEVvYSSsxMXRKOewtDk9RaTKXRlA==
-  /electron-to-chromium/1.3.743:
+  /electron-to-chromium/1.3.745:
     dev: true
     resolution:
-      integrity: sha512-K2wXfo9iZQzNJNx67+Pld0DRF+9bYinj62gXCdgPhcu1vidwVuLPHQPPFnCdO55njWigXXpfBiT90jGUPbw8Zg==
+      integrity: sha512-ZZCx4CS3kYT3BREYiIXocDqlNPT56KfdTS1Ogo4yvxRriBqiEXCDTLIQZT/zNVtby91xTWMMxW2NBiXh8bpLHw==
   /elliptic/6.5.4:
     dependencies:
       bn.js: 4.12.0
@@ -4168,7 +4168,7 @@ packages:
       babel-preset-env: 1.7.0
       babel-runtime: 6.26.0
       btoa: 1.2.1
-      loader-utils: 1.2.3
+      loader-utils: 1.4.0
       resolve: 1.20.0
     dev: true
     engines:
@@ -4705,7 +4705,7 @@ packages:
       '@types/tapable': 1.0.7
       '@types/webpack': 4.41.29
       html-minifier-terser: 5.1.1
-      loader-utils: 1.2.3
+      loader-utils: 1.4.0
       lodash: 4.17.21
       pretty-error: 2.1.2
       tapable: 1.1.3
@@ -5221,7 +5221,7 @@ packages:
       integrity: sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
   /jest-worker/26.6.2:
     dependencies:
-      '@types/node': 15.6.1
+      '@types/node': 15.9.0
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -5373,6 +5373,16 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-fkpz8ejdnEMG3s37wGL07iSBDg99O9D5yflE9RGNH3hRdx9SOwYfnGYdZOUIZitN8E+E2vkq3MUMYMvPYl5ZZA==
+  /loader-utils/1.4.0:
+    dependencies:
+      big.js: 5.2.2
+      emojis-list: 3.0.0
+      json5: 1.0.1
+    dev: true
+    engines:
+      node: '>=4.0.0'
+    resolution:
+      integrity: sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==
   /loader-utils/2.0.0:
     dependencies:
       big.js: 5.2.2
@@ -6719,11 +6729,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ii4iagi25WusVoiC4B4lq7pbXfAp3D9v5CwfkY33vffw2+pkDjY1D8GaN7spsxvCSx8dkPqOZCEZyfxcmJG2IA==
-  /rollup-plugin-terser/7.0.2_rollup@2.50.5:
+  /rollup-plugin-terser/7.0.2_rollup@2.50.6:
     dependencies:
       '@babel/code-frame': 7.12.13
       jest-worker: 26.6.2
-      rollup: 2.50.5
+      rollup: 2.50.6
       serialize-javascript: 4.0.0
       terser: 5.7.0
     dev: true
@@ -6731,7 +6741,7 @@ packages:
       rollup: ^2.0.0
     resolution:
       integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==
-  /rollup/2.50.5:
+  /rollup/2.50.6:
     dev: true
     engines:
       node: '>=10.0.0'
@@ -6739,7 +6749,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     resolution:
-      integrity: sha512-Ztz4NurU2LbS3Jn5rlhnYv35z6pkjBUmYKr94fOBIKINKRO6kug9NTFHArT7jqwMP2kqEZ39jJuEtkk91NBltQ==
+      integrity: sha512-6c5CJPLVgo0iNaZWWliNu1Kl43tjP9LZcp6D/tkf2eLH2a9/WeHxg9vfTFl8QV/2SOyaJX37CEm9XuGM0rviUg==
   /run-queue/1.0.3:
     dependencies:
       aproba: 1.2.0
@@ -7442,7 +7452,7 @@ packages:
     dependencies:
       chalk: 2.4.2
       enhanced-resolve: 4.5.0
-      loader-utils: 1.2.3
+      loader-utils: 1.4.0
       micromatch: 4.0.4
       semver: 6.3.0
       typescript: 4.2.3
@@ -7843,7 +7853,7 @@ packages:
       eslint-scope: 4.0.3
       json-parse-better-errors: 1.0.2
       loader-runner: 2.4.0
-      loader-utils: 1.2.3
+      loader-utils: 1.4.0
       memory-fs: 0.4.1
       micromatch: 3.1.10
       mkdirp: 0.5.5
@@ -7940,9 +7950,9 @@ packages:
       '@babel/preset-env': 7.14.4_@babel+core@7.14.3
       '@babel/runtime': 7.14.0
       '@hapi/joi': 16.1.8
-      '@rollup/plugin-babel': 5.3.0_@babel+core@7.14.3+rollup@2.50.5
-      '@rollup/plugin-node-resolve': 11.2.1_rollup@2.50.5
-      '@rollup/plugin-replace': 2.4.2_rollup@2.50.5
+      '@rollup/plugin-babel': 5.3.0_@babel+core@7.14.3+rollup@2.50.6
+      '@rollup/plugin-node-resolve': 11.2.1_rollup@2.50.6
+      '@rollup/plugin-replace': 2.4.2_rollup@2.50.6
       '@surma/rollup-plugin-off-main-thread': 1.4.2
       common-tags: 1.8.0
       fast-json-stable-stringify: 2.1.0
@@ -7950,8 +7960,8 @@ packages:
       glob: 7.1.6
       lodash: 4.17.21
       pretty-bytes: 5.6.0
-      rollup: 2.50.5
-      rollup-plugin-terser: 7.0.2_rollup@2.50.5
+      rollup: 2.50.6
+      rollup-plugin-terser: 7.0.2_rollup@2.50.6
       source-map: 0.8.0-beta.0
       source-map-url: 0.4.1
       stringify-object: 3.3.0
@@ -8202,7 +8212,7 @@ specifiers:
   '@vaadin/vaadin-confirm-dialog': 20.0.0
   '@vaadin/vaadin-context-menu': 20.0.0
   '@vaadin/vaadin-cookie-consent': 20.0.0
-  '@vaadin/vaadin-core-shrinkwrap': 20.0.0
+  '@vaadin/vaadin-core-shrinkwrap': 20.0.1
   '@vaadin/vaadin-crud': 20.0.0
   '@vaadin/vaadin-custom-field': 20.0.0
   '@vaadin/vaadin-date-picker': 20.0.0
@@ -8226,7 +8236,7 @@ specifiers:
   '@vaadin/vaadin-radio-button': 20.0.0
   '@vaadin/vaadin-rich-text-editor': 20.0.0
   '@vaadin/vaadin-select': 20.0.0
-  '@vaadin/vaadin-shrinkwrap': 20.0.0
+  '@vaadin/vaadin-shrinkwrap': 20.0.1
   '@vaadin/vaadin-split-layout': 20.0.0
   '@vaadin/vaadin-tabs': 20.0.0
   '@vaadin/vaadin-text-field': 20.0.0
