@@ -1,6 +1,4 @@
 {
-  "license": "UNLICENSED",
-  "name": "no-name",
   "dependencies": {
     "@polymer/iron-icon": "3.0.1",
     "@polymer/iron-list": "3.1.0",
@@ -19,7 +17,7 @@
     "@vaadin/vaadin-confirm-dialog": "20.0.0",
     "@vaadin/vaadin-context-menu": "20.0.0",
     "@vaadin/vaadin-cookie-consent": "20.0.0",
-    "@vaadin/vaadin-core-shrinkwrap": "20.0.1",
+    "@vaadin/vaadin-core-shrinkwrap": "20.0.2",
     "@vaadin/vaadin-crud": "20.0.0",
     "@vaadin/vaadin-custom-field": "20.0.0",
     "@vaadin/vaadin-date-picker": "20.0.0",
@@ -36,31 +34,36 @@
     "@vaadin/vaadin-lumo-styles": "20.0.0",
     "@vaadin/vaadin-material-styles": "20.0.0",
     "@vaadin/vaadin-menu-bar": "20.0.0",
+    "@vaadin/vaadin-messages": "20.0.0",
     "@vaadin/vaadin-notification": "20.0.0",
     "@vaadin/vaadin-ordered-layout": "20.0.0",
     "@vaadin/vaadin-progress-bar": "20.0.0",
     "@vaadin/vaadin-radio-button": "20.0.0",
     "@vaadin/vaadin-rich-text-editor": "20.0.0",
     "@vaadin/vaadin-select": "20.0.0",
-    "@vaadin/vaadin-shrinkwrap": "20.0.1",
+    "@vaadin/vaadin-shrinkwrap": "20.0.2",
     "@vaadin/vaadin-split-layout": "20.0.0",
     "@vaadin/vaadin-tabs": "20.0.0",
     "@vaadin/vaadin-text-field": "20.0.0",
     "@vaadin/vaadin-time-picker": "20.0.0",
     "@vaadin/vaadin-upload": "20.0.0",
+    "construct-style-sheets-polyfill": "2.4.16",
     "lit-element": "2.5.1",
-    "@vaadin/vaadin-messages": "20.0.0",
-    "lit-html": "1.4.1",
-    "construct-style-sheets-polyfill": "2.4.16"
+    "lit-html": "1.4.1"
   },
   "devDependencies": {
     "@types/validator": "13.1.0",
+    "@vaadin/application-theme-plugin": "./target/plugins/application-theme-plugin",
+    "@vaadin/stats-plugin": "./target/plugins/stats-plugin",
+    "@vaadin/theme-live-reload-plugin": "./target/plugins/theme-live-reload-plugin",
+    "@vaadin/theme-loader": "./target/plugins/theme-loader",
     "chokidar": "^3.5.0",
     "compression-webpack-plugin": "4.0.1",
     "css-loader": "4.2.1",
     "extra-watch-webpack-plugin": "1.0.3",
     "extract-loader": "5.1.0",
     "file-loader": "6.2.0",
+    "fork-ts-checker-webpack-plugin": "6.2.1",
     "glob": "7.1.6",
     "html-webpack-plugin": "4.5.1",
     "lit-css-loader": "0.0.4",
@@ -75,13 +78,10 @@
     "webpack-merge": "4.2.2",
     "workbox-core": "6.1.0",
     "workbox-precaching": "6.1.0",
-    "workbox-webpack-plugin": "6.1.0",
-    "fork-ts-checker-webpack-plugin": "6.2.1",
-    "@vaadin/stats-plugin": "./target/plugins/stats-plugin",
-    "@vaadin/application-theme-plugin": "./target/plugins/application-theme-plugin",
-    "@vaadin/theme-loader": "./target/plugins/theme-loader",
-    "@vaadin/theme-live-reload-plugin": "./target/plugins/theme-live-reload-plugin"
+    "workbox-webpack-plugin": "6.1.0"
   },
+  "license": "UNLICENSED",
+  "name": "no-name",
   "vaadin": {
     "dependencies": {
       "@polymer/iron-icon": "3.0.1",
@@ -99,7 +99,7 @@
       "@vaadin/vaadin-confirm-dialog": "20.0.0",
       "@vaadin/vaadin-context-menu": "20.0.0",
       "@vaadin/vaadin-cookie-consent": "20.0.0",
-      "@vaadin/vaadin-core-shrinkwrap": "20.0.1",
+      "@vaadin/vaadin-core-shrinkwrap": "20.0.2",
       "@vaadin/vaadin-crud": "20.0.0",
       "@vaadin/vaadin-custom-field": "20.0.0",
       "@vaadin/vaadin-date-picker": "20.0.0",
@@ -116,22 +116,22 @@
       "@vaadin/vaadin-lumo-styles": "20.0.0",
       "@vaadin/vaadin-material-styles": "20.0.0",
       "@vaadin/vaadin-menu-bar": "20.0.0",
+      "@vaadin/vaadin-messages": "20.0.0",
       "@vaadin/vaadin-notification": "20.0.0",
       "@vaadin/vaadin-ordered-layout": "20.0.0",
       "@vaadin/vaadin-progress-bar": "20.0.0",
       "@vaadin/vaadin-radio-button": "20.0.0",
       "@vaadin/vaadin-rich-text-editor": "20.0.0",
       "@vaadin/vaadin-select": "20.0.0",
-      "@vaadin/vaadin-shrinkwrap": "20.0.1",
+      "@vaadin/vaadin-shrinkwrap": "20.0.2",
       "@vaadin/vaadin-split-layout": "20.0.0",
       "@vaadin/vaadin-tabs": "20.0.0",
       "@vaadin/vaadin-text-field": "20.0.0",
       "@vaadin/vaadin-time-picker": "20.0.0",
       "@vaadin/vaadin-upload": "20.0.0",
+      "construct-style-sheets-polyfill": "2.4.16",
       "lit-element": "2.5.1",
-      "@vaadin/vaadin-messages": "20.0.0",
-      "lit-html": "1.4.1",
-      "construct-style-sheets-polyfill": "2.4.16"
+      "lit-html": "1.4.1"
     },
     "devDependencies": {
       "@types/validator": "13.1.0",
@@ -141,6 +141,7 @@
       "extra-watch-webpack-plugin": "1.0.3",
       "extract-loader": "5.1.0",
       "file-loader": "6.2.0",
+      "fork-ts-checker-webpack-plugin": "6.2.1",
       "glob": "7.1.6",
       "html-webpack-plugin": "4.5.1",
       "lit-css-loader": "0.0.4",
@@ -155,9 +156,8 @@
       "webpack-merge": "4.2.2",
       "workbox-core": "6.1.0",
       "workbox-precaching": "6.1.0",
-      "workbox-webpack-plugin": "6.1.0",
-      "fork-ts-checker-webpack-plugin": "6.2.1"
+      "workbox-webpack-plugin": "6.1.0"
     },
-    "hash": "0c9bef68d73549290058a0e6dacd88b788a1ae3f6669428cc87f905ff90df502"
+    "hash": "b60b5bfd2e64f223f5a97680ba7135324e019009d974e61c5b5d383cb4c4a95f"
   }
 }
