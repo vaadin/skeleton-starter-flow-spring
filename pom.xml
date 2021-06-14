@@ -10,7 +10,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <vaadin.version>21.0.0.alpha4</vaadin.version>
+        <vaadin.version>21.0.0.alpha5</vaadin.version>
     </properties>
 
     <parent>
