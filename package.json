@@ -17,7 +17,7 @@
     "@vaadin/vaadin-confirm-dialog": "21.0.0-alpha13",
     "@vaadin/vaadin-context-menu": "21.0.0-alpha13",
     "@vaadin/vaadin-cookie-consent": "21.0.0-alpha13",
-    "@vaadin/vaadin-core-shrinkwrap": "21.0.0-alpha9",
+    "@vaadin/vaadin-core-shrinkwrap": "21.0.0-alpha10",
     "@vaadin/vaadin-crud": "21.0.0-alpha13",
     "@vaadin/vaadin-custom-field": "21.0.0-alpha13",
     "@vaadin/vaadin-date-picker": "21.0.0-alpha13",
@@ -42,7 +42,7 @@
     "@vaadin/vaadin-radio-button": "21.0.0-alpha13",
     "@vaadin/vaadin-rich-text-editor": "21.0.0-alpha13",
     "@vaadin/vaadin-select": "21.0.0-alpha13",
-    "@vaadin/vaadin-shrinkwrap": "21.0.0-alpha9",
+    "@vaadin/vaadin-shrinkwrap": "21.0.0-alpha10",
     "@vaadin/vaadin-split-layout": "21.0.0-alpha13",
     "@vaadin/vaadin-tabs": "21.0.0-alpha13",
     "@vaadin/vaadin-template-renderer": "21.0.0-alpha13",
@@ -101,7 +101,7 @@
       "@vaadin/vaadin-confirm-dialog": "21.0.0-alpha13",
       "@vaadin/vaadin-context-menu": "21.0.0-alpha13",
       "@vaadin/vaadin-cookie-consent": "21.0.0-alpha13",
-      "@vaadin/vaadin-core-shrinkwrap": "21.0.0-alpha9",
+      "@vaadin/vaadin-core-shrinkwrap": "21.0.0-alpha10",
       "@vaadin/vaadin-crud": "21.0.0-alpha13",
       "@vaadin/vaadin-custom-field": "21.0.0-alpha13",
       "@vaadin/vaadin-date-picker": "21.0.0-alpha13",
@@ -126,7 +126,7 @@
       "@vaadin/vaadin-radio-button": "21.0.0-alpha13",
       "@vaadin/vaadin-rich-text-editor": "21.0.0-alpha13",
       "@vaadin/vaadin-select": "21.0.0-alpha13",
-      "@vaadin/vaadin-shrinkwrap": "21.0.0-alpha9",
+      "@vaadin/vaadin-shrinkwrap": "21.0.0-alpha10",
       "@vaadin/vaadin-split-layout": "21.0.0-alpha13",
       "@vaadin/vaadin-tabs": "21.0.0-alpha13",
       "@vaadin/vaadin-template-renderer": "21.0.0-alpha13",
@@ -162,6 +162,6 @@
       "workbox-precaching": "6.1.0",
       "workbox-webpack-plugin": "6.1.0"
     },
-    "hash": "6c1bb198267266b4c3b939d7ca98f54a6f1a05dcaf9ad420b35d91e84de79d75"
+    "hash": "732bab371dec73c0c97e8b97b815095666d7d1f3c5c61b169d46ba69f09ab1a6"
   }
 }
