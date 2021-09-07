@@ -51,7 +51,6 @@
   "devDependencies": {
     "chokidar": "^3.5.0",
     "compression-webpack-plugin": "4.0.1",
-    "construct-style-sheets-polyfill": "2.4.6",
     "copy-webpack-plugin": "5.1.2",
     "css-loader": "4.2.1",
     "extra-watch-webpack-plugin": "1.0.3",
@@ -122,7 +121,6 @@
     "devDependencies": {
       "chokidar": "^3.5.0",
       "compression-webpack-plugin": "4.0.1",
-      "construct-style-sheets-polyfill": "2.4.6",
       "copy-webpack-plugin": "5.1.2",
       "css-loader": "4.2.1",
       "extra-watch-webpack-plugin": "1.0.3",
@@ -138,6 +136,6 @@
       "webpack-dev-server": "3.11.0",
       "webpack-merge": "4.2.2"
     },
-    "hash": "bde45549399a019f6011496129d95820380ead15bdb459c6e2828c8f99664430"
+    "hash": "27a1998499d2b1aad74edd86d515a27526fbe578e32107cf6c7da3dcd6439ddd"
   }
 }
