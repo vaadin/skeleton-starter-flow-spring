@@ -14,7 +14,7 @@
     "@vaadin/vaadin-confirm-dialog": "1.3.0",
     "@vaadin/vaadin-context-menu": "4.5.0",
     "@vaadin/vaadin-cookie-consent": "1.2.0",
-    "@vaadin/vaadin-core-shrinkwrap": "14.6.8",
+    "@vaadin/vaadin-core-shrinkwrap": "14.6.9",
     "@vaadin/vaadin-crud": "1.3.1",
     "@vaadin/vaadin-custom-field": "1.3.1",
     "@vaadin/vaadin-date-picker": "4.4.1",
@@ -37,7 +37,7 @@
     "@vaadin/vaadin-radio-button": "1.5.2",
     "@vaadin/vaadin-rich-text-editor": "1.3.0",
     "@vaadin/vaadin-select": "2.4.1",
-    "@vaadin/vaadin-shrinkwrap": "14.6.8",
+    "@vaadin/vaadin-shrinkwrap": "14.6.9",
     "@vaadin/vaadin-split-layout": "4.3.0",
     "@vaadin/vaadin-tabs": "3.2.0",
     "@vaadin/vaadin-text-field": "2.8.5",
@@ -49,6 +49,7 @@
     "lit-html": "1.4.1"
   },
   "devDependencies": {
+    "babel-loader": "8.2.2",
     "chokidar": "^3.5.0",
     "compression-webpack-plugin": "4.0.1",
     "copy-webpack-plugin": "5.1.2",
@@ -84,7 +85,7 @@
       "@vaadin/vaadin-confirm-dialog": "1.3.0",
       "@vaadin/vaadin-context-menu": "4.5.0",
       "@vaadin/vaadin-cookie-consent": "1.2.0",
-      "@vaadin/vaadin-core-shrinkwrap": "14.6.8",
+      "@vaadin/vaadin-core-shrinkwrap": "14.6.9",
       "@vaadin/vaadin-crud": "1.3.1",
       "@vaadin/vaadin-custom-field": "1.3.1",
       "@vaadin/vaadin-date-picker": "4.4.1",
@@ -107,7 +108,7 @@
       "@vaadin/vaadin-radio-button": "1.5.2",
       "@vaadin/vaadin-rich-text-editor": "1.3.0",
       "@vaadin/vaadin-select": "2.4.1",
-      "@vaadin/vaadin-shrinkwrap": "14.6.8",
+      "@vaadin/vaadin-shrinkwrap": "14.6.9",
       "@vaadin/vaadin-split-layout": "4.3.0",
       "@vaadin/vaadin-tabs": "3.2.0",
       "@vaadin/vaadin-text-field": "2.8.5",
@@ -119,6 +120,7 @@
       "lit-html": "1.4.1"
     },
     "devDependencies": {
+      "babel-loader": "8.2.2",
       "chokidar": "^3.5.0",
       "compression-webpack-plugin": "4.0.1",
       "copy-webpack-plugin": "5.1.2",
@@ -136,6 +138,6 @@
       "webpack-dev-server": "3.11.0",
       "webpack-merge": "4.2.2"
     },
-    "hash": "27a1998499d2b1aad74edd86d515a27526fbe578e32107cf6c7da3dcd6439ddd"
+    "hash": "3fbf6634ac64536b210bb22a5271557763e077fa6af7ecc7f825becd3fecb82f"
   }
 }
