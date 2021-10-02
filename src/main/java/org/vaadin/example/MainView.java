@@ -5,7 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
+import com.vaadin.flow.component.charts.model.Navigator;
 import com.vaadin.flow.component.dependency.CssImport;
+import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
@@ -28,6 +30,7 @@ import com.vaadin.flow.router.Route;
 @CssImport(value = "./styles/vaadin-text-field-styles.css", themeFor = "vaadin-text-field")
 public class MainView extends VerticalLayout {
 
+   
     /**
      * Construct a new Vaadin view.
      * <p>
@@ -37,7 +40,8 @@ public class MainView extends VerticalLayout {
      *            The message service. Automatically injected Spring managed
      *            bean.
      */
-    public MainView(@Autowired GreetService service) {
+   
+    public MainView(@Autowired GreetService service, @Autowired MasterDetailView masterDetailView) {
 
         // Use TextField for standard text input
         TextField textField = new TextField("Your name");
@@ -60,6 +64,11 @@ public class MainView extends VerticalLayout {
         addClassName("centered-content");
 
         add(textField, button);
+        //MasterDetailView masterDetailView = new MasterDetailView(null);
+        //add( masterDetailView  );
+    
+        add(masterDetailView);
+    
     }
 
 }
