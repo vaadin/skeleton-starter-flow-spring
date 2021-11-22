@@ -52,7 +52,7 @@ dependencies:
   construct-style-sheets-polyfill: 3.0.4
   lit: 2.0.0
 devDependencies:
-  '@types/validator': 13.1.0
+  '@types/validator': 13.7.0
   '@vaadin/application-theme-plugin': link:target/plugins/application-theme-plugin
   '@vaadin/stats-plugin': link:target/plugins/stats-plugin
   '@vaadin/theme-live-reload-plugin': link:target/plugins/theme-live-reload-plugin
@@ -70,7 +70,7 @@ devDependencies:
   loader-utils: 2.0.0
   ts-loader: 8.0.12_typescript@4.3.3+webpack@4.46.0
   typescript: 4.3.3
-  validator: 13.1.17
+  validator: 13.7.0
   webpack: 4.46.0_webpack-cli@3.3.12
   webpack-cli: 3.3.12_webpack@4.46.0
   webpack-dev-server: 3.11.0_46edf965869dcc7c8d09e022f331d1ea
@@ -1478,10 +1478,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-O3MmRAk6ZuAKa9CHgg0Pr0+lUOqoMLpc9AS4R8ano2auvsg7IE8syF3Xh/NPr26TWklxYcqoEEFdzLLs1fV9PQ==
-  /@types/validator/13.1.0:
+  /@types/validator/13.7.0:
     dev: true
     resolution:
-      integrity: sha512-gHUHI6pJaANIO2r6WcbT7+WMgbL9GZooR4tWpuBOETpDIqFNxwaJluE+6rj6VGYe8k6OkfhbHz2Fkm8kl06Igw==
+      integrity: sha512-+jBxVvXVuggZOrm04NR8z+5+bgoW4VZyLzUO+hmPPW1mVFL/HaitLAkizfv4yg9TbG8lkfHWVMQ11yDqrVVCzA==
   /@types/webpack-sources/3.2.0:
     dependencies:
       '@types/node': 16.11.7
@@ -4382,7 +4382,7 @@ packages:
       integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==
   /faye-websocket/0.10.0:
     dependencies:
-      websocket-driver: 0.6.5
+      websocket-driver: 0.7.4
     dev: true
     engines:
       node: '>=0.4.0'
@@ -5681,12 +5681,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
-  /loglevel/1.7.1:
+  /loglevel/1.8.0:
     dev: true
     engines:
       node: '>= 0.6.0'
     resolution:
-      integrity: sha512-Hesni4s5UkWkwCGJMQGAh71PaLUmKFM60dHvq0zi/vDhhrzuk+4GgNbTXJ12YYQJn6ZKBDNIjYcuQGKudvqrIw==
+      integrity: sha512-G6A/nJLRgWOuuwdNuA6koovfEV1YpqqAG4pRUlFaz3jj2QNZ8M4vBqnVA+HBTmU/AMNUtlOsMmSpF6NyOjztbA==
   /loose-envify/1.4.0:
     dependencies:
       js-tokens: 4.0.0
@@ -6657,7 +6657,6 @@ packages:
     resolution:
       integrity: sha1-nsYfeQSYdXB9aUFFlv2Qek1xHnM=
   /querystring/0.2.0:
-    deprecated: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
     dev: true
     engines:
       node: '>=0.4.x'
@@ -7898,12 +7897,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
-  /validator/13.1.17:
+  /validator/13.7.0:
     dev: true
     engines:
       node: '>= 0.10'
     resolution:
-      integrity: sha512-zL5QBoemJ3jYFb2/j38y7ljhwYGXVLUp8H6W1nVxadnAOvUOytec+L7BHh1oBQ82/TzWXHd+GSaxUWp4lROkLg==
+      integrity: sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==
   /vary/1.1.2:
     dev: true
     engines:
@@ -7995,7 +7994,7 @@ packages:
       ip: 1.1.5
       is-absolute-url: 3.0.3
       killable: 1.0.1
-      loglevel: 1.7.1
+      loglevel: 1.8.0
       opn: 5.5.0
       p-retry: 3.0.1
       portfinder: 1.0.28
@@ -8412,7 +8411,7 @@ specifiers:
   '@polymer/iron-icon': 3.0.1
   '@polymer/iron-list': 3.1.0
   '@polymer/polymer': 3.2.0
-  '@types/validator': 13.1.0
+  '@types/validator': 13.7.0
   '@vaadin/application-theme-plugin': ./target/plugins/application-theme-plugin
   '@vaadin/flow-frontend': ./target/flow-frontend
   '@vaadin/form': ./target/flow-frontend/form
@@ -8479,7 +8478,7 @@ specifiers:
   loader-utils: 2.0.0
   ts-loader: 8.0.12
   typescript: 4.3.3
-  validator: 13.1.17
+  validator: 13.7.0
   webpack: 4.46.0
   webpack-cli: 3.3.12
   webpack-dev-server: 3.11.0
