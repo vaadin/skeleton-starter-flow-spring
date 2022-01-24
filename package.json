@@ -67,7 +67,7 @@
     "@vaadin/vaadin-confirm-dialog": "22.0.3",
     "@vaadin/vaadin-context-menu": "22.0.3",
     "@vaadin/vaadin-cookie-consent": "22.0.3",
-    "@vaadin/vaadin-core-shrinkwrap": "22.0.3",
+    "@vaadin/vaadin-core-shrinkwrap": "22.0.4",
     "@vaadin/vaadin-crud": "22.0.3",
     "@vaadin/vaadin-custom-field": "22.0.3",
     "@vaadin/vaadin-date-picker": "22.0.3",
@@ -92,7 +92,7 @@
     "@vaadin/vaadin-radio-button": "22.0.3",
     "@vaadin/vaadin-rich-text-editor": "22.0.3",
     "@vaadin/vaadin-select": "22.0.3",
-    "@vaadin/vaadin-shrinkwrap": "22.0.3",
+    "@vaadin/vaadin-shrinkwrap": "22.0.4",
     "@vaadin/vaadin-split-layout": "22.0.3",
     "@vaadin/vaadin-tabs": "22.0.3",
     "@vaadin/vaadin-text-field": "22.0.3",
@@ -107,6 +107,7 @@
     "lit": "2.0.0"
   },
   "devDependencies": {
+    "@babel/core": "7.16.7",
     "@vaadin/application-theme-plugin": "./target/plugins/application-theme-plugin",
     "@vaadin/build-status-plugin": "./target/plugins/build-status-plugin",
     "@vaadin/theme-live-reload-plugin": "./target/plugins/theme-live-reload-plugin",
@@ -202,7 +203,7 @@
       "@vaadin/vaadin-confirm-dialog": "22.0.3",
       "@vaadin/vaadin-context-menu": "22.0.3",
       "@vaadin/vaadin-cookie-consent": "22.0.3",
-      "@vaadin/vaadin-core-shrinkwrap": "22.0.3",
+      "@vaadin/vaadin-core-shrinkwrap": "22.0.4",
       "@vaadin/vaadin-crud": "22.0.3",
       "@vaadin/vaadin-custom-field": "22.0.3",
       "@vaadin/vaadin-date-picker": "22.0.3",
@@ -227,7 +228,7 @@
       "@vaadin/vaadin-radio-button": "22.0.3",
       "@vaadin/vaadin-rich-text-editor": "22.0.3",
       "@vaadin/vaadin-select": "22.0.3",
-      "@vaadin/vaadin-shrinkwrap": "22.0.3",
+      "@vaadin/vaadin-shrinkwrap": "22.0.4",
       "@vaadin/vaadin-split-layout": "22.0.3",
       "@vaadin/vaadin-tabs": "22.0.3",
       "@vaadin/vaadin-text-field": "22.0.3",
@@ -242,6 +243,7 @@
       "lit": "2.0.0"
     },
     "devDependencies": {
+      "@babel/core": "7.16.7",
       "chokidar": "^3.5.0",
       "compression-webpack-plugin": "4.0.1",
       "css-loader": "4.2.1",
@@ -263,6 +265,6 @@
       "workbox-precaching": "6.4.2",
       "workbox-webpack-plugin": "6.4.2"
     },
-    "hash": "40673d215287b672610f0e4837bffee57c1d4fa4c783d74a41bf05623b719259"
+    "hash": "2f10f8a5739a66261011be17271b2bfcaf1a026fb472f5aaafc3795fbb9d0994"
   }
 }
