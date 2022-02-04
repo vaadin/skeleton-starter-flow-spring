@@ -76,7 +76,7 @@
     "@vaadin/vaadin-confirm-dialog": "23.0.0-beta1",
     "@vaadin/vaadin-context-menu": "23.0.0-beta1",
     "@vaadin/vaadin-cookie-consent": "23.0.0-beta1",
-    "@vaadin/vaadin-core-shrinkwrap": "23.0.0-alpha4",
+    "@vaadin/vaadin-core-shrinkwrap": "23.0.0-beta1",
     "@vaadin/vaadin-crud": "23.0.0-beta1",
     "@vaadin/vaadin-custom-field": "23.0.0-beta1",
     "@vaadin/vaadin-date-picker": "23.0.0-beta1",
@@ -104,7 +104,7 @@
     "@vaadin/vaadin-radio-button": "23.0.0-beta1",
     "@vaadin/vaadin-rich-text-editor": "23.0.0-beta1",
     "@vaadin/vaadin-select": "23.0.0-beta1",
-    "@vaadin/vaadin-shrinkwrap": "23.0.0-alpha4",
+    "@vaadin/vaadin-shrinkwrap": "23.0.0-beta1",
     "@vaadin/vaadin-split-layout": "23.0.0-beta1",
     "@vaadin/vaadin-tabs": "23.0.0-beta1",
     "@vaadin/vaadin-template-renderer": "23.0.0-beta1",
@@ -128,7 +128,7 @@
     "@vaadin/theme-loader": "./target/plugins/theme-loader",
     "chokidar": "^3.5.0",
     "compression-webpack-plugin": "4.0.1",
-    "css-loader": "4.2.1",
+    "css-loader": "5.2.7",
     "esbuild-loader": "2.15.1",
     "extra-watch-webpack-plugin": "1.0.3",
     "extract-loader": "5.1.0",
@@ -222,7 +222,7 @@
       "@vaadin/vaadin-confirm-dialog": "23.0.0-beta1",
       "@vaadin/vaadin-context-menu": "23.0.0-beta1",
       "@vaadin/vaadin-cookie-consent": "23.0.0-beta1",
-      "@vaadin/vaadin-core-shrinkwrap": "23.0.0-alpha4",
+      "@vaadin/vaadin-core-shrinkwrap": "23.0.0-beta1",
       "@vaadin/vaadin-crud": "23.0.0-beta1",
       "@vaadin/vaadin-custom-field": "23.0.0-beta1",
       "@vaadin/vaadin-date-picker": "23.0.0-beta1",
@@ -250,7 +250,7 @@
       "@vaadin/vaadin-radio-button": "23.0.0-beta1",
       "@vaadin/vaadin-rich-text-editor": "23.0.0-beta1",
       "@vaadin/vaadin-select": "23.0.0-beta1",
-      "@vaadin/vaadin-shrinkwrap": "23.0.0-alpha4",
+      "@vaadin/vaadin-shrinkwrap": "23.0.0-beta1",
       "@vaadin/vaadin-split-layout": "23.0.0-beta1",
       "@vaadin/vaadin-tabs": "23.0.0-beta1",
       "@vaadin/vaadin-template-renderer": "23.0.0-beta1",
@@ -270,7 +270,7 @@
     "devDependencies": {
       "chokidar": "^3.5.0",
       "compression-webpack-plugin": "4.0.1",
-      "css-loader": "4.2.1",
+      "css-loader": "5.2.7",
       "esbuild-loader": "2.15.1",
       "extra-watch-webpack-plugin": "1.0.3",
       "extract-loader": "5.1.0",
@@ -289,7 +289,7 @@
       "workbox-precaching": "6.4.2",
       "workbox-webpack-plugin": "6.4.2"
     },
-    "hash": "c320cff002c600899669b711305c423ee51b2370929cfb381264269e7366aa9e"
+    "hash": "ed4319d819010331f4d13d60ba033018c33690f3b45f5fa375502a851c9b0816"
   },
   "overrides": {
     "@vaadin/accordion": "$@vaadin/accordion",
