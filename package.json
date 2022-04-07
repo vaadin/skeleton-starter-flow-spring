@@ -114,7 +114,7 @@
     "@vaadin/vaadin-virtual-list": "23.0.4",
     "@vaadin/vertical-layout": "23.0.4",
     "@vaadin/virtual-list": "23.0.4",
-    "construct-style-sheets-polyfill": "3.0.4",
+    "construct-style-sheets-polyfill": "3.1.0",
     "date-fns": "2.23.0",
     "lit": "2.1.4"
   },
