@@ -77,7 +77,7 @@
     "@vaadin/vaadin-confirm-dialog": "22.0.12",
     "@vaadin/vaadin-context-menu": "22.0.12",
     "@vaadin/vaadin-cookie-consent": "22.0.12",
-    "@vaadin/vaadin-core-shrinkwrap": "22.0.13",
+    "@vaadin/vaadin-core-shrinkwrap": "22.0.14",
     "@vaadin/vaadin-crud": "22.0.12",
     "@vaadin/vaadin-custom-field": "22.0.12",
     "@vaadin/vaadin-date-picker": "22.0.12",
@@ -105,7 +105,7 @@
     "@vaadin/vaadin-radio-button": "22.0.12",
     "@vaadin/vaadin-rich-text-editor": "22.0.12",
     "@vaadin/vaadin-select": "22.0.12",
-    "@vaadin/vaadin-shrinkwrap": "22.0.13",
+    "@vaadin/vaadin-shrinkwrap": "22.0.14",
     "@vaadin/vaadin-split-layout": "22.0.12",
     "@vaadin/vaadin-tabs": "22.0.12",
     "@vaadin/vaadin-template-renderer": "22.0.12",
@@ -119,7 +119,7 @@
     "@vaadin/virtual-list": "22.0.12",
     "@webcomponents/shadycss": "1.9.6",
     "construct-style-sheets-polyfill": "3.0.4",
-    "date-fns": "2.23.0",
+    "date-fns": "2.28.0",
     "lit": "2.0.0"
   },
   "devDependencies": {
@@ -141,8 +141,8 @@
     "loader-utils": "2.0.0",
     "typescript": "4.4.3",
     "webpack": "4.46.0",
-    "webpack-cli": "4.9.0",
-    "webpack-dev-server": "4.1.1",
+    "webpack-cli": "4.9.2",
+    "webpack-dev-server": "4.8.1",
     "webpack-merge": "4.2.2",
     "workbox-core": "6.4.2",
     "workbox-precaching": "6.4.2",
@@ -224,7 +224,7 @@
       "@vaadin/vaadin-confirm-dialog": "22.0.12",
       "@vaadin/vaadin-context-menu": "22.0.12",
       "@vaadin/vaadin-cookie-consent": "22.0.12",
-      "@vaadin/vaadin-core-shrinkwrap": "22.0.13",
+      "@vaadin/vaadin-core-shrinkwrap": "22.0.14",
       "@vaadin/vaadin-crud": "22.0.12",
       "@vaadin/vaadin-custom-field": "22.0.12",
       "@vaadin/vaadin-date-picker": "22.0.12",
@@ -252,7 +252,7 @@
       "@vaadin/vaadin-radio-button": "22.0.12",
       "@vaadin/vaadin-rich-text-editor": "22.0.12",
       "@vaadin/vaadin-select": "22.0.12",
-      "@vaadin/vaadin-shrinkwrap": "22.0.13",
+      "@vaadin/vaadin-shrinkwrap": "22.0.14",
       "@vaadin/vaadin-split-layout": "22.0.12",
       "@vaadin/vaadin-tabs": "22.0.12",
       "@vaadin/vaadin-template-renderer": "22.0.12",
@@ -266,7 +266,7 @@
       "@vaadin/virtual-list": "22.0.12",
       "@webcomponents/shadycss": "1.9.6",
       "construct-style-sheets-polyfill": "3.0.4",
-      "date-fns": "2.23.0",
+      "date-fns": "2.28.0",
       "lit": "2.0.0"
     },
     "devDependencies": {
@@ -284,13 +284,13 @@
       "loader-utils": "2.0.0",
       "typescript": "4.4.3",
       "webpack": "4.46.0",
-      "webpack-cli": "4.9.0",
-      "webpack-dev-server": "4.1.1",
+      "webpack-cli": "4.9.2",
+      "webpack-dev-server": "4.8.1",
       "webpack-merge": "4.2.2",
       "workbox-core": "6.4.2",
       "workbox-precaching": "6.4.2",
       "workbox-webpack-plugin": "6.4.2"
     },
-    "hash": "77b45dd5efb28fe9f944104ba3e794b11f39400fbff9288ff3acf02dde715bad"
+    "hash": "bdea64c9dabb26b2ac43efcf215f6758aaff13acb644a42c219dc71cba64c046"
   }
 }
