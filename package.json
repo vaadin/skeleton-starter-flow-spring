@@ -32,7 +32,7 @@
     "@vaadin/dialog": "23.0.6",
     "@vaadin/email-field": "23.0.6",
     "@vaadin/field-base": "23.0.6",
-    "@vaadin/field-highlighter": "23.0.2",
+    "@vaadin/field-highlighter": "23.0.5",
     "@vaadin/flow-frontend": "./target/flow-frontend",
     "@vaadin/form-layout": "23.0.6",
     "@vaadin/grid": "23.0.6",
