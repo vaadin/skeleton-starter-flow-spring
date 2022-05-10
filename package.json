@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@babel/core": "^7.17.10",
     "@polymer/iron-a11y-announcer": "3.0.2",
     "@polymer/iron-a11y-keys-behavior": "3.0.1",
     "@polymer/iron-fit-behavior": "3.0.2",
@@ -65,7 +66,8 @@
     "@webcomponents/webcomponentsjs": "^2.2.10",
     "construct-style-sheets-polyfill": "3.0.4",
     "lit-element": "2.5.1",
-    "lit-html": "1.4.1"
+    "lit-html": "1.4.1",
+    "terser": "^5.13.1"
   },
   "devDependencies": {
     "babel-loader": "8.2.2",
