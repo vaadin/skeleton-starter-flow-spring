@@ -12,6 +12,7 @@
     <properties>
         <java.version>11</java.version>
         <vaadin.version>23.2-SNAPSHOT</vaadin.version>
+        <flow.version>2.7.15</flow.version>
         <selenium.version>4.1.2</selenium.version>
     </properties>
 
@@ -122,6 +123,12 @@
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.1.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>flow-test-util</artifactId>
+            <version>${flow.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

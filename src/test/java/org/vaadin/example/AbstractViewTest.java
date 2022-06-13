@@ -1,9 +1,9 @@
 package org.vaadin.example;
 
+import com.vaadin.flow.testutil.TestBenchHelpers;
 import com.vaadin.flow.theme.AbstractTheme;
 import com.vaadin.testbench.ScreenshotOnFailureRule;
 import com.vaadin.testbench.TestBench;
-import com.vaadin.testbench.parallel.ParallelTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.junit.Before;
@@ -27,7 +27,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * To learn more about TestBench, visit
  * <a href="https://vaadin.com/docs/v10/testbench/testbench-overview.html">Vaadin TestBench</a>.
  */
-public abstract class AbstractViewTest extends ParallelTest {
+public abstract class AbstractViewTest extends TestBenchHelpers {
     private static final int SERVER_PORT = 8080;
 
     private final String route;
@@ -59,6 +59,7 @@ public abstract class AbstractViewTest extends ParallelTest {
             setDriver(TestBench.createDriver(new ChromeDriver()));
         }
         getDriver().get(getURL(route));
+        waitForDevServer();
     }
 
     /**
