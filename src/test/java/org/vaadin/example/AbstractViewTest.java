@@ -1,10 +1,5 @@
 package org.vaadin.example;
 
-import com.vaadin.flow.theme.AbstractTheme;
-import com.vaadin.testbench.ScreenshotOnFailureRule;
-import com.vaadin.testbench.TestBench;
-import com.vaadin.testbench.parallel.ParallelTest;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -12,6 +7,14 @@ import org.junit.Rule;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import com.vaadin.flow.theme.AbstractTheme;
+import com.vaadin.testbench.ScreenshotOnFailureRule;
+import com.vaadin.testbench.TestBench;
+import com.vaadin.testbench.parallel.ParallelTest;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
  * Base class for TestBench IntegrationTests on chrome.
@@ -56,7 +59,9 @@ public abstract class AbstractViewTest extends ParallelTest {
         if (isUsingHub()) {
             super.setup();
         } else {
-            setDriver(TestBench.createDriver(new ChromeDriver()));
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.setHeadless(Boolean.getBoolean("headless"));
+            setDriver(TestBench.createDriver(new ChromeDriver(chromeOptions)));
         }
         getDriver().get(getURL(route));
     }
