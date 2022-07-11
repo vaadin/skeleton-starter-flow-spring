@@ -7,7 +7,7 @@
     "@polymer/iron-list": "3.1.0",
     "@polymer/iron-meta": "3.0.1",
     "@polymer/iron-resizable-behavior": "3.0.1",
-    "@polymer/polymer": "3.4.1",
+    "@polymer/polymer": "3.5.1",
     "@vaadin/accordion": "23.1.2",
     "@vaadin/app-layout": "23.1.2",
     "@vaadin/avatar": "23.1.2",
@@ -117,7 +117,7 @@
     "@vaadin/virtual-list": "23.1.2",
     "construct-style-sheets-polyfill": "3.1.0",
     "date-fns": "2.28.0",
-    "lit": "2.2.3"
+    "lit": "2.2.6"
   },
   "devDependencies": {
     "async": "3.2.2",
