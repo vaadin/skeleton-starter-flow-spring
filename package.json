@@ -117,7 +117,7 @@
     "@vaadin/virtual-list": "23.1.5",
     "construct-style-sheets-polyfill": "3.1.0",
     "date-fns": "2.28.0",
-    "lit": "2.2.6"
+    "lit": "2.2.8"
   },
   "devDependencies": {
     "async": "3.2.2",
