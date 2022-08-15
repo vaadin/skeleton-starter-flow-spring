@@ -118,7 +118,7 @@
     "@vaadin/virtual-list": "23.2.0-alpha5",
     "construct-style-sheets-polyfill": "3.1.0",
     "date-fns": "2.28.0",
-    "lit": "2.2.6",
+    "lit": "2.3.0",
     "proj4": "2.8.0"
   },
   "devDependencies": {
@@ -142,7 +142,14 @@
     "webpack-merge": "4.2.2",
     "workbox-core": "6.5.0",
     "workbox-precaching": "6.5.0",
-    "workbox-webpack-plugin": "6.5.0"
+    "workbox-webpack-plugin": "6.5.0",
+    "rollup-plugin-postcss-lit": "2.0.0",
+    "mkdirp": "1.0.4",
+    "vite": "v3.0.4",
+    "rollup-plugin-brotli": "3.1.0",
+    "workbox-build": "6.5.0",
+    "vite-plugin-checker": "0.4.9",
+    "@rollup/plugin-replace": "3.1.0"
   },
   "vaadin": {
     "dependencies": {
@@ -261,7 +268,7 @@
       "@vaadin/virtual-list": "23.2.0-alpha5",
       "construct-style-sheets-polyfill": "3.1.0",
       "date-fns": "2.28.0",
-      "lit": "2.2.6",
+      "lit": "2.3.0",
       "proj4": "2.8.0"
     },
     "devDependencies": {
@@ -285,7 +292,14 @@
       "webpack-merge": "4.2.2",
       "workbox-core": "6.5.0",
       "workbox-precaching": "6.5.0",
-      "workbox-webpack-plugin": "6.5.0"
+      "workbox-webpack-plugin": "6.5.0",
+      "rollup-plugin-postcss-lit": "2.0.0",
+      "mkdirp": "1.0.4",
+      "vite": "v3.0.4",
+      "rollup-plugin-brotli": "3.1.0",
+      "workbox-build": "6.5.0",
+      "vite-plugin-checker": "0.4.9",
+      "@rollup/plugin-replace": "3.1.0"
     },
     "hash": "c5c4f15938e74fd9eaf8dc8cb1b428a9e1020ccf62dbdd5305f0a081468c5b31"
   },
