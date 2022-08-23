@@ -250,7 +250,10 @@
     "@vaadin/common-frontend": "$@vaadin/common-frontend",
     "construct-style-sheets-polyfill": "$construct-style-sheets-polyfill",
     "lit": "$lit",
-    "@polymer/polymer": "$@polymer/polymer"
+    "@polymer/polymer": "$@polymer/polymer",
+    "@vaadin/multi-select-combo-box": "$@vaadin/multi-select-combo-box",
+    "date-fns": "$date-fns",
+    "proj4": "$proj4"
   },
   "vaadin": {
     "dependencies": {

@@ -12,7 +12,7 @@
     <properties>
         <java.version>11</java.version>
         <vaadin.version>23.2.0.beta2</vaadin.version>
-        <flow.version>23.2.jakarta-servlet5-SNAPSHOT</flow.version>
+        <flow.version>24.0.0.alpha1</flow.version>
         <selenium.version>4.4.0</selenium.version>
     </properties>
 
