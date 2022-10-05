@@ -12,6 +12,7 @@
     <properties>
         <java.version>11</java.version>
         <vaadin.version>23.2.3</vaadin.version>
+        <!-- this parameter is needed as spring-boot bom overwrites it -->
         <selenium.version>4.4.0</selenium.version>
     </properties>
 
