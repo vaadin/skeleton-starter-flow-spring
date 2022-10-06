@@ -14,6 +14,8 @@
         <vaadin.version>23.2.3</vaadin.version>
         <!-- this parameter is needed as spring-boot bom overwrites it -->
         <selenium.version>4.4.0</selenium.version>
+        <!-- selenium is so much verbose -->
+        <maven.test.redirectTestOutputToFile>true</maven.test.redirectTestOutputToFile>        
     </properties>
 
     <parent>
@@ -228,8 +230,6 @@
                         <configuration>
                             <trimStackTrace>false</trimStackTrace>
                             <enableAssertions>true</enableAssertions>
-                            <!-- selenium is so much verbose -->
-                            <redirectTestOutputToFile>true</redirectTestOutputToFile>
                         </configuration>
                     </plugin>
                 </plugins>
