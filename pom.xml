@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -11,15 +11,14 @@
 
     <properties>
         <java.version>17</java.version>
-        <vaadin.version>24.0-SNAPSHOT</vaadin.version>
-        <flow.version>24.0.0.alpha4</flow.version>
-        <selenium.version>4.4.0</selenium.version>
+        <vaadin.version>24.0.0.alpha2</vaadin.version>
+        <selenium.version>4.5.0</selenium.version>
     </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.0-M5</version>
+        <version>3.0.0-RC1</version>
     </parent>
 
     <repositories>
@@ -81,13 +80,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>com.vaadin</groupId>
-                <artifactId>flow-bom</artifactId>
-                <version>${flow.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
             <dependency>
                 <groupId>com.vaadin</groupId>
                 <artifactId>vaadin-bom</artifactId>
