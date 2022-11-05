@@ -14,8 +14,6 @@
         <vaadin.version>23.2.6</vaadin.version>
         <!-- this parameter is needed as spring-boot bom overwrites it -->
         <selenium.version>4.5.3</selenium.version>
-        <!-- selenium is so much verbose -->
-        <maven.test.redirectTestOutputToFile>true</maven.test.redirectTestOutputToFile>        
     </properties>
 
     <parent>
