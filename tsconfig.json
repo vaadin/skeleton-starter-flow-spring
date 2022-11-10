@@ -5,12 +5,15 @@
 // For more information about the configurations, please refer to http://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
+    "jsx": "react-jsx",
     "inlineSources": true,
     "module": "esNext",
     "target": "es2020",
-    "moduleResolution": "node",
+    "moduleResolution": "node16",
     "strict": true,
+    "skipLibCheck": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noImplicitAny": true,
@@ -18,16 +21,14 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "experimentalDecorators": true,
+    "importsNotUsedAsValues": "error",
     "baseUrl": "frontend",
     "paths": {
-      "Frontend/*": [
-        "*"
-      ]
+      "Frontend/*": ["*"]
     }
   },
   "include": [
-    "frontend/**/*.ts",
-    "frontend/index.js",
+    "frontend/**/*",
     "types.d.ts"
   ],
   "exclude": []
