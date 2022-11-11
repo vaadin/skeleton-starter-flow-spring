@@ -11,6 +11,7 @@
     "target": "es2020",
     "moduleResolution": "node",
     "strict": true,
+    "skipLibCheck": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noImplicitAny": true,
@@ -18,11 +19,12 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "experimentalDecorators": true,
+    "useDefineForClassFields": false,
     "baseUrl": "frontend",
     "paths": {
-      "Frontend/*": [
-        "*"
-      ]
+      "@vaadin/flow-frontend": ["generated/jar-resources"],
+      "@vaadin/flow-frontend/*": ["generated/jar-resources/*"],
+      "Frontend/*": ["*"]
     }
   },
   "include": [
