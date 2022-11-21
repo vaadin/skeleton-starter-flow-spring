@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3943c717-e2a4-4e03-94ad-4725c2583842" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/frontend/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="fix-import" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-skeleton" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.vaadin.example.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
