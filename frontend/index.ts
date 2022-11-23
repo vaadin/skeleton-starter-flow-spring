@@ -1,4 +1,4 @@
-import {Flow} from 'Frontend/generated/jar-resources/Flow';
+import {Flow} from '@vaadin/flow-frontend/Flow';
 import {Router} from '@vaadin/router';
 
 const {serverSideRoutes} = new Flow({
