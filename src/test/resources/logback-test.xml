@@ -3,10 +3,7 @@
 	<include resource="org/springframework/boot/logging/logback/defaults.xml"/>
 	<include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
 
-	<root level="DEBUG">
+	<root level="INFO">
 		<appender-ref ref="CONSOLE"/>
 	</root>
-	<logger name="io.github.bonigarcia" level="INFO"></logger>
-	<logger name="io.netty" level="INFO"></logger>
-	<logger name="org.asynchttpclient" level="INFO"></logger>
 </configuration>
