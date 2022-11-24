@@ -11,14 +11,14 @@
 
     <properties>
         <java.version>17</java.version>
-        <vaadin.version>24.0.0.alpha4</vaadin.version>
+        <vaadin.version>24.0.0.alpha5</vaadin.version>
         <selenium.version>4.6.0</selenium.version>
     </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.0-RC2</version>
+        <version>3.0.0</version>
     </parent>
 
     <repositories>
@@ -46,10 +46,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <repository>
-            <id>spring milestones</id>
-            <url>https://repo.spring.io/milestone</url>
-        </repository>
     </repositories>
 
     <pluginRepositories>
@@ -66,11 +62,6 @@
             <url>
                 https://maven.vaadin.com/vaadin-prereleases/
             </url>
-        </pluginRepository>
-
-        <pluginRepository>
-            <id>spring milestones</id>
-            <url>https://repo.spring.io/milestone</url>
         </pluginRepository>
     </pluginRepositories>
 
