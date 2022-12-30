@@ -11,8 +11,8 @@
 
     <properties>
         <java.version>17</java.version>
-        <vaadin.version>24.0.0.alpha6</vaadin.version>
-        <selenium.version>4.6.0</selenium.version>
+        <vaadin.version>24.0.0.alpha7</vaadin.version>
+        <selenium.version>4.7.2</selenium.version>
     </properties>
 
     <parent>
