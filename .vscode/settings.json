@@ -1,3 +1,5 @@
 {
-    "lit-plugin.strict": true
+    "lit-plugin.strict": true,
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "automatic"
 }
