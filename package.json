@@ -77,7 +77,7 @@
     "@vaadin/vaadin-confirm-dialog": "22.0.22",
     "@vaadin/vaadin-context-menu": "22.0.22",
     "@vaadin/vaadin-cookie-consent": "22.0.22",
-    "@vaadin/vaadin-core-shrinkwrap": "22.0.27",
+    "@vaadin/vaadin-core-shrinkwrap": "22.0.28",
     "@vaadin/vaadin-crud": "22.0.22",
     "@vaadin/vaadin-custom-field": "22.0.22",
     "@vaadin/vaadin-date-picker": "22.0.22",
@@ -105,7 +105,7 @@
     "@vaadin/vaadin-radio-button": "22.0.22",
     "@vaadin/vaadin-rich-text-editor": "22.0.22",
     "@vaadin/vaadin-select": "22.0.22",
-    "@vaadin/vaadin-shrinkwrap": "22.0.27",
+    "@vaadin/vaadin-shrinkwrap": "22.0.28",
     "@vaadin/vaadin-split-layout": "22.0.22",
     "@vaadin/vaadin-tabs": "22.0.22",
     "@vaadin/vaadin-template-renderer": "22.0.22",
@@ -224,7 +224,7 @@
       "@vaadin/vaadin-confirm-dialog": "22.0.22",
       "@vaadin/vaadin-context-menu": "22.0.22",
       "@vaadin/vaadin-cookie-consent": "22.0.22",
-      "@vaadin/vaadin-core-shrinkwrap": "22.0.27",
+      "@vaadin/vaadin-core-shrinkwrap": "22.0.28",
       "@vaadin/vaadin-crud": "22.0.22",
       "@vaadin/vaadin-custom-field": "22.0.22",
       "@vaadin/vaadin-date-picker": "22.0.22",
@@ -252,7 +252,7 @@
       "@vaadin/vaadin-radio-button": "22.0.22",
       "@vaadin/vaadin-rich-text-editor": "22.0.22",
       "@vaadin/vaadin-select": "22.0.22",
-      "@vaadin/vaadin-shrinkwrap": "22.0.27",
+      "@vaadin/vaadin-shrinkwrap": "22.0.28",
       "@vaadin/vaadin-split-layout": "22.0.22",
       "@vaadin/vaadin-tabs": "22.0.22",
       "@vaadin/vaadin-template-renderer": "22.0.22",
@@ -291,6 +291,6 @@
       "workbox-precaching": "6.4.2",
       "workbox-webpack-plugin": "6.4.2"
     },
-    "hash": "c1c4cfa1ae10d6dd8352651e5b35a373edf9e01ad09ee9f752e84fa6e84d9965"
+    "hash": "1d35ed9408734f69518756d482b601f46cba326daba51b97dface6c82109564c"
   }
 }
