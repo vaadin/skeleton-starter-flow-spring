@@ -8,7 +8,8 @@
       "type": "java",
       "name": "Launch Application",
       "request": "launch",
-      "mainClass": "org.vaadin.example.Application"
+      "mainClass": "com.example.application.Application",
+      "vmArgs": "-XX:+AllowEnhancedClassRedefinition -XX:HotswapAgent=fatjar"
     },
     {
       "type": "java",
