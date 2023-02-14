@@ -1,14 +1,11 @@
 package org.vaadin.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringBootVersion;
-import org.springframework.core.SpringVersion;
 
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.dependency.CssImport;
-import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
@@ -62,13 +59,7 @@ public class MainView extends VerticalLayout {
         // shared-styles.css.
         addClassName("centered-content");
 
-        Paragraph springVersion = new Paragraph(
-                "Spring version = " + SpringVersion.getVersion());
-
-        Paragraph springBootVersion = new Paragraph(
-                "Spring Boot version = " + SpringBootVersion.getVersion());
-
-        add(textField, button, springVersion, springBootVersion);
+        add(textField, button);
     }
 
 }
