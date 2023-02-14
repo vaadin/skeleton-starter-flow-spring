@@ -7,17 +7,22 @@ The best way to create your own project based on this starter is [start.vaadin.c
 
 ## Running the Application
 
-While developing the application you should always launch the `Application` class in debug mode from your IDE. You should not launch the Maven `spring-boot:run` target as it will prevent breakpoints and debugging from working because it forks a new process.
+While developing the application you should always launch the `Application` class in debug mode from your IDE. 
 
 After the application has started, you can view your it at http://localhost:8080/ in your browser.
 
-#### Eclipse
+### Eclipse
 
 Open the Application class, right click on it and select "Debug as..." --> "Java Application"
 
-#### Intellij IDEA
+### Intellij IDEA
 
 Open the Application class, right click on it and select "Debug 'Application.main()'"
+
+### Do not use the Maven target from your IDE
+
+You should not launch the Maven `spring-boot:run` target from your IDE as it will prevent breakpoints and debugging from working because it forks a new process. It might also prevent the server from being shut down properly, especially in Eclipse. 
+
 
 ### Running Integration Tests
 
