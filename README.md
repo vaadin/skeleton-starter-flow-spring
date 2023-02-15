@@ -19,10 +19,12 @@ Open the Application class, right click on it and select "Debug as..." --> "Java
 
 Open the Application class, right click on it and select "Debug 'Application.main()'"
 
-### Do not use the Maven target from your IDE
+### Command line
+From the command line you should use the Maven `spring-boot:run` target to run your application. 
 
 You should not launch the Maven `spring-boot:run` target from your IDE as it will prevent breakpoints and debugging from working because it forks a new process. It might also prevent the server from being shut down properly, especially in Eclipse. 
 
+If you want to run the application in the production mode, run `spring-boot:run -Pproduction`.
 
 ### Running Integration Tests
 
