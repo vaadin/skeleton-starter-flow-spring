@@ -7,7 +7,7 @@ The best way to create your own project based on this starter is [start.vaadin.c
 
 ## Running the Application
 
-While developing the application you should always launch the `Application` class in debug mode from your IDE. 
+While developing the application, it is recommended to launch the `Application` class in debug mode from your IDE.
 
 After the application has started, you can view your it at http://localhost:8080/ in your browser.
 
@@ -20,11 +20,17 @@ Open the Application class, right click on it and select "Debug as..." --> "Java
 Open the Application class, right click on it and select "Debug 'Application.main()'"
 
 ### Command line
-From the command line you should use the Maven `spring-boot:run` target to run your application. 
+
+From the command line you can use `./mvnw spring-boot:run` to run your application. 
 
 You should not launch the Maven `spring-boot:run` target from your IDE as it will prevent breakpoints and debugging from working because it forks a new process. It might also prevent the server from being shut down properly, especially in Eclipse. 
 
-If you want to run the application in the production mode, run `spring-boot:run -Pproduction`.
+If you want to run the application in the production mode, use `./mvnw spring-boot:run -Pproduction`.
+
+### Remote debugging using IDE + command line
+
+For advanced cases it can be useful to run the application from command line and attach to it from an IDE when you want to debug something. The project is set up to listen for a debug connection on port 5005 out of the box so if you run `./mvnw spring-boot:run` you can connect by adding a remote Java launch configuration to your IDE.
+
 
 ### Running Integration Tests
 
