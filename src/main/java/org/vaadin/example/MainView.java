@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
-import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
@@ -52,10 +51,6 @@ public class MainView extends VerticalLayout {
         // You can specify keyboard shortcuts for buttons.
         // Example: Pressing enter in this view clicks the Button.
         button.addClickShortcut(Key.ENTER);
-
-        // Use custom CSS classes to apply styling. This is defined in
-        // shared-styles.css.
-        addClassName("centered-content");
 
         add(textField, button);
     }
