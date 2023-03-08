@@ -38,7 +38,7 @@ public class MainView extends VerticalLayout {
 
         // Use TextField for standard text input
         TextField textField = new TextField("Your name");
-        textField.addThemeName("bordered");
+        textField.addClassName("bordered");
 
         // Button click listeners can be defined as lambda expressions
         Button button = new Button("Say hello",
@@ -51,6 +51,10 @@ public class MainView extends VerticalLayout {
         // You can specify keyboard shortcuts for buttons.
         // Example: Pressing enter in this view clicks the Button.
         button.addClickShortcut(Key.ENTER);
+
+        // Use custom CSS classes to apply styling. This is defined in
+        // styles.css.
+        addClassName("centered-content");
 
         add(textField, button);
     }
