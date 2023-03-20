@@ -49,7 +49,7 @@ public class MainView extends VerticalLayout {
         TextField summaryField = new TextField("Summary");
         summaryField.setValue("Component event not propagated");
 
-        TextField labelField = new TextField("Label");
+        TextField labelField = new TextField("Labels");
         labelField.setValue("events, flow");
 
         TextField authorField = new TextField("Author");
@@ -62,12 +62,11 @@ public class MainView extends VerticalLayout {
         severityField.setStepButtonsVisible(true);
         severityField.setValue(7.0);
 
-        Checkbox termsCheckbox = new Checkbox("I read and accept terms");
+        Checkbox termsCheckbox = new Checkbox("I have read and accepted the terms");
         termsCheckbox.setValue(true);
 
         TextArea descriptionTextArea = new TextArea("Description");
-        descriptionTextArea.setValue("When I click button like a crazy, quadruple click event is not propagated correctly. " +
-                "It's annoying because I cannot win my favourite Vaadin-based game without ultra fast clicking.");
+        descriptionTextArea.setPlaceholder("Describe the issue");
 
         add(summaryField, labelField, authorField, severityField, descriptionTextArea, termsCheckbox);
 
