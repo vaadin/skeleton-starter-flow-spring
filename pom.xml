@@ -22,23 +22,6 @@
     </parent>
 
     <repositories>
-        <!-- The order of definitions matters. Explicitly defining central here to make sure it has the highest priority. -->
-
-        <!-- Main Maven repository -->
-        <repository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>vaadin-prereleases</id>
-            <url>
-                https://maven.vaadin.com/vaadin-prereleases/
-            </url>
-        </repository>
-        <!-- Repository used by many Vaadin add-ons -->
         <repository>
             <id>Vaadin Directory</id>
             <url>https://maven.vaadin.com/vaadin-addons</url>
@@ -47,23 +30,6 @@
             </snapshots>
         </repository>
     </repositories>
-
-    <pluginRepositories>
-        <!-- The order of definitions matters. Explicitly defining central here to make sure it has the highest priority. -->
-        <pluginRepository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>vaadin-prereleases</id>
-            <url>
-                https://maven.vaadin.com/vaadin-prereleases/
-            </url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <dependencyManagement>
         <dependencies>
@@ -114,8 +80,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <!-- Clean build and startup time for Vaadin apps sometimes may exceed
-                     the default Spring Boot's 30sec timeout.  -->
                 <configuration>
                     <jvmArguments>-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005</jvmArguments>
                     <wait>500</wait>
