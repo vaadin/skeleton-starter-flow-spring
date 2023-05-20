@@ -110,7 +110,7 @@
     "@vaadin/vaadin-tabs": "23.3.11",
     "@vaadin/vaadin-template-renderer": "23.3.11",
     "@vaadin/vaadin-text-field": "23.3.11",
-    "@vaadin/vaadin-themable-mixin": "23.3.11",
+    "@vaadin/vaadin-themable-mixin": "23.3.12",
     "@vaadin/vaadin-time-picker": "23.3.11",
     "@vaadin/vaadin-upload": "23.3.11",
     "@vaadin/vaadin-usage-statistics": "2.1.2",
