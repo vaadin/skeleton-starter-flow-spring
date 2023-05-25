@@ -96,7 +96,7 @@
     "@vaadin/vaadin-list-mixin": "23.3.11",
     "@vaadin/vaadin-login": "23.3.11",
     "@vaadin/vaadin-lumo-styles": "23.3.11",
-    "@vaadin/vaadin-material-styles": "23.3.11",
+    "@vaadin/vaadin-material-styles": "23.3.12",
     "@vaadin/vaadin-menu-bar": "23.3.11",
     "@vaadin/vaadin-messages": "23.3.11",
     "@vaadin/vaadin-notification": "23.3.11",
