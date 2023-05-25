@@ -28,7 +28,7 @@
     "@vaadin/custom-field": "23.3.11",
     "@vaadin/date-picker": "23.3.11",
     "@vaadin/date-time-picker": "23.3.11",
-    "@vaadin/details": "23.3.11",
+    "@vaadin/details": "23.3.12",
     "@vaadin/dialog": "23.3.11",
     "@vaadin/email-field": "23.3.11",
     "@vaadin/field-base": "23.3.11",
