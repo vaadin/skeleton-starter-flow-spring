@@ -119,7 +119,7 @@
     "@vaadin/virtual-list": "23.3.15",
     "construct-style-sheets-polyfill": "3.1.0",
     "date-fns": "2.29.3",
-    "lit": "2.6.1",
+    "lit": "2.7.4",
     "proj4": "2.9.0"
   },
   "devDependencies": {
@@ -276,7 +276,7 @@
       "workbox-core": "6.5.4",
       "workbox-precaching": "6.5.4"
     },
-    "hash": "31cba135481d781990b5b344f5c0261c0a60a312fb1ee5fac80368af1db696a5"
+    "hash": "a9ce6d8b38139bdb3356f33945363d92d782b36182cefd1a0bc6116125c75fa7"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
