@@ -93,7 +93,7 @@
     "@vaadin/vaadin-icons": "23.3.11",
     "@vaadin/vaadin-item": "23.3.11",
     "@vaadin/vaadin-list-box": "23.3.11",
-    "@vaadin/vaadin-list-mixin": "23.3.11",
+    "@vaadin/vaadin-list-mixin": "23.3.12",
     "@vaadin/vaadin-login": "23.3.11",
     "@vaadin/vaadin-lumo-styles": "23.3.11",
     "@vaadin/vaadin-material-styles": "23.3.11",
