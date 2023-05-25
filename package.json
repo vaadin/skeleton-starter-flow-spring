@@ -9,7 +9,7 @@
     "@polymer/iron-resizable-behavior": "3.0.1",
     "@polymer/polymer": "3.5.1",
     "@vaadin/accordion": "23.3.11",
-    "@vaadin/app-layout": "23.3.11",
+    "@vaadin/app-layout": "23.3.12",
     "@vaadin/avatar": "23.3.11",
     "@vaadin/avatar-group": "23.3.11",
     "@vaadin/board": "23.3.11",
