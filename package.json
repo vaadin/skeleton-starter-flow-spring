@@ -66,7 +66,7 @@
     "@vaadin/text-area": "23.3.11",
     "@vaadin/text-field": "23.3.11",
     "@vaadin/time-picker": "23.3.11",
-    "@vaadin/tooltip": "23.3.11",
+    "@vaadin/tooltip": "23.3.12",
     "@vaadin/upload": "23.3.11",
     "@vaadin/vaadin-accordion": "23.3.11",
     "@vaadin/vaadin-app-layout": "23.3.11",
