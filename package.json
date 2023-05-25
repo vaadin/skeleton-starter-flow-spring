@@ -41,7 +41,7 @@
     "@vaadin/icons": "23.3.11",
     "@vaadin/input-container": "23.3.11",
     "@vaadin/integer-field": "23.3.11",
-    "@vaadin/item": "23.3.11",
+    "@vaadin/item": "23.3.12",
     "@vaadin/list-box": "23.3.11",
     "@vaadin/lit-renderer": "23.3.11",
     "@vaadin/login": "23.3.11",
