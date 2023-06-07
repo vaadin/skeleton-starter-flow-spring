@@ -12,6 +12,8 @@
     <properties>
         <java.version>1.8</java.version>
         <vaadin.version>14.10.1</vaadin.version>
+
+        <selenium.version>3.141.59</selenium.version>
     </properties>
 
     <parent>
@@ -144,6 +146,12 @@
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.0.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.14.9</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
