@@ -11,7 +11,7 @@
 
     <properties>
         <java.version>17</java.version>
-        <vaadin.version>24.1.1</vaadin.version>
+        <vaadin.version>24.2-SNAPSHOT</vaadin.version>
         <selenium.version>4.8.3</selenium.version>
     </properties>
 
@@ -23,6 +23,13 @@
 
     <repositories>
         <repository>
+            <id>vaadin-prereleases</id>
+            <url>https://maven.vaadin.com/vaadin-prereleases</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
             <id>Vaadin Directory</id>
             <url>https://maven.vaadin.com/vaadin-addons</url>
             <snapshots>
@@ -30,6 +37,16 @@
             </snapshots>
         </repository>
     </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>vaadin-prereleases</id>
+            <url>https://maven.vaadin.com/vaadin-prereleases</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
     <dependencyManagement>
         <dependencies>
