@@ -69,7 +69,7 @@
             <dependency>
                 <groupId>com.vaadin</groupId>
                 <artifactId>flow-bom</artifactId>
-                <version>9.1.4</version>
+                <version>9.1.5</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -153,8 +153,8 @@
             -->
             <plugin>
                 <groupId>com.vaadin</groupId>
-                <artifactId>vaadin-maven-plugin</artifactId>
-                <version>${vaadin.version}</version>
+                <artifactId>flow-maven-plugin</artifactId>
+                <version>9.1.5</version>
                 <executions>
                     <execution>
                         <goals>
@@ -174,8 +174,8 @@
                 <plugins>
                     <plugin>
                         <groupId>com.vaadin</groupId>
-                        <artifactId>vaadin-maven-plugin</artifactId>
-                        <version>${vaadin.version}</version>
+                        <artifactId>flow-maven-plugin</artifactId>
+                        <version>9.1.5</version>
                         <executions>
                             <execution>
                                 <goals>
