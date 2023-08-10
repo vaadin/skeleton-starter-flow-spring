@@ -15,14 +15,14 @@ public class MainViewIT extends AbstractViewTest {
     @Test
     public void clickingButtonShowsNotification() {
         Assert.assertFalse($(NotificationElement.class).exists());
-        $(ButtonElement.class).waitForFirst().click();
+        $(ButtonElement.class).waitForFirst(100).click();
         Assert.assertTrue($(NotificationElement.class).waitForFirst().isOpen());
     }
 
     @Test
     public void clickingButtonTwiceShowsTwoNotifications() {
         Assert.assertFalse($(NotificationElement.class).exists());
-        ButtonElement button = $(ButtonElement.class).waitForFirst();
+        ButtonElement button = $(ButtonElement.class).waitForFirst(100);
         button.click();
         button.click();
         $(NotificationElement.class).waitForFirst();
@@ -31,13 +31,13 @@ public class MainViewIT extends AbstractViewTest {
 
     @Test
     public void buttonIsUsingLumoTheme() {
-        WebElement element = $(ButtonElement.class).waitForFirst();
+        WebElement element = $(ButtonElement.class).waitForFirst(100);
         assertThemePresentOnElement(element, Lumo.class);
     }
 
     @Test
     public void testClickButtonShowsHelloAnonymousUserNotificationWhenUserNameIsEmpty() {
-        ButtonElement button = $(ButtonElement.class).waitForFirst();
+        ButtonElement button = $(ButtonElement.class).waitForFirst(100);
         button.click();
         $(NotificationElement.class).waitForFirst();
         Assert.assertTrue($(NotificationElement.class).exists());
@@ -47,7 +47,7 @@ public class MainViewIT extends AbstractViewTest {
 
     @Test
     public void testClickButtonShowsHelloUserNotificationWhenUserIsNotEmpty() {
-        TextFieldElement textField = $(TextFieldElement.class).waitForFirst();
+        TextFieldElement textField = $(TextFieldElement.class).waitForFirst(100);
         textField.setValue("Vaadiner");
         $(ButtonElement.class).waitForFirst().click();
         $(NotificationElement.class).waitForFirst();
@@ -58,7 +58,7 @@ public class MainViewIT extends AbstractViewTest {
 
     @Test
     public void testEnterShowsHelloUserNotificationWhenUserIsNotEmpty() {
-        TextFieldElement textField = $(TextFieldElement.class).waitForFirst();
+        TextFieldElement textField = $(TextFieldElement.class).waitForFirst(100);
         textField.setValue("Vaadiner");
         textField.sendKeys(Keys.ENTER);
         $(NotificationElement.class).waitForFirst();
