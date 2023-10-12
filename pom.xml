@@ -112,9 +112,9 @@
                         </goals>
                     </execution>
                 </executions>
-<!--                <configuration>-->
-<!--                    <eagerServerLoad>true</eagerServerLoad>-->
-<!--                </configuration>-->
+                <configuration>
+                    <eagerServerLoad>true</eagerServerLoad>
+                </configuration>
             </plugin>
         </plugins>
     </build>
