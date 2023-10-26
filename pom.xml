@@ -13,13 +13,13 @@
         <java.version>11</java.version>
         <vaadin.version>23.3.26</vaadin.version>
         <!-- this parameter is needed as spring-boot bom overwrites it -->
-        <selenium.version>4.5.3</selenium.version>
+        <selenium.version>4.8.3</selenium.version>
     </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.11</version>
+        <version>2.7.17</version>
     </parent>
 
     <repositories>
