@@ -45,14 +45,6 @@
                 <enabled>true</enabled>
             </snapshots>
         </pluginRepository>
-        <!-- Remove this after SB 3.2 is stable -->
-        <pluginRepository>
-            <id>spring-milestones</id>
-            <url>https://repo.spring.io/milestone/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
     </pluginRepositories>
 
     <dependencyManagement>
