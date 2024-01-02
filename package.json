@@ -19,7 +19,7 @@
     "@vaadin/checkbox": "23.3.29",
     "@vaadin/checkbox-group": "23.3.29",
     "@vaadin/combo-box": "23.3.29",
-    "@vaadin/common-frontend": "0.0.18",
+    "@vaadin/common-frontend": "0.0.19",
     "@vaadin/component-base": "23.3.29",
     "@vaadin/confirm-dialog": "23.3.29",
     "@vaadin/context-menu": "23.3.29",
