@@ -60,7 +60,9 @@ public abstract class AbstractViewTest extends ParallelTest {
             super.setup();
         } else {
             ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.setHeadless(Boolean.getBoolean("headless"));
+            if (Boolean.getBoolean("headless")) {
+                chromeOptions.addArguments("--headless=new");
+            }
             setDriver(TestBench.createDriver(new ChromeDriver(chromeOptions)));
         }
         getDriver().get(getURL(route));
