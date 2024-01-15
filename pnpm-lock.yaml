@@ -84,8 +84,8 @@ dependencies:
     specifier: 1.2.1
     version: 1.2.1
   '@vaadin/vaadin-core-shrinkwrap':
-    specifier: 14.11.1
-    version: 14.11.1
+    specifier: 14.11.2
+    version: 14.11.2
   '@vaadin/vaadin-crud':
     specifier: 1.4.0
     version: 1.4.0
@@ -168,8 +168,8 @@ dependencies:
     specifier: 2.5.0
     version: 2.5.0
   '@vaadin/vaadin-shrinkwrap':
-    specifier: 14.11.1
-    version: 14.11.1
+    specifier: 14.11.2
+    version: 14.11.2
   '@vaadin/vaadin-split-layout':
     specifier: 4.3.1
     version: 4.3.1
@@ -219,7 +219,7 @@ devDependencies:
     version: 8.2.2(@babel/core@7.17.10)(webpack@4.42.0)
   chokidar:
     specifier: ^3.5.0
-    version: 3.5.0
+    version: 3.5.3
   compression-webpack-plugin:
     specifier: 4.0.1
     version: 4.0.1(webpack@4.42.0)
@@ -298,7 +298,7 @@ packages:
       slash: 2.0.0
     optionalDependencies:
       '@nicolo-ribaudo/chokidar-2': 2.1.8-no-fsevents.3
-      chokidar: 3.5.0
+      chokidar: 3.5.3
     dev: true
 
   /@babel/code-frame@7.23.5:
@@ -1799,8 +1799,8 @@ packages:
       cookieconsent: 3.1.1
     dev: false
 
-  /@vaadin/vaadin-core-shrinkwrap@14.11.1:
-    resolution: {integrity: sha512-1LhCbCNRLdRJuTs5itLPEOTyguGeShno6vdGgt8PKHfCkeLbL+lKVyCfgwIw8ngyBgFH2sz5F/7ra5PPuDQyiA==}
+  /@vaadin/vaadin-core-shrinkwrap@14.11.2:
+    resolution: {integrity: sha512-6JSMAWPL2CbvI7zOxfddeQg43neW4fVUy26eq1IgjXkQXZ3R7POh3jZP8dU6tEeGU0MD4NbscsfEdWADSrgKPg==}
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
@@ -2173,8 +2173,8 @@ packages:
       '@vaadin/vaadin-themable-mixin': 1.6.2
     dev: false
 
-  /@vaadin/vaadin-shrinkwrap@14.11.1:
-    resolution: {integrity: sha512-CZulMyE8hAX0qXDGYjTXiv1UrSBmVlvO5PtVlNSxkVWPQK1ivlSqQ5Dw9YR0Ca+E99gdAjyeniJCgldy/UlheA==}
+  /@vaadin/vaadin-shrinkwrap@14.11.2:
+    resolution: {integrity: sha512-/KHEUw/t06o76jD5Lb595YkaRX/Gid4PE16Rf6Eaun3Rka0AVKu+s5UjD9OAFbSKQ6M+vjcOgH4nA9IHtfTlyA==}
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
@@ -3610,8 +3610,8 @@ packages:
       - supports-color
     dev: true
 
-  /chokidar@3.5.0:
-    resolution: {integrity: sha512-JgQM9JS92ZbFR4P90EvmzNpSGhpPBGBSj10PILeDyYFwp4h2/D9OM03wsJ4zW1fEp4ka2DGrnUeD7FuvQ2aZ2Q==}
+  /chokidar@3.5.3:
+    resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
     engines: {node: '>= 8.10.0'}
     dependencies:
       anymatch: 3.1.3
@@ -3620,7 +3620,7 @@ packages:
       is-binary-path: 2.1.0
       is-glob: 4.0.3
       normalize-path: 3.0.0
-      readdirp: 3.5.0
+      readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
@@ -3982,7 +3982,7 @@ packages:
       supports-color:
         optional: true
     dependencies:
-      ms: 2.1.3
+      ms: 2.1.2
       supports-color: 6.1.0
     dev: true
 
@@ -4202,7 +4202,7 @@ packages:
       end-of-stream: 1.4.4
       inherits: 2.0.4
       readable-stream: 2.3.8
-      stream-shift: 1.0.1
+      stream-shift: 1.0.2
     dev: true
 
   /ee-first@1.1.1:
@@ -4670,8 +4670,8 @@ packages:
       readable-stream: 2.3.8
     dev: true
 
-  /follow-redirects@1.15.4(debug@4.3.4):
-    resolution: {integrity: sha512-Cr4D/5wlrb0z9dgERpUL3LrmPKVDsETIJhaCMeDfuFYcqa5bldGV6wBsAN6X/vxlXQtFBMrXdXxdL8CbDTGniw==}
+  /follow-redirects@1.15.5(debug@4.3.4):
+    resolution: {integrity: sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -5156,7 +5156,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.4(debug@4.3.4)
+      follow-redirects: 1.15.5(debug@4.3.4)
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -6727,8 +6727,8 @@ packages:
       - supports-color
     dev: true
 
-  /readdirp@3.5.0:
-    resolution: {integrity: sha512-cMhu7c/8rdhkHXWsY+osBhfSy0JikwpHK/5+imo+LpeasTF8ouErHrlYkwT0++njiyuDvc7OFY5T3ukvZ8qmFQ==}
+  /readdirp@3.6.0:
+    resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
     dependencies:
       picomatch: 2.3.1
@@ -7366,7 +7366,7 @@ packages:
     resolution: {integrity: sha512-vlMC2f8I2u/bZGqkdfLQW/13Zihpej/7PmSiMQsbYddxuTsJp8vRe2x2FvVExZg7FaOds43ROAuFJwPR4MTZLw==}
     dependencies:
       end-of-stream: 1.4.4
-      stream-shift: 1.0.1
+      stream-shift: 1.0.2
     dev: true
 
   /stream-http@2.8.3:
@@ -7379,8 +7379,8 @@ packages:
       xtend: 4.0.2
     dev: true
 
-  /stream-shift@1.0.1:
-    resolution: {integrity: sha512-AiisoFqQ0vbGcZgQPY1cdP2I76glaVA/RauYR4G4thNFgkTqr90yXTo4LYX60Jl+sIlPNHHdGSwo01AvbKUSVQ==}
+  /stream-shift@1.0.2:
+    resolution: {integrity: sha512-rV4Bovi9xx0BFzOb/X0B2GqoIjvqPCttZdu0Wgtx2Dxkj7ETyWl9gmqJ4EutWRLvtZWm8dxE+InQZX1IryZn/w==}
     dev: true
 
   /string-width@3.1.0:
@@ -7863,7 +7863,7 @@ packages:
       graceful-fs: 4.2.11
       neo-async: 2.6.2
     optionalDependencies:
-      chokidar: 3.5.0
+      chokidar: 3.5.3
       watchpack-chokidar2: 2.0.1
     transitivePeerDependencies:
       - supports-color
