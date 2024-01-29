@@ -84,8 +84,8 @@ dependencies:
     specifier: 1.2.1
     version: 1.2.1
   '@vaadin/vaadin-core-shrinkwrap':
-    specifier: 14.11.2
-    version: 14.11.2
+    specifier: 14.11.3
+    version: 14.11.3
   '@vaadin/vaadin-crud':
     specifier: 1.4.0
     version: 1.4.0
@@ -168,8 +168,8 @@ dependencies:
     specifier: 2.5.0
     version: 2.5.0
   '@vaadin/vaadin-shrinkwrap':
-    specifier: 14.11.2
-    version: 14.11.2
+    specifier: 14.11.3
+    version: 14.11.3
   '@vaadin/vaadin-split-layout':
     specifier: 4.3.1
     version: 4.3.1
@@ -1799,8 +1799,8 @@ packages:
       cookieconsent: 3.1.1
     dev: false
 
-  /@vaadin/vaadin-core-shrinkwrap@14.11.2:
-    resolution: {integrity: sha512-6JSMAWPL2CbvI7zOxfddeQg43neW4fVUy26eq1IgjXkQXZ3R7POh3jZP8dU6tEeGU0MD4NbscsfEdWADSrgKPg==}
+  /@vaadin/vaadin-core-shrinkwrap@14.11.3:
+    resolution: {integrity: sha512-28ayY8fKY7szAGeVrMXTsMR0nd4tfNHgWsr9+PYUDDcWFVzzSbif2hyABOGuMVEvsksl+KOv5CMLy/owH5aNjA==}
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
@@ -2173,8 +2173,8 @@ packages:
       '@vaadin/vaadin-themable-mixin': 1.6.2
     dev: false
 
-  /@vaadin/vaadin-shrinkwrap@14.11.2:
-    resolution: {integrity: sha512-/KHEUw/t06o76jD5Lb595YkaRX/Gid4PE16Rf6Eaun3Rka0AVKu+s5UjD9OAFbSKQ6M+vjcOgH4nA9IHtfTlyA==}
+  /@vaadin/vaadin-shrinkwrap@14.11.3:
+    resolution: {integrity: sha512-UIv4btWQi3n+mghi0mutJu7ogxIoizruu+bRstc/NWkJsJSP0XnGufXZVEVwH6PzrkpcvsiHRjfV5LvtvQ1piw==}
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
