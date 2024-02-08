@@ -68,6 +68,12 @@
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.vaadin.hilla</groupId>
+                    <artifactId>hilla-react</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
