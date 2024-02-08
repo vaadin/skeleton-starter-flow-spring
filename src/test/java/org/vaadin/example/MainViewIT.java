@@ -28,7 +28,6 @@ public class MainViewIT extends BrowserTestBase {
     @BeforeEach
     public void open() {
         getDriver().get("http://"+getDeploymentHostname()+":8080/");
-        getCommandExecutor().waitForVaadin();
     }
 
     @BrowserTest
