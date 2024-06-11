@@ -97,7 +97,7 @@
     "@vaadin/vaadin-list-mixin": "23.4.0",
     "@vaadin/vaadin-login": "23.4.0",
     "@vaadin/vaadin-lumo-styles": "23.4.0",
-    "@vaadin/vaadin-material-styles": "23.4.0",
+    "@vaadin/vaadin-material-styles": "23.5.1",
     "@vaadin/vaadin-menu-bar": "23.4.0",
     "@vaadin/vaadin-messages": "23.4.0",
     "@vaadin/vaadin-notification": "23.4.0",
