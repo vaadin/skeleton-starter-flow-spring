@@ -87,8 +87,8 @@ importers:
         specifier: 1.2.1
         version: 1.2.1
       '@vaadin/vaadin-core-shrinkwrap':
-        specifier: 14.11.12
-        version: 14.11.12
+        specifier: 14.11.13
+        version: 14.11.13
       '@vaadin/vaadin-crud':
         specifier: 1.4.0
         version: 1.4.0
@@ -171,8 +171,8 @@ importers:
         specifier: 2.5.0
         version: 2.5.0
       '@vaadin/vaadin-shrinkwrap':
-        specifier: 14.11.12
-        version: 14.11.12
+        specifier: 14.11.13
+        version: 14.11.13
       '@vaadin/vaadin-split-layout':
         specifier: 4.3.1
         version: 4.3.1
@@ -1009,8 +1009,8 @@ packages:
   '@vaadin/vaadin-cookie-consent@1.2.1':
     resolution: {integrity: sha512-R9oCNmuoMK5lxjGloM9qtULC6raCvzHk4C48Wt2r0Z03yY4ytVjVt0h++/bqXTuwt3JRtdQCoVAJhpDZnMnfYQ==}
 
-  '@vaadin/vaadin-core-shrinkwrap@14.11.12':
-    resolution: {integrity: sha512-eQXfarV2rKec5mNLV5+3z6Bz67s18Iz+S78QyYFkjt9DvTb3TU9wLucfq6AqgS7Ql+Km9quLD3NLmMqYWj9Nuw==}
+  '@vaadin/vaadin-core-shrinkwrap@14.11.13':
+    resolution: {integrity: sha512-w9c+fZ0gvAnxPzfNj5aAXBqr3pntp7egRP9R273vZcZSB3+0eUrG0WlN2js/IuhqdXXmzcyX6atLichobM1GXA==}
 
   '@vaadin/vaadin-crud@1.4.0':
     resolution: {integrity: sha512-B1mJMppQ4XtDaN7KeSKz7GElz6xvd0NmLpt61JuEvHj/LqBDSWvRYxtdf6+5CF+p1cgn8hINitZImC0LEyxCpw==}
@@ -1096,8 +1096,8 @@ packages:
   '@vaadin/vaadin-select@2.5.0':
     resolution: {integrity: sha512-4hhYJCCtuuzWYhzAPc/zsUFlrP3BX4pn0CZBmUfvy/Rl12RqAndUGn7hXzn+GVIP43sFopI2D98P9c8+Q8ePtw==}
 
-  '@vaadin/vaadin-shrinkwrap@14.11.12':
-    resolution: {integrity: sha512-w3ygi2UY0PheIrB9dpxZNGpeZzOc1LrtLuOkGDuIybmgpcsq4XY+qag9OmVsayPfbM35B9yOKIq3a/R8+EjaIg==}
+  '@vaadin/vaadin-shrinkwrap@14.11.13':
+    resolution: {integrity: sha512-pSACTRLtGuL+BJbM2C/PNBmZN7VKUQdXtMB33f1AB+E+VF8RgaorwcUkt0U9z0WC8RRcmAmzNQCRAUAQEOmuEA==}
 
   '@vaadin/vaadin-split-layout@4.3.1':
     resolution: {integrity: sha512-MOTq+1H+e4ohP+RLeoges9FtxDue1w8IqB9ZeUmMgzzKaPSAskBdmP3+4CMuaawWc3FNEZXW69kbxiK8HZkKLA==}
@@ -5177,7 +5177,7 @@ snapshots:
       '@vaadin/vaadin-themable-mixin': 1.6.2
       cookieconsent: 3.1.1
 
-  '@vaadin/vaadin-core-shrinkwrap@14.11.12':
+  '@vaadin/vaadin-core-shrinkwrap@14.11.13':
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
@@ -5493,7 +5493,7 @@ snapshots:
       '@vaadin/vaadin-text-field': 2.10.0
       '@vaadin/vaadin-themable-mixin': 1.6.2
 
-  '@vaadin/vaadin-shrinkwrap@14.11.12':
+  '@vaadin/vaadin-shrinkwrap@14.11.13':
     dependencies:
       '@polymer/iron-a11y-announcer': 3.0.2
       '@polymer/iron-a11y-keys-behavior': 3.0.1
