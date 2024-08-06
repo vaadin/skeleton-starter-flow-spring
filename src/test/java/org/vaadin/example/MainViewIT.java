@@ -2,6 +2,8 @@ package org.vaadin.example;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.runner.RunWith;
+import org.junit.runners.BlockJUnit4ClassRunner;
 import org.openqa.selenium.Keys;
 
 import com.vaadin.flow.component.button.testbench.ButtonElement;
@@ -10,6 +12,7 @@ import com.vaadin.flow.component.textfield.testbench.TextFieldElement;
 import com.vaadin.testbench.BrowserTest;
 import com.vaadin.testbench.BrowserTestBase;
 
+@RunWith(BlockJUnit4ClassRunner.class)
 public class MainViewIT extends BrowserTestBase {
 
     /**
