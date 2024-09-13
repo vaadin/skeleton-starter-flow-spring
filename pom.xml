@@ -112,6 +112,9 @@
                         <includes>
                             <include>src/main/frontend/**/*.ts</include>
                         </includes>
+                        <excludes>
+                            <exclude>src/main/frontend/generated/**</exclude>
+                        </excludes>
                         <prettier>
                             <prettierVersion>3.3.3</prettierVersion>
                             <configFile>.prettierrc.json</configFile>
