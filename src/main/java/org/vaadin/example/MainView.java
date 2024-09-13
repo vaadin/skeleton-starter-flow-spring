@@ -1,15 +1,13 @@
 package org.vaadin.example;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.html.Paragraph;
-import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * A sample Vaadin view class.
@@ -32,8 +30,7 @@ public class MainView extends VerticalLayout {
      * Build the initial UI state for the user accessing the application.
      *
      * @param service
-     *            The message service. Automatically injected Spring managed
-     *            bean.
+     *            The message service. Automatically injected Spring managed bean.
      */
     public MainView(@Autowired GreetService service) {
 
@@ -60,5 +57,4 @@ public class MainView extends VerticalLayout {
 
         add(textField, button);
     }
-
 }
