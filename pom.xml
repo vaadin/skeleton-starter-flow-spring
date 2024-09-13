@@ -110,7 +110,6 @@
                     <!-- Uncomment to format TypeScript files 
                         <typescript>
                         <includes>
-                            <include>frontend/**/*.ts</include>
                             <include>src/main/frontend/**/*.ts</include>
                         </includes>
                         <prettier>
