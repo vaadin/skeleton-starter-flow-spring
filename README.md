@@ -76,6 +76,14 @@ Vaadin web applications are full-stack and include both client-side and server-s
 | &nbsp;&nbsp;&nbsp;&nbsp;`Application.java` | Server entrypoint |
 | &nbsp;&nbsp;&nbsp;&nbsp;`AppShell.java`    | application-shell configuration |
 
+## Code Formatting
+
+The project includes the Spotless code formatter.
+
+To use it in IntelliJ, install the [https://plugins.jetbrains.com/plugin/22455-spotless-applier](IntelliJ plugin)
+To use it in VS Code, install the [https://marketplace.visualstudio.com/items?itemName=richardwillis.vscode-spotless-gradle ](VS Code extension)
+To use it from the command line, run `mvn spotless:apply`
+
 ## Useful links
 
 - Read the documentation at [vaadin.com/docs](https://vaadin.com/docs).
