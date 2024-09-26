@@ -1,7 +1,4 @@
 {
-  "name": "no-name",
-  "license": "UNLICENSED",
-  "type": "module",
   "dependencies": {
     "@polymer/polymer": "3.5.1",
     "@vaadin/bundles": "24.5.0-beta1",
@@ -89,6 +86,7 @@
     },
     "hash": "337e9af9d46c7e91e91de08f888fdb30d5b817ccc7a8312f66ee492ccb70254f"
   },
+  "type": "module",
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
     "@vaadin/polymer-legacy-adapter": "$@vaadin/polymer-legacy-adapter",
