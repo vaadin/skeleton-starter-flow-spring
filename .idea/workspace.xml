@@ -4,46 +4,104 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb66b84-5336-4d83-ae0b-59f760dd4a3d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="fcfaa163-1359-45fa-a9dd-cacc3d8f1ff2" name="Changes" comment="test flow children in react">
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/ReactLayout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vaadin/example/ReactLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vaadin/example/RichTextEditorView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/bundles/dev.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/bundles/dev.bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vaadin/example/MainView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vaadin/example/OtherView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vaadin/example/HelloWorldView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vaadin/example/ReactRouterLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vaadin/example/ReactRouterLayout.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test-layout" />
+      </map>
+    </option>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
-  <component name="ProjectId" id="2nYO3fjJyDYyFragEly66KvYhFB" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "v24",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/WorkFolder/skeleton-starter-flow-spring"
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "Spring Boot.Application.executor": "Run",
+    "git-widget-placeholder": "flow-child-in-react",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "ts.external.directory.path": "/Users/mikhail/workspace/vaadin/skeleton-starter-flow-spring/node_modules/typescript/lib"
   }
 }]]></component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="spring-skeleton" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.vaadin.example.Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.vaadin.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="dfb66b84-5336-4d83-ae0b-59f760dd4a3d" name="Changes" comment="" />
-      <created>1729146349328</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1729146349328</updated>
+    <task id="LOCAL-00001" summary="test flow children in react">
+      <option name="closed" value="true" />
+      <created>1727949233259</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727949233259</updated>
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="apply exclusions" />
+    <MESSAGE value="test flow children in react" />
+    <option name="LAST_COMMIT_MESSAGE" value="test flow children in react" />
   </component>
 </project>
