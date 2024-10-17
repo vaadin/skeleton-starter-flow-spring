@@ -12,7 +12,7 @@
 
     <properties>
         <java.version>17</java.version>
-        <vaadin.version>24.5.0.rc2</vaadin.version>
+        <vaadin.version>24.6.0.alpha1</vaadin.version>
     </properties>
 
     <parent>
