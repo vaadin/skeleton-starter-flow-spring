@@ -58,7 +58,7 @@
     "@vaadin/progress-bar": "23.5.6",
     "@vaadin/radio-group": "23.5.6",
     "@vaadin/rich-text-editor": "23.5.6",
-    "@vaadin/router": "1.7.5",
+    "@vaadin/router": "2.0.0",
     "@vaadin/scroller": "23.5.6",
     "@vaadin/select": "23.5.6",
     "@vaadin/split-layout": "23.5.6",
