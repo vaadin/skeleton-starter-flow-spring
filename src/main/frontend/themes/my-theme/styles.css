@@ -16,4 +16,12 @@ vaadin-text-field.bordered::part(input-field) {
   background-color: var(--lumo-base-color);
 }
 
+.v-dragged {
+  opacity: 0;
+}
+
+.v-drag-over-target {
+  outline: 3px solid lightblue;
+}
+
 
