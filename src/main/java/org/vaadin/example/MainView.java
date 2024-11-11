@@ -1,5 +1,7 @@
 package org.vaadin.example;
 
+import static com.vaadin.flow.i18n.I18NProvider.translate;
+
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
@@ -35,13 +37,14 @@ public class MainView extends VerticalLayout {
     public MainView(@Autowired GreetService service) {
 
         // Use TextField for standard text input
-        TextField textField = new TextField("Your name");
+        // Use TextField for standard text input
+        TextField textField = new TextField(translate("vaadin-text-field.hello.label"));
         textField.addClassName("bordered");
+        // Button click listeners can be defined as lambda expressions
+        Button button = new Button(translate("vaadin-button.element-1.text"), e ->
+                add(new Paragraph(service.greet(textField.getValue()))));
 
         // Button click listeners can be defined as lambda expressions
-        Button button = new Button("Say hello", e -> {
-            add(new Paragraph(service.greet(textField.getValue())));
-        });
 
         // Theme variants give you predefined extra styles for components.
         // Example: Primary button has a more prominent look.
