@@ -7,7 +7,6 @@ import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * A sample Vaadin view class.
@@ -32,7 +31,7 @@ public class MainView extends VerticalLayout {
      * @param service
      *            The message service. Automatically injected Spring managed bean.
      */
-    public MainView(@Autowired GreetService service) {
+    public MainView(GreetService service) {
 
         // Use TextField for standard text input
         TextField textField = new TextField("Your name");
