@@ -20,7 +20,7 @@ import com.vaadin.flow.router.Route;
  * The main view contains a text field for getting the user name and a button
  * that shows a greeting message in a notification.
  */
-@Route
+@Route("flow")
 public class MainView extends VerticalLayout {
 
     /**
