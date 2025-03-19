@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aa89b5e-a175-4d93-a9bb-6bdbed53d512" name="Changes" comment="">
+    <list default="true" id="dfb66b84-5336-4d83-ae0b-59f760dd4a3d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +22,7 @@
   "customColor": "",
   "associatedIndex": 2
 }]]></component>
-  <component name="ProjectId" id="2uX3sPIlxE8XEOE0HH07vgMqToL" />
+  <component name="ProjectId" id="2nYO3fjJyDYyFragEly66KvYhFB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,18 +30,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "v24.7",
-    "kotlin-language-version-configured": "true"
+    "git-widget-placeholder": "v24",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/WorkFolder/skeleton-starter-flow-spring"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1aa89b5e-a175-4d93-a9bb-6bdbed53d512" name="Changes" comment="" />
-      <created>1742381299193</created>
+      <changelist id="dfb66b84-5336-4d83-ae0b-59f760dd4a3d" name="Changes" comment="" />
+      <created>1729146349328</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1742381299193</updated>
+      <updated>1729146349328</updated>
     </task>
     <servers />
   </component>
