@@ -26,7 +26,7 @@
     "@vaadin/vaadin-context-menu": "4.6.1",
     "@vaadin/vaadin-control-state-mixin": "2.2.6",
     "@vaadin/vaadin-cookie-consent": "1.2.1",
-    "@vaadin/vaadin-core-shrinkwrap": "14.12.6",
+    "@vaadin/vaadin-core-shrinkwrap": "14.12.8",
     "@vaadin/vaadin-crud": "1.4.0",
     "@vaadin/vaadin-custom-field": "1.4.0",
     "@vaadin/vaadin-date-picker": "4.6.0",
@@ -36,7 +36,7 @@
     "@vaadin/vaadin-dialog": "2.6.0",
     "@vaadin/vaadin-element-mixin": "2.4.2",
     "@vaadin/vaadin-form-layout": "2.3.0",
-    "@vaadin/vaadin-grid": "5.10.1",
+    "@vaadin/vaadin-grid": "5.10.2",
     "@vaadin/vaadin-grid-pro": "2.4.1",
     "@vaadin/vaadin-icons": "4.3.2",
     "@vaadin/vaadin-item": "2.3.0",
@@ -54,7 +54,7 @@
     "@vaadin/vaadin-radio-button": "1.6.3",
     "@vaadin/vaadin-rich-text-editor": "1.4.0",
     "@vaadin/vaadin-select": "2.5.0",
-    "@vaadin/vaadin-shrinkwrap": "14.12.6",
+    "@vaadin/vaadin-shrinkwrap": "14.12.8",
     "@vaadin/vaadin-split-layout": "4.3.1",
     "@vaadin/vaadin-tabs": "3.2.0",
     "@vaadin/vaadin-text-field": "2.10.0",
@@ -121,7 +121,7 @@
       "@vaadin/vaadin-context-menu": "4.6.1",
       "@vaadin/vaadin-control-state-mixin": "2.2.6",
       "@vaadin/vaadin-cookie-consent": "1.2.1",
-      "@vaadin/vaadin-core-shrinkwrap": "14.12.6",
+      "@vaadin/vaadin-core-shrinkwrap": "14.12.8",
       "@vaadin/vaadin-crud": "1.4.0",
       "@vaadin/vaadin-custom-field": "1.4.0",
       "@vaadin/vaadin-date-picker": "4.6.0",
@@ -131,7 +131,7 @@
       "@vaadin/vaadin-dialog": "2.6.0",
       "@vaadin/vaadin-element-mixin": "2.4.2",
       "@vaadin/vaadin-form-layout": "2.3.0",
-      "@vaadin/vaadin-grid": "5.10.1",
+      "@vaadin/vaadin-grid": "5.10.2",
       "@vaadin/vaadin-grid-pro": "2.4.1",
       "@vaadin/vaadin-icons": "4.3.2",
       "@vaadin/vaadin-item": "2.3.0",
@@ -149,7 +149,7 @@
       "@vaadin/vaadin-radio-button": "1.6.3",
       "@vaadin/vaadin-rich-text-editor": "1.4.0",
       "@vaadin/vaadin-select": "2.5.0",
-      "@vaadin/vaadin-shrinkwrap": "14.12.6",
+      "@vaadin/vaadin-shrinkwrap": "14.12.8",
       "@vaadin/vaadin-split-layout": "4.3.1",
       "@vaadin/vaadin-tabs": "3.2.0",
       "@vaadin/vaadin-text-field": "2.10.0",
@@ -186,6 +186,6 @@
       "webpack-dev-server": "3.11.0",
       "webpack-merge": "4.2.2"
     },
-    "hash": "2d9664ecd9633c73a66a6dfb436bfa1f7d78b1bf77aeefce596e2545cb9b7c51"
+    "hash": "d14c1baa11300f78467602cf206ae7e3b35e5bcc819fd8471bca49fca27a0c22"
   }
 }
