@@ -119,7 +119,7 @@
     "@vaadin/vertical-layout": "23.5.12",
     "@vaadin/virtual-list": "23.5.12",
     "construct-style-sheets-polyfill": "3.1.0",
-    "date-fns": "2.30.0",
+    "date-fns": "3.0.0",
     "lit": "2.6.1",
     "proj4": "2.12.1"
   },
