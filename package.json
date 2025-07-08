@@ -119,9 +119,9 @@
     "@vaadin/vertical-layout": "23.6.0",
     "@vaadin/virtual-list": "23.6.0",
     "construct-style-sheets-polyfill": "3.1.0",
-    "date-fns": "2.30.0",
+    "date-fns": "2.29.3",
     "lit": "2.8.0",
-    "proj4": "2.12.1"
+    "proj4": "2.8.1"
   },
   "devDependencies": {
     "@rollup/plugin-replace": "3.1.0",
@@ -278,7 +278,7 @@
       "workbox-core": "6.6.1",
       "workbox-precaching": "6.6.1"
     },
-    "hash": "cdd9cb9aa8134e78b685b84aedb505295bee9482e9ff3cccdd04a698289b9bb0"
+    "hash": "506c2e252232af1c1a2f7bb1361a94061231acfd0468a06f8ccba1e878dfe855"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -291,6 +291,7 @@
     "@vaadin/checkbox-group": "$@vaadin/checkbox-group",
     "@vaadin/combo-box": "$@vaadin/combo-box",
     "@vaadin/component-base": "$@vaadin/component-base",
+    "@vaadin/confirm-dialog": "$@vaadin/confirm-dialog",
     "@vaadin/context-menu": "$@vaadin/context-menu",
     "@vaadin/custom-field": "$@vaadin/custom-field",
     "@vaadin/date-picker": "$@vaadin/date-picker",
@@ -319,8 +320,10 @@
     "@vaadin/menu-bar": "$@vaadin/menu-bar",
     "@vaadin/message-input": "$@vaadin/message-input",
     "@vaadin/message-list": "$@vaadin/message-list",
+    "@vaadin/multi-select-combo-box": "$@vaadin/multi-select-combo-box",
     "@vaadin/notification": "$@vaadin/notification",
     "@vaadin/number-field": "$@vaadin/number-field",
+    "@vaadin/overlay": "$@vaadin/overlay",
     "@vaadin/password-field": "$@vaadin/password-field",
     "@vaadin/polymer-legacy-adapter": "$@vaadin/polymer-legacy-adapter",
     "@vaadin/progress-bar": "$@vaadin/progress-bar",
@@ -329,9 +332,11 @@
     "@vaadin/select": "$@vaadin/select",
     "@vaadin/split-layout": "$@vaadin/split-layout",
     "@vaadin/tabs": "$@vaadin/tabs",
+    "@vaadin/tabsheet": "$@vaadin/tabsheet",
     "@vaadin/text-area": "$@vaadin/text-area",
     "@vaadin/text-field": "$@vaadin/text-field",
     "@vaadin/time-picker": "$@vaadin/time-picker",
+    "@vaadin/tooltip": "$@vaadin/tooltip",
     "@vaadin/upload": "$@vaadin/upload",
     "@vaadin/vaadin-accordion": "$@vaadin/vaadin-accordion",
     "@vaadin/vaadin-app-layout": "$@vaadin/vaadin-app-layout",
@@ -339,6 +344,7 @@
     "@vaadin/vaadin-button": "$@vaadin/vaadin-button",
     "@vaadin/vaadin-checkbox": "$@vaadin/vaadin-checkbox",
     "@vaadin/vaadin-combo-box": "$@vaadin/vaadin-combo-box",
+    "@vaadin/vaadin-confirm-dialog": "$@vaadin/vaadin-confirm-dialog",
     "@vaadin/vaadin-context-menu": "$@vaadin/vaadin-context-menu",
     "@vaadin/vaadin-custom-field": "$@vaadin/vaadin-custom-field",
     "@vaadin/vaadin-date-picker": "$@vaadin/vaadin-date-picker",
@@ -378,7 +384,6 @@
     "@vaadin/virtual-list": "$@vaadin/virtual-list",
     "@vaadin/board": "$@vaadin/board",
     "@vaadin/charts": "$@vaadin/charts",
-    "@vaadin/confirm-dialog": "$@vaadin/confirm-dialog",
     "@vaadin/cookie-consent": "$@vaadin/cookie-consent",
     "@vaadin/crud": "$@vaadin/crud",
     "@vaadin/grid-pro": "$@vaadin/grid-pro",
@@ -386,7 +391,6 @@
     "@vaadin/rich-text-editor": "$@vaadin/rich-text-editor",
     "@vaadin/vaadin-board": "$@vaadin/vaadin-board",
     "@vaadin/vaadin-charts": "$@vaadin/vaadin-charts",
-    "@vaadin/vaadin-confirm-dialog": "$@vaadin/vaadin-confirm-dialog",
     "@vaadin/vaadin-cookie-consent": "$@vaadin/vaadin-cookie-consent",
     "@vaadin/vaadin-crud": "$@vaadin/vaadin-crud",
     "@vaadin/vaadin-grid-pro": "$@vaadin/vaadin-grid-pro",
@@ -395,11 +399,7 @@
     "construct-style-sheets-polyfill": "$construct-style-sheets-polyfill",
     "lit": "$lit",
     "@polymer/polymer": "$@polymer/polymer",
-    "date-fns": "$date-fns",
-    "@vaadin/multi-select-combo-box": "$@vaadin/multi-select-combo-box",
     "proj4": "$proj4",
-    "@vaadin/tabsheet": "$@vaadin/tabsheet",
-    "@vaadin/tooltip": "$@vaadin/tooltip",
-    "@vaadin/overlay": "$@vaadin/overlay"
+    "date-fns": "$date-fns"
   }
 }
