@@ -153,6 +153,11 @@
                 <groupId>com.vaadin</groupId>
                 <artifactId>flow-maven-plugin</artifactId>
                 <version>${vaadin.version}</version>
+                <configuration>
+                    <forceProductionBuild>true</forceProductionBuild>
+                    <frontendHotdeploy>true</frontendHotdeploy>
+                    <commercialWithBanner>true</commercialWithBanner>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
