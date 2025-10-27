@@ -28,12 +28,12 @@ Clicking on the green run button will start the application.
 After the application has started, you can view your it at http://localhost:8080/ in your browser.
 
 
-If you want to run the application locally in the production mode, use `spring-boot:run -Pproduction` command instead.
+If you want to run the application locally in the production mode, use `package` and `java -jar target/spring-skeleton-1.0-SNAPSHOT.jar` commands instead.
 ### Running Integration Tests
 
 Integration tests are implemented using [Vaadin TestBench](https://vaadin.com/testbench). The tests take a few minutes to run and are therefore included in a separate Maven profile. We recommend running tests with a production build to minimize the chance of development time toolchains affecting test stability. To run the tests using Google Chrome, execute
 
-`mvn verify -Pit,production`
+`mvn verify -Pit`
 
 and make sure you have a valid TestBench license installed.
 
