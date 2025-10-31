@@ -137,11 +137,6 @@
                 <version>${vaadin.version}</version>
                 <executions>
                     <execution>
-                        <goals>
-                            <goal>prepare-frontend</goal>
-                        </goals>
-                    </execution>
-                    <execution>
                         <id>package-for-production</id>
                         <goals>
                             <goal>build-frontend</goal>
