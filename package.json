@@ -111,7 +111,7 @@
     "@vaadin/vaadin-tabs": "23.6.1",
     "@vaadin/vaadin-template-renderer": "23.6.1",
     "@vaadin/vaadin-text-field": "23.6.1",
-    "@vaadin/vaadin-themable-mixin": "23.6.1",
+    "@vaadin/vaadin-themable-mixin": "23.6.2",
     "@vaadin/vaadin-time-picker": "23.6.1",
     "@vaadin/vaadin-upload": "23.6.1",
     "@vaadin/vaadin-usage-statistics": "2.1.3",
