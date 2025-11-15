@@ -20,7 +20,7 @@
     "@vaadin/checkbox-group": "23.6.1",
     "@vaadin/combo-box": "23.6.1",
     "@vaadin/common-frontend": "0.0.19",
-    "@vaadin/component-base": "23.6.1",
+    "@vaadin/component-base": "23.6.2",
     "@vaadin/confirm-dialog": "23.6.1",
     "@vaadin/context-menu": "23.6.1",
     "@vaadin/cookie-consent": "23.6.1",
