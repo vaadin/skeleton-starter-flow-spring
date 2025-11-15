@@ -31,7 +31,7 @@
     "@vaadin/details": "23.6.1",
     "@vaadin/dialog": "23.6.1",
     "@vaadin/email-field": "23.6.1",
-    "@vaadin/field-base": "23.6.1",
+    "@vaadin/field-base": "23.6.2",
     "@vaadin/field-highlighter": "23.6.1",
     "@vaadin/form-layout": "23.6.1",
     "@vaadin/grid": "23.6.1",
