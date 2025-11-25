@@ -93,6 +93,8 @@
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-testbench-junit5</artifactId>
             <scope>test</scope>
+            <!-- test deps are always "optional", but may interfere regular transitive optionals if not optional -->
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
