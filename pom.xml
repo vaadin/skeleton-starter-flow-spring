@@ -93,7 +93,9 @@
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-testbench-junit5</artifactId>
             <scope>test</scope>
-            <!-- test deps are always "optional", but may interfere regular transitive optionals if not optional -->
+            <!-- Test-scoped dependencies are always considered "optional", but 
+            their transitive dependencies may conflict with those from regular 
+            optional dependencies if not explicitly marked as optional here. -->
             <optional>true</optional>
         </dependency>
     </dependencies>
