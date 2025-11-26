@@ -22,18 +22,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Add v24.9 branch as remote ref
-        run: |
-          git fetch origin v24.9:v24.9
+      - name: Fetch v24.9
+        run: git fetch origin v24.9
 
-      - name: Merge v24.9 into v24 (prefer v24.9 content)
+      - name: Hard reset v24 to v24.9
         run: |
-          # Use 'theirs' strategy for automatic conflict resolution
-          git merge v24.9 -X theirs --no-edit || true
+          git reset --hard origin/v24.9
 
-      - name: Push updated v24 branch
+      - name: Push updated v24
         run: |
-          # Only push if there are changes
-          if ! git diff --quiet HEAD; then
-            git push origin v24
-          fi
+          git push origin v24 --force
