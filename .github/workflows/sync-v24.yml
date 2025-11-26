@@ -1,0 +1,39 @@
+name: Sync v24 with latest v24.x
+
+on:
+  push:
+    branches:
+      - v24.9
+
+jobs:
+  sync-branches:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout target branch (v24)
+        uses: actions/checkout@v4
+        with:
+          ref: v24
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add v24.9 branch as remote ref
+        run: |
+          git fetch origin v24.9:v24.9
+
+      - name: Merge v24.9 into v24 (prefer v24.9 content)
+        run: |
+          # Use 'theirs' strategy for automatic conflict resolution
+          git merge v24.9 -X theirs --no-edit || true
+
+      - name: Push updated v24 branch
+        run: |
+          # Only push if there are changes
+          if ! git diff --quiet HEAD; then
+            git push origin v24
+          fi
