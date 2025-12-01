@@ -5,11 +5,15 @@ import com.vaadin.flow.component.html.testbench.ParagraphElement;
 import com.vaadin.flow.component.textfield.testbench.TextFieldElement;
 import com.vaadin.testbench.BrowserTest;
 import com.vaadin.testbench.BrowserTestBase;
+import com.vaadin.testbench.DriverSupplier;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
-public class MainViewIT extends BrowserTestBase {
+public class MainViewIT extends BrowserTestBase implements DriverSupplier {
 
     /**
      * If running on CI, get the host name from environment variable HOSTNAME
@@ -70,5 +74,13 @@ public class MainViewIT extends BrowserTestBase {
         textField.sendKeys(Keys.ENTER);
         ParagraphElement msg = $(ParagraphElement.class).waitForFirst();
         Assertions.assertEquals("Hello Vaadiner", msg.getText());
+    }
+
+    @Override
+    public WebDriver createDriver() {
+        final ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new", "--disable-gpu");
+        options.addArguments("--disable-backgrounding-occluded-windows");
+        return new ChromeDriver( options);
     }
 }
