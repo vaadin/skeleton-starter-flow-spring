@@ -91,7 +91,7 @@
         </dependency>
         <dependency>
             <groupId>com.vaadin</groupId>
-            <artifactId>vaadin-testbench-junit6</artifactId>
+            <artifactId>browserless-test-junit6</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
