@@ -93,10 +93,6 @@
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-testbench-junit6</artifactId>
             <scope>test</scope>
-            <!-- Test-scoped dependencies are always considered "optional", but 
-            their transitive dependencies may conflict with those from regular 
-            optional dependencies if not explicitly marked as optional here. -->
-            <optional>true</optional>
         </dependency>
     </dependencies>
 
