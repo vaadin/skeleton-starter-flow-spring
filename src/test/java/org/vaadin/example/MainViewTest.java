@@ -19,14 +19,14 @@ public class MainViewTest extends SpringBrowserlessTest {
     }
 
     @Test
-    public void clickingButtonShowsNotification() {
+    public void clickingButtonShowsGreeting() {
         Assertions.assertTrue($(Paragraph.class).all().isEmpty());
         test($(Button.class).single()).click();
         Assertions.assertFalse($(Paragraph.class).all().isEmpty());
     }
 
     @Test
-    public void clickingButtonTwiceShowsTwoNotifications() {
+    public void clickingButtonTwiceShowsTwoGreetings() {
         Assertions.assertTrue($(Paragraph.class).all().isEmpty());
         Button button = $(Button.class).single();
         test(button).click();
@@ -35,14 +35,14 @@ public class MainViewTest extends SpringBrowserlessTest {
     }
 
     @Test
-    public void testClickButtonShowsHelloAnonymousUserNotificationWhenUserNameIsEmpty() {
+    public void testClickButtonShowsHelloAnonymousUserGreetingWhenUserNameIsEmpty() {
         test($(Button.class).single()).click();
         Paragraph msg = $(Paragraph.class).single();
         Assertions.assertEquals("Hello anonymous user", msg.getText());
     }
 
     @Test
-    public void testClickButtonShowsHelloUserNotificationWhenUserIsNotEmpty() {
+    public void testClickButtonShowsHelloUserGreetingWhenUserIsNotEmpty() {
         test($(TextField.class).single()).setValue("Vaadiner");
         test($(Button.class).single()).click();
         Paragraph msg = $(Paragraph.class).single();
@@ -50,7 +50,7 @@ public class MainViewTest extends SpringBrowserlessTest {
     }
 
     @Test
-    public void testEnterShowsHelloUserNotificationWhenUserIsNotEmpty() {
+    public void testEnterShowsHelloUserGreetingWhenUserIsNotEmpty() {
         test($(TextField.class).single()).setValue("Vaadiner");
         fireShortcut(Key.ENTER);
         Paragraph msg = $(Paragraph.class).single();
