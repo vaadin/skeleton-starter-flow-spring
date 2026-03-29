@@ -22,6 +22,14 @@
     </parent>
 
     <repositories>
+        <!-- Central first to avoid unnecessary lookups from maven.vaadin.com for all artifacts -->
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
         <repository>
             <id>vaadin-prereleases</id>
             <url>https://maven.vaadin.com/vaadin-prereleases</url>
@@ -39,6 +47,14 @@
     </repositories>
 
     <pluginRepositories>
+        <!-- Central first to avoid unnecessary lookups from maven.vaadin.com for all artifacts -->
+        <pluginRepository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
         <pluginRepository>
             <id>vaadin-prereleases</id>
             <url>https://maven.vaadin.com/vaadin-prereleases</url>
