@@ -22,6 +22,14 @@
     </parent>
 
     <repositories>
+        <!-- Central first to avoid unnecessary lookups from maven.vaadin.com for all artifacts -->
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
         <repository>
             <id>Vaadin Directory</id>
             <url>https://maven.vaadin.com/vaadin-addons</url>
