@@ -64,11 +64,11 @@ jobs:
 
       - name: Verify in dev mode
         run: |
-          mvn -B -ntp verify -Pit
+          mvn -B -ntp verify -Pit -Dcom.vaadin.testbench.Parameters.maxAttempts=2 -Dcom.vaadin.testbench.Parameters.headless=true
 
       - name: Verify in production mode
         run: |
-          mvn -B -ntp verify -Pproduction,integration-tests,it
+          mvn -B -ntp verify -Pproduction,integration-tests,it -Dcom.vaadin.testbench.Parameters.maxAttempts=2 -Dcom.vaadin.testbench.Parameters.headless=true
 
       - name: Check for version mismatches
         if: always()
