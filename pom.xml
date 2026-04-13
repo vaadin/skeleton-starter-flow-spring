@@ -12,13 +12,13 @@
 
     <properties>
         <java.version>21</java.version>
-        <vaadin.version>25.0.0-beta2</vaadin.version>
+        <vaadin.version>25.0.7</vaadin.version>
     </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.0-RC1</version>
+        <version>4.0.3</version>
     </parent>
 
     <repositories>
@@ -91,7 +91,7 @@
         </dependency>
         <dependency>
             <groupId>com.vaadin</groupId>
-            <artifactId>vaadin-testbench-junit5</artifactId>
+            <artifactId>vaadin-testbench-junit6</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -110,15 +110,8 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>prepare-frontend</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>package-for-production</id>
-                        <goals>
                             <goal>build-frontend</goal>
                         </goals>
-                        <phase>prepare-package</phase>
                     </execution>
                 </executions>
             </plugin>
