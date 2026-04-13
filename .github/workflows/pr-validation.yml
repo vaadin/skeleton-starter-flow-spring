@@ -1,0 +1,95 @@
+name: Starter Validation
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.head_ref }} || ${{ github.ref_name }}
+  cancel-in-progress: true
+
+env:
+  JAVA_VERSION: '21'
+
+jobs:
+  validation:
+    name: Validate Starter
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+
+    steps:
+      - name: Check secrets
+        run: |
+          [ -z "${{secrets.TB_LICENSE}}" ] \
+            && echo "🚫 **TB_LICENSE** is not defined, check that **${{github.repository}}** repo has a valid secret" \
+            | tee -a $GITHUB_STEP_SUMMARY && exit 1 || exit 0
+
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24.9.0'
+
+      - name: Set up JDK
+        uses: actions/setup-java@v5
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+
+      - name: Set up Maven
+        run: |
+          curl -sL https://archive.apache.org/dist/maven/maven-3/3.8.7/binaries/apache-maven-3.8.7-bin.tar.gz | tar xz -C /opt
+          echo "/opt/apache-maven-3.8.7/bin" >> $GITHUB_PATH
+
+      - name: Cache Maven repository
+        uses: actions/cache@v5
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-maven-
+
+      - name: Set TB License
+        run: |
+          TB_LICENSE=${{secrets.TB_LICENSE}}
+          mkdir -p ~/.vaadin/
+          echo '{"username":"'`echo $TB_LICENSE | cut -d / -f1`'","proKey":"'`echo $TB_LICENSE | cut -d / -f2`'"}' > ~/.vaadin/proKey
+
+      - name: Package
+        run: mvn -B -ntp clean package -DskipTests
+
+      - name: Verify in dev mode
+        run: |
+          mvn -B -ntp verify -Pit -Dcom.vaadin.testbench.Parameters.maxAttempts=2 -Dcom.vaadin.testbench.Parameters.headless=true
+
+      - name: Verify in production mode
+        run: |
+          mvn -B -ntp verify -Pproduction,integration-tests,it -Dcom.vaadin.testbench.Parameters.maxAttempts=2 -Dcom.vaadin.testbench.Parameters.headless=true
+
+      - name: Check for version mismatches
+        if: always()
+        run: |
+          if grep -r "has version mismatches with installed packages" target/ 2>/dev/null || \
+             grep -r "has version mismatches with installed packages" ./**/target/ 2>/dev/null; then
+            echo "::error::Bundle version mismatch detected, check build log"
+            exit 1
+          fi
+
+      - name: Package test reports
+        if: failure() || success()
+        run: |
+          find . -name surefire-reports -o -name failsafe-reports -o -name error-screenshots | \
+            tar -czf test-reports.tgz -T - 2>/dev/null || true
+
+      - name: Upload test reports
+        if: failure() || success()
+        uses: actions/upload-artifact@v6
+        with:
+          name: test-reports
+          path: test-reports.tgz
+          if-no-files-found: ignore
+          retention-days: 7
