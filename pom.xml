@@ -12,13 +12,13 @@
 
     <properties>
         <java.version>21</java.version>
-        <vaadin.version>25.2.0-alpha3</vaadin.version>
+        <vaadin.version>25.2.0-alpha4</vaadin.version>
     </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.5</version>
+        <version>4.0.6</version>
     </parent>
 
     <repositories>
@@ -107,7 +107,7 @@
         </dependency>
         <dependency>
             <groupId>com.vaadin</groupId>
-            <artifactId>browserless-test-junit6</artifactId>
+            <artifactId>browserless-test-spring</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
