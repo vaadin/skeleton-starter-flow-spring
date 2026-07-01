@@ -67,6 +67,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- PERF-TEST ONLY: manages AWS SDK v2 module versions (see below). -->
+            <dependency>
+                <groupId>software.amazon.awssdk</groupId>
+                <artifactId>bom</artifactId>
+                <version>2.39.6</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -106,18 +114,62 @@
         </dependency>
 
         <!--
-            PERF-TEST ONLY: full AWS SDK v2 aggregate pulls ~400 service JARs
-            (tens of thousands of classes under software/amazon/awssdk, which is
-            NOT in Vaadin's DEFAULT_SCAN_NEVER blocklist). This forces the
-            dev-mode classpath scan in VaadinServletContextInitializer to open
-            and read every one of those archives, making the
+            PERF-TEST ONLY: a curated subset of AWS SDK v2 service modules.
+            Their classes live under software/amazon/awssdk, which is NOT in
+            Vaadin's DEFAULT_SCAN_NEVER blocklist, so the dev-mode classpath
+            scan in VaadinServletContextInitializer opens and reads every one
+            of these JARs. This subset is tuned so the
             "Search for subclasses and classes with annotations took X ms"
-            phase take several seconds. Remove to restore normal startup.
+            phase lands in the ~5-10 s range (the full aws-sdk-java aggregate
+            pushed it to ~96 s). Add/remove modules to raise/lower the time.
         -->
         <dependency>
             <groupId>software.amazon.awssdk</groupId>
-            <artifactId>aws-sdk-java</artifactId>
-            <version>2.39.6</version>
+            <artifactId>s3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>dynamodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>iam</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>sqs</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>sns</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>lambda</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>kms</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>rds</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>cloudwatch</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>ssm</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>sts</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>secretsmanager</artifactId>
         </dependency>
     </dependencies>
 
