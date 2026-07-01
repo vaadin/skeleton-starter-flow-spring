@@ -12,7 +12,7 @@
 
     <properties>
         <java.version>21</java.version>
-        <vaadin.version>25.2.1</vaadin.version>
+        <vaadin.version>25.3-SNAPSHOT</vaadin.version>
     </properties>
 
     <parent>
@@ -22,6 +22,10 @@
     </parent>
 
     <repositories>
+        <repository>
+            <id>vaadin-prereleases</id>
+            <url>https://maven.vaadin.com/vaadin-prereleases/</url>
+        </repository>
         <!-- Central first to avoid unnecessary lookups from maven.vaadin.com for all artifacts -->
         <repository>
             <id>central</id>
@@ -40,6 +44,10 @@
     </repositories>
 
     <pluginRepositories>
+        <pluginRepository>
+            <id>vaadin-prereleases</id>
+            <url>https://maven.vaadin.com/vaadin-prereleases/</url>
+        </pluginRepository>
         <!-- Central first to avoid unnecessary lookups from maven.vaadin.com for all artifacts -->
         <pluginRepository>
             <id>central</id>
@@ -95,6 +103,21 @@
             <groupId>com.vaadin</groupId>
             <artifactId>browserless-test-spring</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!--
+            PERF-TEST ONLY: full AWS SDK v2 aggregate pulls ~400 service JARs
+            (tens of thousands of classes under software/amazon/awssdk, which is
+            NOT in Vaadin's DEFAULT_SCAN_NEVER blocklist). This forces the
+            dev-mode classpath scan in VaadinServletContextInitializer to open
+            and read every one of those archives, making the
+            "Search for subclasses and classes with annotations took X ms"
+            phase take several seconds. Remove to restore normal startup.
+        -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>aws-sdk-java</artifactId>
+            <version>2.39.6</version>
         </dependency>
     </dependencies>
 
