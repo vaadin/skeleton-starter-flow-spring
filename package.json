@@ -126,6 +126,7 @@
   "devDependencies": {
     "@rollup/plugin-replace": "3.1.0",
     "@rollup/pluginutils": "4.2.1",
+    "@types/node": "18.19.115",
     "async": "3.2.6",
     "glob": "7.2.3",
     "mkdirp": "3.0.1",
@@ -265,6 +266,7 @@
     "devDependencies": {
       "@rollup/plugin-replace": "3.1.0",
       "@rollup/pluginutils": "4.2.1",
+      "@types/node": "18.19.115",
       "async": "3.2.6",
       "glob": "7.2.3",
       "mkdirp": "3.0.1",
@@ -278,7 +280,7 @@
       "workbox-core": "6.6.1",
       "workbox-precaching": "6.6.1"
     },
-    "hash": "ca46b17834ec3e13e5316086bc516f8e0693d76a407410169432c71069cc627f"
+    "hash": "5157527c94e01c7003ba6be6b2529649ccf27d2f632c04c9848c23952d414975"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
