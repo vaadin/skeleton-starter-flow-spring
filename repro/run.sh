@@ -3,11 +3,12 @@
 # been called" by simulating a stale browser tab whose push connection keeps
 # reconnecting to localhost:8080 while a fresh server boots on that port.
 #
-# usage: repro/run.sh [tag]
+# usage: repro/run.sh [tag] [initDelayMillis]
 set -u
 DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJ="$(dirname "$DIR")"
 TAG="${1:-run}"
+DELAY="${2:-0}"
 cd "$PROJ"
 
 [ -f "$DIR/cp.txt" ] || ./mvnw -B -q dependency:build-classpath -Dmdep.outputFile="$DIR/cp.txt"
@@ -16,7 +17,7 @@ cd "$PROJ"
 node "$DIR/probe.js" > "$DIR/probe-$TAG.log" 2>&1 &
 PROBE=$!
 sleep 0.5
-env VAADIN_USAGE_STATS_ENABLED=false java -Dvaadin.launch-browser=false \
+env VAADIN_USAGE_STATS_ENABLED=false java -Drepro.initDelayMillis="$DELAY" -Dvaadin.launch-browser=false \
   -cp "target/classes:src/main/resources:$(cat "$DIR/cp.txt")" \
   org.vaadin.example.Application > "$DIR/srv-$TAG.log" 2>&1 &
 SRV=$!
