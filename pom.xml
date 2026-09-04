@@ -12,7 +12,7 @@
 
     <properties>
         <java.version>21</java.version>
-        <vaadin.version>25.2.6</vaadin.version>
+        <vaadin.version>25.3-SNAPSHOT</vaadin.version>
     </properties>
 
     <parent>
@@ -37,6 +37,12 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>vaadin-prereleases</id>
+            <url>https://maven.vaadin.com/vaadin-prereleases</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
     </repositories>
 
     <pluginRepositories>
@@ -47,6 +53,12 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>vaadin-prereleases</id>
+            <url>https://maven.vaadin.com/vaadin-prereleases</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
         </pluginRepository>
     </pluginRepositories>
 
