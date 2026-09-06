@@ -1,138 +1,120 @@
-# Repro: Vaadin 25 — PWA `offline.html` not displayed after integrating Spring Security
+# Repro: a custom `@PWA(offlinePath = …)` is never permitted by Spring Security
 
-Forum thread: <https://vaadin.com/forum/t/vaadin-25-pwa-offline-html-not-displaying-after-integrating-spring-security/179756>
+Companion to branch `repro/vaadin-25-pwa-offline-spring-security`, which reproduces the
+forum report
+<https://vaadin.com/forum/t/vaadin-25-pwa-offline-html-not-displaying-after-integrating-spring-security/179756>.
+That reporter uses the default filename; **this branch shows a separate defect that
+appears as soon as the offline path is renamed.**
 
-Reproduced on the skeleton starter with the reporter's `SecurityConfig` copied
-verbatim from post #1. Vaadin **25.2.6**, Spring Boot 4.1.0, Java 25, Chromium 152,
-driven with Playwright.
+Verified on Vaadin **25.2.6**, Spring Boot 4.1.0, Java 25, Chromium 152 (Playwright).
 
-## Setup in this repo
+## Difference from the companion branch
 
-- `spring-boot-starter-security` in `pom.xml`
-- `SecurityConfig` — verbatim from the forum post (no `loginView`, the same
-  `permitAll` list, the same `WebSecurityCustomizer` ignore list)
-- `MainView` is `@AnonymousAllowed` (post #5: all views are open)
-- `@PWA(..., offlinePath = "offline.html")` on `Application`
-- `src/main/resources/META-INF/resources/offline.html`
+```java
+@PWA(name = "…", shortName = "…", offlinePath = "custom-offline.html")
+```
 
-Run it: `./mvnw -DskipTests package && java -jar target/spring-skeleton-1.0-SNAPSHOT.jar`
-then load the app, wait for the service worker, and switch DevTools to Offline.
+plus `src/main/resources/META-INF/resources/custom-offline.html`. Everything else —
+`SecurityConfig` (copied verbatim from the forum report), `@AnonymousAllowed` views —
+is unchanged. `offline.html` is kept as a control; see below.
 
 ## Result
 
-Reproduced. The offline page renders **blank** with Spring Security on the
-classpath, and correctly without it. The single new console message is:
+The service worker never installs, and the app has no offline support at all.
 
-    Refused to display 'http://localhost:8081/' in a frame
-    because it set 'X-Frame-Options' to 'deny'.
+```bash
+./mvnw -DskipTests package
+java -jar target/spring-skeleton-1.0-SNAPSHOT.jar
+```
 
-## Root cause: two Vaadin defects that only break in combination
+Flow puts the configured path into the service worker's precache manifest:
 
-### Defect 1 — `@PWA(offlinePath = …)` does not invalidate the reusable default bundle
+```
+$ curl -s http://localhost:8080/sw-runtime-resources-precache.js
+self.additionalManifestEntries = [
+{ url: 'icons/icon-144x144.png', revision: '644831840' },
+…
+{ url: 'custom-offline.html', revision: '-1756531766' },
+{ url: 'offline-stub.html', revision: '-1756531766' },
+{ url: 'manifest.webmanifest', revision: '1409500091' }
+];
+```
 
-`OFFLINE_PATH` is a Vite `define` baked in at frontend-build time
-(`vite.generated.ts` → `OFFLINE_PATH: settings.offlinePath`, written by
-`TaskUpdateSettingsFile`). But `BundleValidationUtil.needsBuildInternal()` checks
-npm packages, index.html, theme config, frontend imports and exported web
-components — **it never looks at the PWA configuration**.
+…and Spring Security blocks that exact URL:
 
-A plain skeleton app has no custom frontend dependencies, so Vaadin reuses the
-pre-compiled bundle from `vaadin-prod-bundle` / `vaadin-dev-bundle`, whose `sw.js`
-was compiled with `OFFLINE_PATH = "."`:
+| path | anonymous |
+|---|---|
+| `/` | 200 |
+| `/offline-stub.html` | 200 |
+| `/offline.html` — **not** the configured path, but hardcoded in Vaadin's permit list | 200 |
+| `/custom-offline.html` — **the configured path** | **403** |
 
-    $ ./mvnw package                                  # "A production mode bundle build is not needed"
-    $ grep -o 'var Y=`[^`]*`' target/classes/META-INF/VAADIN/webapp/sw.js
-    var Y=`.`                                         # should be `offline.html`
+That asymmetry is the whole bug in one table.
 
-    $ ./mvnw -Dvaadin.force.production.build=true package
-    var Y=`offline.html`                              # correct
+In the browser: open <http://localhost:8080/>, and the service worker never activates.
+Registering it by hand shows the install failing —
 
-`target/vaadin-dev-server-settings.json` correctly holds
-`"offlinePath": "'offline.html'"` — only the compiled bundle is stale. Dev mode is
-affected too (`GET /sw.js` serves `offlinePath = "."`).
+```js
+const reg = await navigator.serviceWorker.register('/sw.js');
+// the installing worker transitions to "redundant":
+// workbox raises bad-precaching-response for the 403
+```
 
-Consequence: `matchPrecache(".")` in `sw.ts` resolves to the precached **app
-shell** rather than to `offline.html`. The offline page is correctly precached and
-never served directly. The app shell boots from cache instead, Flow detects the
-lost connection, and `Flow.offlineStubAction()` (flow-client `Flow.js`) renders the
-offline content in an iframe:
+Cache Storage is left partial (31 entries — the ones workbox fetched before aborting;
+`custom-offline.html`, `offline-stub.html` and `manifest.webmanifest` are all absent).
+DevTools → Network → Offline, then reload, gives the browser's network-error page.
 
-    const offlineStub = document.createElement('iframe');
-    offlineStub.setAttribute('src', './offline-stub.html');
+## Root cause
 
-`offline-stub.html` is served by `PwaHandler` with the same body as `offline.html`,
-so **without** Spring Security the user still sees their offline page and nothing
-looks wrong. Defect 1 on its own is latent.
+`HandlerHelper` hardcodes the *default* offline path into the public-resource list that
+`VaadinSecurityConfigurer.getDefaultWebSecurityIgnoreMatcher()` turns into `permitAll`
+matchers, so the configured value is never consulted:
 
-### Defect 2 — Spring Security's `X-Frame-Options: DENY` blocks Vaadin's own offline stub iframe
+```java
+// flow-server, com/vaadin/flow/server/HandlerHelper.java
+resources.add("/" + PwaConfiguration.DEFAULT_OFFLINE_PATH);   // always "/offline.html"
+```
 
-`/offline-stub.html` is served through the Vaadin servlet, so it passes through the
-Spring Security filter chain and gets the default `X-Frame-Options: DENY`. Being
-`permitAll` does not help — the header is added to permitted responses too. Workbox
-stores the response *with its headers* in the precache, so the browser refuses to
-render it in the iframe, the frame becomes `chrome-error://chromewebdata/`, and the
-offline page is blank.
+Custom `offlineResources` entries are affected the same way unless they happen to fall
+under an already-permitted prefix (`/themes/`, `/assets/`, `/VAADIN/`).
 
-Cached response headers, read out of the workbox cache in the browser:
+Vaadin already solved exactly this for the **icon** path, via `WebIconsRequestMatcher` /
+`RequestUtil.isCustomWebIcon()` wired into `VaadinSecurityConfigurer.defaultPermitMatcher()`.
+There is no equivalent for the offline path.
 
-| entry | status | `X-Frame-Options` |
-|---|---|---|
-| `/` | 200 | `DENY` |
-| `/offline-stub.html` | 200 | **`DENY`** ← blocks the iframe |
-| `/offline.html` | 200 | *(none)* — the reporter's `WebSecurityCustomizer` ignores this path |
+## Second failure mode: the login page gets cached as the offline page
 
-`VaadinSecurityConfigurer` never touches `HeadersConfigurer`/`frameOptions`
-(`grep -r frameOptions vaadin-spring` → no hits), even though the Vaadin client
-frames this Vaadin-internal path itself. The reporter did whitelist `/offline.html`;
-they had no way to know `/offline-stub.html` is the path that actually gets framed.
+This branch configures no login view, so the blocked request is answered with `403`.
+If the application *does* configure one (`configurer.loginView(LoginView.class)` — the
+documented setup, and the commented-out line in `SecurityConfig`), the same request is
+answered with `302 → /login` instead. Workbox follows the redirect, the login page comes
+back `200 text/html`, and `copyRedirectedCacheableResponsesPlugin` copies and caches it
+under the precache key for the offline path.
 
-### Why "it broke when I added Spring Security"
+The install then *succeeds*, and offline the service worker serves the Vaadin login
+page, which cannot bootstrap without a network — a blank page rather than the offline
+HTML. Reading the cache back shows `/custom-offline.html` holding the app shell while
+`/offline-stub.html` holds the correct custom offline HTML.
 
-Defect 1 forces the offline page through the iframe route; Defect 2 breaks that
-route. Either one alone is survivable — together they produce the reported symptom.
+## Workaround
 
-## Verification — each fix alone restores the offline page
+Present but commented out in `SecurityConfig`:
 
-| # | Change | `OFFLINE_PATH` | Offline result |
-|---|---|---|---|
-| baseline | security removed entirely | `.` | ✅ offline.html shown in stub iframe |
-| **repro** | reporter's config verbatim | `.` | ❌ blank, `X-Frame-Options` error |
-| fix A | `-Dvaadin.force.production.build=true`, config untouched | `offline.html` | ✅ offline.html served directly, no iframe |
-| fix B | `http.headers(h -> h.frameOptions(fo -> fo.sameOrigin()))`, stale bundle | `.` | ✅ offline.html shown in stub iframe |
+```java
+http.authorizeHttpRequests(auth -> auth
+        .requestMatchers("/custom-offline.html").permitAll());
+```
 
-Fix B is in `SecurityConfig`, commented out. `SAMEORIGIN` still blocks cross-origin
-framing, so it is a safe workaround; adding `/offline-stub.html` to the existing
-`WebSecurityCustomizer` ignore list works as well.
+Verified: with it, `/custom-offline.html` returns `200`, the service worker installs,
+the precache holds the real offline HTML, and offline navigation renders
+"CUSTOM OFFLINE PAGE custom-offline.html".
 
-## Notes on the forum answers
+## Related
 
-- The guess in post #2 (no login view → `403` on `/` → precache install aborts) is
-  **not** what happens here: `MainView` is `@AnonymousAllowed`, so `GET /` returns
-  `200`, the service worker installs cleanly, and all 34 precache entries —
-  including `/` — are stored. Adding `configurer.loginView(...)` does not change the
-  outcome.
-- The failing resources the reporter listed *are* consequences, not the cause, as
-  post #2 said — but note `/lumo/lumo.css`, `/styles.css` and
-  `/VAADIN/static/push/vaadinPush.js` are absent from the precache in the **working**
-  no-security baseline too. They are lazily-loaded and simply not precached, so
-  those `ERR_INTERNET_DISCONNECTED` messages are benign and appear either way.
+Branch `repro/vaadin-25-pwa-offline-spring-security` covers the two defects behind the
+forum report itself:
 
-## Appendix — a separate, related bug found while investigating
-
-Not what the reporter hit (they use the default filename), but verified on the same
-setup: a **custom** offline path is never permitted by Spring Security.
-`HandlerHelper` hardcodes the default into the public-resource list that
-`VaadinSecurityConfigurer` turns into `permitAll` matchers:
-
-    resources.add("/" + PwaConfiguration.DEFAULT_OFFLINE_PATH);   // always "/offline.html"
-
-With `@PWA(offlinePath = "custom-offline.html")`, `/custom-offline.html` returns
-`302 → /login` anonymously and `403` when authenticated. Both wreck the service
-worker: authenticated, the precache fetch `403`s and workbox raises
-`bad-precaching-response`, so install fails and the worker goes `redundant`;
-anonymous, the `302` is followed and workbox's
-`copyRedirectedCacheableResponsesPlugin` caches the **login page** under the offline
-path. The same applies to custom `offlineResources` entries. Vaadin already solved
-exactly this for the icon path (`WebIconsRequestMatcher` /
-`RequestUtil.isCustomWebIcon()`, wired into `defaultPermitMatcher()`); there is no
-equivalent for the offline path.
+1. `@PWA(offlinePath = …)` does not invalidate the reusable default bundle, so `sw.js`
+   keeps `OFFLINE_PATH = "."`.
+2. `/offline-stub.html` gets Spring Security's default `X-Frame-Options: DENY`, which
+   blocks the iframe Flow uses to display the offline page.

@@ -15,12 +15,13 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
-        // WORKAROUND (see REPRODUCER.md): Vaadin renders the PWA offline page
-        // inside a same-origin <iframe src="./offline-stub.html">, which Spring
-        // Security's default X-Frame-Options: DENY blocks. Uncomment to make
-        // the offline page appear again.
+        // WORKAROUND (see REPRODUCER.md): the offline path configured in
+        // @PWA is not part of Vaadin's default permitted resources -- only the
+        // hardcoded "/offline.html" is -- so the service worker gets a 403 when
+        // it tries to precache it. Uncomment to make the offline page work.
         //
-        // http.headers(headers -> headers.frameOptions(fo -> fo.sameOrigin()));
+        // http.authorizeHttpRequests(auth -> auth
+        //         .requestMatchers("/custom-offline.html").permitAll());
 
         http.authorizeHttpRequests(auth -> auth
                 .requestMatchers(
