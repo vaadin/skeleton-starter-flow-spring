@@ -7,6 +7,7 @@ import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.server.auth.AnonymousAllowed;
 
 /**
  * A sample Vaadin view class.
@@ -21,6 +22,7 @@ import com.vaadin.flow.router.Route;
  * that shows a greeting message in a notification.
  */
 @Route
+@AnonymousAllowed
 public class MainView extends VerticalLayout {
 
     /**

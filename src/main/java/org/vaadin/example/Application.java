@@ -16,7 +16,7 @@ import com.vaadin.flow.theme.lumo.Lumo;
  *
  */
 @SpringBootApplication
-@PWA(name = "Project Base for Vaadin with Spring", shortName = "Project Base")
+@PWA(name = "Project Base for Vaadin with Spring", shortName = "Project Base", offlinePath = "offline.html")
 @StyleSheet(Lumo.STYLESHEET)
 @StyleSheet("styles.css")
 public class Application implements AppShellConfigurator {
