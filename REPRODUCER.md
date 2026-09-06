@@ -105,9 +105,23 @@ http.authorizeHttpRequests(auth -> auth
         .requestMatchers("/custom-offline.html").permitAll());
 ```
 
-Verified: with it, `/custom-offline.html` returns `200`, the service worker installs,
-the precache holds the real offline HTML, and offline navigation renders
-"CUSTOM OFFLINE PAGE custom-offline.html".
+That fixes *this* defect: `/custom-offline.html` returns `200`, the service worker
+installs and activates, and the precache holds all 34 entries including
+`/custom-offline.html` with the real offline HTML.
+
+**It is not enough to see the offline page on this branch**, because the two companion
+defects then take over: `sw.js` still carries `OFFLINE_PATH = "."`, so the app shell is
+served instead and the offline content is pushed into the `offline-stub.html` iframe,
+which Spring Security's `X-Frame-Options: DENY` blocks. Adding either companion fix on
+top makes the page appear:
+
+| variant | `OFFLINE_PATH` | `/custom-offline.html` | offline result |
+|---|---|---|---|
+| branch as-is | `.` | 403 | ❌ service worker never installs |
+| `permitAll` workaround only | `.` | 200 | ❌ installs, but page still blank |
+| `permitAll` + `-Dvaadin.force.production.build=true` | `custom-offline.html` | 200 | ✅ "CUSTOM OFFLINE PAGE custom-offline.html" served directly |
+
+All three rows verified on a clean clone of this branch.
 
 ## Related
 
