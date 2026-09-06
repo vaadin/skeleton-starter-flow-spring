@@ -20,8 +20,15 @@ then load the app, wait for the service worker, and switch DevTools to Offline.
 
 ## Result
 
-Reproduced. The offline page renders **blank** with Spring Security on the
-classpath, and correctly without it. The single new console message is:
+Reproduced. The offline page is never shown with Spring Security on the classpath, and
+shows correctly without it.
+
+What you get instead: the iframe Flow uses for the offline page renders Chrome's
+frame-blocked error page — "localhost refused to connect." — and the only other thing on
+screen is Vaadin's connection indicator, a thin striped bar across the top of the
+viewport (its "Connection lost" text is in the DOM but is not legibly rendered, the
+element being 8px tall). The frame's URL is `chrome-error://chromewebdata/`. The single
+new console message is:
 
     Refused to display 'http://localhost:8081/' in a frame
     because it set 'X-Frame-Options' to 'deny'.
@@ -70,8 +77,8 @@ looks wrong. Defect 1 on its own is latent.
 Spring Security filter chain and gets the default `X-Frame-Options: DENY`. Being
 `permitAll` does not help — the header is added to permitted responses too. Workbox
 stores the response *with its headers* in the precache, so the browser refuses to
-render it in the iframe, the frame becomes `chrome-error://chromewebdata/`, and the
-offline page is blank.
+render it in the iframe. The frame navigates to `chrome-error://chromewebdata/` and
+displays Chrome's frame-blocked error page instead of the offline HTML.
 
 Cached response headers, read out of the workbox cache in the browser:
 
@@ -96,7 +103,7 @@ route. Either one alone is survivable — together they produce the reported sym
 | # | Change | `OFFLINE_PATH` | Offline result |
 |---|---|---|---|
 | baseline | security removed entirely | `.` | ✅ offline.html shown in stub iframe |
-| **repro** | reporter's config verbatim | `.` | ❌ blank, `X-Frame-Options` error |
+| **repro** | reporter's config verbatim | `.` | ❌ never shown; iframe blocked |
 | fix A | `-Dvaadin.force.production.build=true`, config untouched | `offline.html` | ✅ offline.html served directly, no iframe |
 | fix B | `http.headers(h -> h.frameOptions(fo -> fo.sameOrigin()))`, stale bundle | `.` | ✅ offline.html shown in stub iframe |
 
