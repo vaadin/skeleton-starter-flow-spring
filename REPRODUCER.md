@@ -92,8 +92,8 @@ back `200 text/html`, and `copyRedirectedCacheableResponsesPlugin` copies and ca
 under the precache key for the offline path.
 
 The install then *succeeds*, and offline the service worker serves the Vaadin login
-page, which cannot bootstrap without a network — a blank page rather than the offline
-HTML. Reading the cache back shows `/custom-offline.html` holding the app shell while
+page's app shell rather than the offline HTML. It cannot bootstrap without a network,
+so the offline page is not shown. Reading the cache back shows `/custom-offline.html` holding the app shell while
 `/offline-stub.html` holds the correct custom offline HTML.
 
 ## Workaround
@@ -118,7 +118,7 @@ top makes the page appear:
 | variant | `OFFLINE_PATH` | `/custom-offline.html` | offline result |
 |---|---|---|---|
 | branch as-is | `.` | 403 | ❌ service worker never installs |
-| `permitAll` workaround only | `.` | 200 | ❌ installs, but page still blank |
+| `permitAll` workaround only | `.` | 200 | ❌ installs, but offline page still not shown (iframe blocked) |
 | `permitAll` + `-Dvaadin.force.production.build=true` | `custom-offline.html` | 200 | ✅ "CUSTOM OFFLINE PAGE custom-offline.html" served directly |
 
 All three rows verified on a clean clone of this branch.
